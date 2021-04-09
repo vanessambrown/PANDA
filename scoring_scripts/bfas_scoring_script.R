@@ -61,4 +61,4 @@ bfas_scoredscales <- as.data.frame(bfas_scoredscales)
 bfas_scoredscales$record_id <- bfas_data$record_id
 
 #write csv file
-write.csv(bfas_scored, "/Users/shreya/Box/skinner/data/PANDA/Psychosocial/bfas_scored.csv", row.names = FALSE)
+write.csv(bfas_scoredscales, "/Users/shreya/Box/skinner/data/PANDA/Psychosocial/bfas_scored.csv", row.names = FALSE)
