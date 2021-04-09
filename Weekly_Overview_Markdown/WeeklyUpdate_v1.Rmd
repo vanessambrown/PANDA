@@ -1,0 +1,115 @@
+---
+title: "PANDA Weekly Report"
+author: "Shreya Sheth"
+date: "April XX, 2021"
+output:
+  html_document:
+    code_folding: hide
+    df_print: kable
+    mathjax: default
+    number_sections: no
+    theme: spacelab
+    toc: yes
+    toc_depth: 2
+  pdf_document:
+    code_folding: hide
+    df_print: kable
+    number_sections: no
+    toc: yes
+    toc_depth: 2
+---
+<style type="text/css">
+body{ font-size: 18px; max-width: 1600px; margin: auto; padding: 1em; }
+code.r{ font-size: 20px; }
+p { padding-top: 8px; padding-bottom: 8px; }
+pre { font-size: 16px; }
+</style>
+
+```{r setup, include=FALSE, warning = F}
+#this is just some basic setup
+if (!require(pacman)) { install.packages("pacman"); library(pacman) } #sets up pacman package, which simplifies loading of all the packages below
+p_load(knitr, tidyverse, psych, R.matlab, reshape2, ggplot2, cowplot, lme4, flextable, emmeans) #packages to load
+knitr::opts_chunk$set(echo = TRUE) #print code by default
+options(digits=3) 
+
+panda_protocol=list(name="PANDA",
+                        redcap_uri='https://www.ctsiredcap.pitt.edu/redcap/api/',
+                        token='CD9DCB5E2B863E04684C111F7A6C22F2',
+                        forcenewsubinsync=TRUE)
+
+```
+
+# PANDA Weekly Report and Data Summary
+
+## Overview of Recruitment
+
+```{r, warning = F}
+# First, let's make a table to provide a regular update on recruitment. 
+# Work towards doing this programmatically, so that the numbers get pulled from redcap each time the markdown is generated, as opposed to you having to manually update them
+
+Completed <- 15 # number of subjects that have completed the protocol
+Part1_Only <- 4 # number of subjects that have completed part 1 only
+Total_Enrolled <- Completed + Part1_Only # number of subjects enrolled in the study (consented)
+Scheduled_NotRun <- 0 # number of subjects that have been scheduled but not yet run
+Need_to_Screen <- 49 # subjects that need to be screened
+Total_Screened <- 36 # number of subjects that have been screened
+Screen2Run_Conversion <- ((Part1_Only+Completed) / Total_Screened)*100 # Screen to Completion Conversion rate
+
+(recruitment_table <- data.frame(Completed, Part1_Only, Total_Enrolled, Scheduled_NotRun, Need_to_Screen, Total_Screened, Screen2Run_Conversion) %>% pivot_longer(Completed:Screen2Run_Conversion, names_to = "Metric", values_to = "Value"))
+
+```
+
+## Demographic and Clinical Characterization of Part 1 Completers
+
+```{r, message = FALSE, warning= FALSE}
+
+# Overall Sample First
+
+demo<-bsrc::bsrc.getform(protocol = panda_protocol,online = TRUE,formname = "demographic_information")
+
+#get rid of character ids
+demo$record_id <- as.numeric(demo$record_id)
+demo <- demo %>% filter(!is.na(record_id))
+
+Mean_Age <- mean(demo$demo_age) #mean age of the sample
+SD_Age <- sd(demo$demo_age) #standard deviation of age in the sample
+N_Female <- table(demo$demo_gender)[2]
+N_Asian <- sum(demo$demo_race___1, na.rm = T)
+N_AmIndianNative <- sum(demo$demo_race___2, na.rm = T)
+N_Black <- sum(demo$demo_race___3, na.rm = T)
+N_HisLatinx <- sum(demo$demo_race___4, na.rm = T)
+N_NatHawPi <- sum(demo$demo_race___5, na.rm = T)
+N_White <- sum(demo$demo_race___6, na.rm = T)
+N_NoAns <- sum(demo$demo_race___7, na.rm = T)
+N_Other <- sum(demo$demo_race___8, na.rm = T)
+N_Single <- table(demo$demo_maritalstatus)[1]
+MedianIncome18 <- median(demo$demo_income)
+MedianEducation18 <- median(demo$demo_education)
+
+#make the table
+demographic_table <- data.frame(Mean_Age, SD_Age, N_Female, N_Asian, N_AmIndianNative, N_Black, N_HisLatinx, N_NatHawPi, N_White, N_NoAns, N_Other, N_Single, MedianIncome18, MedianEducation18, row.names = NULL) %>% pivot_longer(Mean_Age:MedianEducation18, names_to = "Demographic", values_to = "Value")
+
+#percentages can be helpful for some of these, so let's add a column for those
+(demographic_table <- demographic_table %>% mutate(Percent = if_else(grepl('^N_', demographic_table$Demographic), ((demographic_table$Value / Total_Enrolled) * 100), NA_real_)))
+
+#for income, let's convert it to a factor, specify levels, and plot: 
+demo$demo_income <- as.factor(demo$demo_income)
+levels(demo$demo_income) <- c("<25k", "25-35k", "35-50k", "50-75k", "75-100k", "100-150k", ">150k", "No Answer")
+
+ggplot(demo, aes(x = demo_income)) + geom_histogram(stat = "count") + theme_cowplot()
+
+#same deal for education
+demo$demo_education <- as.factor(demo$demo_education)
+levels(demo$demo_education) <- c("Some HS", "HS/GED", "Some College", "Associates", "BA/BS", "Postgrad", "Masters", "Phd/JD/MD")
+
+ggplot(demo, aes(x = demo_education)) + geom_histogram(stat = "count") + theme_cowplot()
+
+N_level<-bsrc::bsrc.getform(protocol = panda_protocol,online = TRUE,formname = "record_registration")
+
+# High N
+
+
+#Low N
+```
+
+## Examining BFAS Screening Scores vs. BFAS Reported Scores
