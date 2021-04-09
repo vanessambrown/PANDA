@@ -50,8 +50,6 @@ bfas_scoredscales <- bfas_scored$scores
 
 describe(bfas_scoredscales)
 
-### In smc, smcs < 0 were set to .0 ### ???
-
 bfas_plot <- pairs.panels(bfas_scoredscales, pch = '.', lm = TRUE, cex.cor = 2)
 
 ### make it a table
