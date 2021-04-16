@@ -34,10 +34,10 @@ rsq_data_score <- rsq_data %>% mutate(
 rsq_data_score <- select(rsq_data, c(rsq_1, rsq_2, rsq_3, rsq_4, rsq_5, rsq_6, rsq_7, rsq_8, rsq_9))
 
 #list - rejection sensitivity = rsq_1:rsq_9
-rsq_items <- list (rejection_sensitivity = c("rsq_1", "rsq_2", "rsq_3", "rsq_4", "rsq_5", "rsq_6", "rsq_7", "rsq_8", "rsq_9"))
+rsq_items <- list(rejection_sensitivity = c("rsq_1", "rsq_2", "rsq_3", "rsq_4", "rsq_5", "rsq_6", "rsq_7", "rsq_8", "rsq_9"))
 
 #score the new items - rejection sensitivity
-rsq_scored <- scoreItems(rsq_items,rsq_data_score, min = 1)
+rsq_scored <- scoreItems(rsq_items,rsq_data_score, min = 1, max = 36)
 
 #look at the output
 print(rsq_scored)#, #short = FALSE)
@@ -48,9 +48,7 @@ rsq_scored_data <- rsq_scored$scores
 describe(rsq_scored_data)
 
 ### make it a table
-rsq_scored_data <- as.data.frame(rsq_scored_data)
-
-## how to round off digits? round(rsq_scored_data, digits = 2)
+rsq_scored_data <- round(as.data.frame(rsq_scored_data), digits = 2)
 
 ### add the subject ID
 rsq_scored_data$record_id <- rsq_data$record_id

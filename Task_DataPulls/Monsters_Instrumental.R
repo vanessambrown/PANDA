@@ -25,11 +25,4 @@ for (i in mat_files) {
 ins_data <- bind_rows(out)
 
 
-### what do we do with total rts? 
-id_long <- sort(rep(unique(ins_data$id), 40))
-all_rt <- unlist(x$Data[[1]][6])
-
-sub1_inst$presstimest
-
-x <- readMat(paste0("/Users/timallen/Box/skinner/data/PANDA/Monsters/",
-                    i))
+#presstimest = times of the button presses relative to the onset of the instrumental stimulus

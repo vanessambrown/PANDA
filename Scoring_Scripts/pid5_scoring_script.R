@@ -59,7 +59,7 @@ pid5_traits <- list(Anhedonia = c("pid_9","pid_11","pid_43","pid_65"),
                      #Psychoticism = c("Unusual_Beliefs_Experiences","Eccentricity","Perceptual_Dysregulation"))
                    
 #score the items based on traits
-pid5_traits_scored <- scoreItems(pid5_traits, pid5_data, min = 0, max = 4, delete = FALSE)
+pid5_traits_scored <- scoreItems(pid5_traits, pid5_data, min = 1, max = 4, delete = FALSE)
 
 #score the items based on domains
 #pid5_domains_scores <- scoreItems(pid5_domains, pid5_data, min = 0, max = 4, delete = FALSE)
@@ -71,7 +71,7 @@ print(pid5_traits_scored)#, #short = FALSE)
 pid5_traits_scored_table <- pid5_traits_scored$scores
 
 describe(pid5_traits_scored_table)
-
+ 
 
 ### make it a table
 pid5_traits_scored_table <- as.data.frame(pid5_traits_scored_table)

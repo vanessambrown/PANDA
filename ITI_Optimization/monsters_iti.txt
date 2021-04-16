@@ -1,0 +1,6 @@
+#!/bin/bash
+set -ex
+module load free surfer
+
+
+optseq2 --ntp 1500 --tr .9 --psdwin 2 12 .9 --ev run_cond 3 90 --ev hide_cond 3 90 --evc 1 -1 --nkeep 10 --o MON --nsearch 10000 
