@@ -43,7 +43,7 @@ panda_protocol=list(name="PANDA",
 
 ## Overview of Recruitment
 
-```{r, warning = F}
+```{r, message = FALSE, warning = FALSE}
 # First, let's make a table to provide a regular update on recruitment. 
 # Work towards doing this programmatically, so that the numbers get pulled from redcap each time the markdown is generated, as opposed to you having to manually update them
 
@@ -71,6 +71,11 @@ Part1_Only <- sum(is.na(recruitment_data$panda_checklist___2))
 #cat("Total_Enrolled  = " , sum(!is.na(recruitment_data$panda_consent)))
 
 Total_Enrolled <- sum(!is.na(recruitment_data$panda_consent))
+
+#ss_csv <- read_csv("~/Box/skinner/protocols/PANDA/Scheduling and Tracking/Panda Screening and Scheduling.csv") #need this to be a csv
+#filter removes empty rows
+#ss_csv <- ss_csv %>% filter(Intials != "") 
+#Total_Screened <- nrow(ss_csv) #number of rows will be equal to number of participants screened
 
 Scheduled_NotRun <- 1 # number of subjects that have been scheduled but not yet run - add from excel?
 Need_to_Screen <- 32 # subjects that need to be screened - add from excel? 
@@ -148,7 +153,7 @@ ggplot(demo, aes(x = demo_education)) + geom_histogram(stat = "count") + theme_c
 
 ```
 
-## Level of Neuroticism
+## Frequency and Characterization of Low and High N Groups
 
 ```{r, message = FALSE, warning= FALSE}
 #Level of Neuroticism
@@ -159,22 +164,86 @@ N_level$record_id <- as.numeric(N_level$record_id)
 N_level <- N_level %>% filter(!is.na(record_id))
 
 # Low N and High N
-Low_N <- sum(N_level$panda_group == 2)
-High_N <- sum(N_level$panda_group == 1)
+#Low_N <- sum(N_level$panda_group == 2)
+#High_N <- sum(N_level$panda_group == 1)
 
-(N_level_table <- as.data.frame(Low_N, High_N))
+N_level_table <- as.data.frame(table(N_level$panda_group))
+#table(N_level$panda_group)
+N_level$panda_group <- as.factor(N_level$panda_group)
 
-N_level$N <- as.factor(N_level$panda_group)
+levels(N_level$panda_group) <- c("High", "Low")
 
-levels(N_level$N) <- c("High", "Low")
+ggplot(N_level, aes(x=as.factor(panda_group))) + geom_bar() + theme_cowplot()
 
-ggplot (N_level, aes(x=N)) + geom_histogram(stat = "count") + theme_cowplot()
+```
 
-      # Differentiate AD and ID froms screening form
+```{r message = FALSE, warning= FALSE}
+
+#here we can build a table of the same demographics variables as above, but split for low and high N
 
 
 ```
 
+## Plotting the Distribution of N in the Sample
+
+```{r message = FALSE, warning= FALSE}
+
+#Score the BFAS
+###set up the panda protocol environment to pull forms from
+panda_protocol=list(name="PANDA",
+                        redcap_uri='https://www.ctsiredcap.pitt.edu/redcap/api/',
+                        token='CD9DCB5E2B863E04684C111F7A6C22F2',
+                        forcenewsubinsync=TRUE)
+
+###pull a form
+bfas<-bsrc::bsrc.getform(protocol = panda_protocol,online = TRUE,formname = "bfas")
+
+###remove unwanted variables like attention check questions
+bfas_data <- select(bfas, -c(redcap_event_name, bfas_check_1, bfas_check_2))
+
+## convert id from character variable to numeric variable
+bfas_data$record_id <- as.numeric(bfas_data$record_id)
+#filter out the missings we introduced by converting to numeric. This gives us all viable subjects
+bfas_data <- bfas_data %>% filter(!is.na(record_id))
+
+#just messing around: reorder the variables, then sort by bfas_39 in descending order
+#xx <- bfas_data %>% select(bfas_39, bfas_8_r, bfas_18, everything()) %>% arrange(desc(bfas_39))
+
+# create a list of the items that load on each BFAS aspect
+bfas_items <- list(WIT = c("bfas_1_r", "bfas_11", "bfas_21_r", "bfas_31", "bfas_41_r", "bfas_51", "bfas_61", "bfas_71_r", "bfas_81", "bfas_91"), 
+                    VOL = c("bfas_6", "bfas_16_r", "bfas_26", "bfas_36_r", "bfas_46", "bfas_56_r", "bfas_66", "bfas_76_r", "bfas_86", "bfas_96"))
+
+#score the items
+bfas_scored <- scoreItems(bfas_items, bfas_data, min = 1, max = 5)
+
+#look at the output
+print(bfas_scored)#, #short = FALSE)
+
+#create new dataframe with the scored scales
+bfas_scoredscales <- bfas_scored$scores
+
+describe(bfas_scoredscales)
+
+bfas_plot <- pairs.panels(bfas_scoredscales, pch = '.', lm = TRUE, cex.cor = 2)
+
+### make it a table
+bfas_scoredscales <- as.data.frame(bfas_scoredscales)
+
+### add the subject ID
+bfas_scoredscales$record_id <- bfas_data$record_id
+
+bfas_scoredscales <- bfas_scoredscales %>% rowwise() %>% mutate(N = mean(c(WIT, VOL))) 
+
+ggplot(bfas_scoredscales, aes(x = N)) + geom_histogram(binwidth = .25) + theme_cowplot()
+
+#
+bfas_long <- pivot_longer(bfas_scoredscales, cols = WIT:VOL, names_to = "aspect", values_to = "score")
+
+ggplot(bfas_long, aes(x = score)) + geom_histogram(binwidth = .25) + theme_cowplot() + facet_wrap(vars(aspect))
+
+
+
+```
 
 ## Examining BFAS Screening Scores vs. BFAS Reported Scores
 ```{r}
