@@ -51,6 +51,7 @@ pid5_traits <- list(Anhedonia = c("pid_9","pid_11","pid_43","pid_65"),
                    Unusual_Beliefs_Experiences = c("pid_34","pid_54","pid_59","pid_96"),
                    Withdrawal = c("pid_27","pid_52","pid_57","pid_84"))
 
+#add additional facets for each domain
 #pid5_domains <- list(Negative_Affect = c("Emotional_Lability","Anxiousness","Separation_Insecurity"),
                      #Detachment = c("Withdrawal","Anhedonia","Intimacy_Avoidance"),
                      #Antagonism = c("Manipulativeness","Deceitfulness","Grandiosity"),
