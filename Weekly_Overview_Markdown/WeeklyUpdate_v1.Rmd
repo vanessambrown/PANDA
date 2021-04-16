@@ -47,12 +47,47 @@ panda_protocol=list(name="PANDA",
 # First, let's make a table to provide a regular update on recruitment. 
 # Work towards doing this programmatically, so that the numbers get pulled from redcap each time the markdown is generated, as opposed to you having to manually update them
 
-Completed <- 15 # number of subjects that have completed the protocol
-Part1_Only <- 4 # number of subjects that have completed part 1 only
-Total_Enrolled <- Completed + Part1_Only # number of subjects enrolled in the study (consented)
-Scheduled_NotRun <- 0 # number of subjects that have been scheduled but not yet run
-Need_to_Screen <- 49 # subjects that need to be screened
-Total_Screened <- 36 # number of subjects that have been screened
+#pull record registration form from REDCap
+recruitment<-bsrc::bsrc.getform(protocol = panda_protocol,online = TRUE,formname = "record_registration")
+
+#remove IDs that aren't real subjects
+
+recruitment$record_id <- as.numeric(recruitment$record_id)
+recruitment_data <- recruitment %>% filter(!is.na(record_id))
+
+#Get recruitment stats
+##Completed <- 15 # number of subjects that have completed the protocol
+
+#cat("Completed  = " , sum(!is.na(recruitment_data$panda_checklist___2)))
+
+Completed <- sum(!is.na(recruitment_data$panda_checklist___2))
+
+##Part1_Only <- 4 # number of subjects that have completed part 1 only
+#cat("Part1_Only  = " , sum(is.na(recruitment_data$panda_checklist___2)))
+
+Part1_Only <- sum(is.na(recruitment_data$panda_checklist___2))
+
+#Total_Enrolled <- Completed + Part1_Only # number of subjects enrolled in the study (consented)
+#cat("Total_Enrolled  = " , sum(!is.na(recruitment_data$panda_consent)))
+
+Total_Enrolled <- sum(!is.na(recruitment_data$panda_consent))
+
+Scheduled_NotRun <- 1 # number of subjects that have been scheduled but not yet run - add from excel?
+Need_to_Screen <- 32 # subjects that need to be screened - add from excel? 
+Total_Screened <- 45 # number of subjects that have been screened - should screened include people not in redcap?
+
+#panda_screening=list(name="panda_screening",
+                        #redcap_uri='https://www.ctsiredcap.pitt.edu/redcap/api/',
+                        #token='83419F4206440B5D26B1FC3B465DB2F7',
+                        #forcenewsubinsync=TRUE)
+
+#screening<-bsrc::bsrc.getform(protocol = panda_screening,online = TRUE,formname = "eligibility_screening_phone_or_unit")
+
+#screening_data <- screening %>% filter(egs_whichblrub == "5")
+
+#cat("Total_Screened  = " , sum(!is.na(screening_data$egs_whichblrub)))
+
+
 Screen2Run_Conversion <- ((Part1_Only+Completed) / Total_Screened)*100 # Screen to Completion Conversion rate
 
 (recruitment_table <- data.frame(Completed, Part1_Only, Total_Enrolled, Scheduled_NotRun, Need_to_Screen, Total_Screened, Screen2Run_Conversion) %>% pivot_longer(Completed:Screen2Run_Conversion, names_to = "Metric", values_to = "Value"))
@@ -71,9 +106,16 @@ demo<-bsrc::bsrc.getform(protocol = panda_protocol,online = TRUE,formname = "dem
 demo$record_id <- as.numeric(demo$record_id)
 demo <- demo %>% filter(!is.na(record_id))
 
-Mean_Age <- mean(demo$demo_age) #mean age of the sample
-SD_Age <- sd(demo$demo_age) #standard deviation of age in the sample
+#mean age of the sample 
+Mean_Age <- mean(demo$demo_age) 
+#cat("Mean_Age  = " , mean(demo$demo_age))
+
+#standard deviation of age in the sample 
+SD_Age <- sd(demo$demo_age) 
+#cat("SD_Age  = " , sd(demo$demo_age))
+
 N_Female <- table(demo$demo_gender)[2]
+N_Male <- table(demo$demo_gender)[1]
 N_Asian <- sum(demo$demo_race___1, na.rm = T)
 N_AmIndianNative <- sum(demo$demo_race___2, na.rm = T)
 N_Black <- sum(demo$demo_race___3, na.rm = T)
@@ -104,14 +146,51 @@ levels(demo$demo_education) <- c("Some HS", "HS/GED", "Some College", "Associate
 
 ggplot(demo, aes(x = demo_education)) + geom_histogram(stat = "count") + theme_cowplot()
 
-N_level<-bsrc::bsrc.getform(protocol = panda_protocol,online = TRUE,formname = "record_registration")
-
-# High N
-
-
-#Low N
 ```
 
+## Level of Neuroticism
+
+```{r, message = FALSE, warning= FALSE}
+#Level of Neuroticism
+N_level<-bsrc::bsrc.getform(protocol = panda_protocol,online = TRUE,formname = "record_registration")
+
+#get rid of record IDs
+N_level$record_id <- as.numeric(N_level$record_id)
+N_level <- N_level %>% filter(!is.na(record_id))
+
+# Low N and High N
+Low_N <- sum(N_level$panda_group == 2)
+High_N <- sum(N_level$panda_group == 1)
+
+(N_level_table <- as.data.frame(Low_N, High_N))
+
+N_level$N <- as.factor(N_level$panda_group)
+
+levels(N_level$N) <- c("High", "Low")
+
+ggplot (N_level, aes(x=N)) + geom_histogram(stat = "count") + theme_cowplot()
+
+      # Differentiate AD and ID froms screening form
+
+
+```
+
+
 ## Examining BFAS Screening Scores vs. BFAS Reported Scores
+```{r}
+
+panda_screening=list(name="panda_screening",
+                        redcap_uri='https://www.ctsiredcap.pitt.edu/redcap/api/',
+                        token='83419F4206440B5D26B1FC3B465DB2F7',
+                        forcenewsubinsync=TRUE)
+
+screening<-bsrc::bsrc.getform(protocol = panda_screening,online = TRUE,formname = "eligibility_screening_phone_or_unit")
+
+screening_data <- screening %>% filter(egs_whichblrub == "5")
+
+screening_data <- screening_data %>% select(record_id, adid_1:adid_20)
+```
+
+
 
 ## Test
