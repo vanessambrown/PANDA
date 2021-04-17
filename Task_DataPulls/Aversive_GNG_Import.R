@@ -3,10 +3,8 @@ library(R.matlab)
 library(ggplot2)
 
 
-setwd("~/Box/skinner/data/PANDA/Aversive_GNG")
-
-gng_ids <- as.numeric(list.files(path = "/Users/timallen/Box/skinner/data/PANDA/Aversive_GNG", recursive=FALSE)) #grab the list of ids
-gng_files <- list.files(pattern="*.\\dtrials.csv", recursive=TRUE)
+#setwd("~/Box/skinner/data/PANDA/Aversive_GNG")
+setwd("C:/Users/timot/Box/skinner/data/PANDA/Aversive_GNG")
 
 # function that will bring the data into r
 read_millner <- function(file) {
@@ -17,13 +15,13 @@ read_millner <- function(file) {
   date_line <- grep("date", fdata)
   if (length(date_line) != 1) { stop("Can't identify Mode in footer in: ", file)}
   
-  subj_id <- sub("subjnum", "", fdata[id_line])
+  subj_id <- sub("subjnum,", "", fdata[id_line])
   taskdate <- sub("date", "", fdata[date_line])
   if (length(desc_line) != 1) { stop("Can't identify extraInfo line in: ", file) }
   nblanks <- which(fdata == "")
   nblanks <- sum(nblanks < desc_line)
   
-  fcsv <- read.csv(file, nrow=desc_line - 2 - nblanks) # -1 for row before descriptions, -1 for header line
+  fcsv <- read.csv(file, fileEncoding="UTF-8-BOM", nrow=desc_line - 2 - nblanks) # -1 for row before descriptions, -1 for header line
   fcsv$subj_id <- subj_id
   fcsv$date <- taskdate
   return(fcsv)
@@ -32,11 +30,9 @@ read_millner <- function(file) {
 ## for loop to execute function over all csvs
 ldf <- list() # creates a list
 
-for (i in gng_ids) {
-listcsv <- list.files(path = paste0("Users/timallen/Box/skinner/data/PANDA/Aversive_GNG/", i, "/"), pattern = "*.\\dtrials.csv") # creates the list of all the csv files in the directory -- reg exp says give me all the files with trials and a number preceding it (Which excludes the practice trial files)
+listcsv <- list.files(pattern = "*.\\dtrials.csv", recursive = TRUE) # creates the list of all the csv files in the directory -- reg exp says give me all the files with trials and a number preceding it (Which excludes the practice trial files)
 for (k in 1:length(listcsv)){
   ldf[[k]] <- read_millner(listcsv[k])
-}
 }
 
 #check dimensions of each person's data
@@ -48,7 +44,7 @@ dim_df <- data.frame(matrix(unlist(dim_list), nrow=nlist, byrow=T),stringsAsFact
 #make rownames a variable
 dim_df$subs <- rownames(dim_df)
 #print subs in ldf that have the wrong number of dimensions
-dim_df %>% filter(X1 != 160 | X2 != 54) ### note that at pitt, data is 160 x 54, whereas at penn state it is 160x56
+dim_df %>% filter(X1 != 160 | X2 != 56) ### should be 160 * 56
 
 #merge the dataframes in the list
 millner_data <- rbindlist(ldf)
@@ -56,17 +52,8 @@ millner_data <- rbindlist(ldf)
 #check IDs
 unique(millner_data$subj_id)
 
-#sanity check
-unique(millner_data$subj_id)
-
-#grab just the numeric component of the subject id column
-millner_data <- millner_data %>% mutate(subj_id = parse_number(subj_id))
-
-#rename condition column
-millner_data <- dplyr::rename(millner_data, Condition = ?..Condition)
-
-#grab just the numeric component of the CuePic_from_dict_raw column
-millner_data <- millner_data %>% mutate(CuePic_from_dict_raw = parse_number(as.character(CuePic_from_dict_raw)))
+#grab just the numeric component of the subject id column and the CuePic_from_dict_raw column
+millner_data <- millner_data %>% mutate(subj_id = parse_number(subj_id), CuePic_from_dict_raw = parse_number(as.character(CuePic_from_dict_raw)))
 
 # remove quotes from sound_fdbk_outcome_raw & target_resp.keys_raw columns
 millner_data$sound_fdbk_outcome_raw <- gsub("'", "", millner_data$sound_fdbk_outcome_raw, fixed = TRUE)
@@ -84,9 +71,12 @@ empty_as_na <- function(x){
   ifelse(as.character(x)!="", x, NA)
 }
 
-millner_data <- millner_data %>% mutate_at(vars(-one_of(c("subj_id", "date"))), funs(empty_as_na))
+millner_data <- millner_data %>% mutate_at(vars(-one_of(c("subj_id", "date"))), list(empty_as_na))
 
 ##exclude non-real data
 millner_data <- millner_data %>% dplyr::filter(subj_id != 9999 & subj_id != 8888)
 #sanity check
 unique(millner_data$subj_id)
+n_distinct(millner_data$subj_id)
+
+write.csv(millner_data, "Aversive_GNG_Data.csv", row.names = FALSE)
