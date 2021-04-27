@@ -61,7 +61,7 @@ mean(AGNG_data$Subj_Acc)
 sd(AGNG_data$Subj_Acc)
 
 #removing inaccurate subs -- create a vector of the bad subjects and then filter them out
-badsubs <- c("440275")
+badsubs <- c("440275", "440272")
 AGNG_data <- AGNG_data %>% filter(!subj_id %in% badsubs)
 
 #dv: trialcorrect_raw
