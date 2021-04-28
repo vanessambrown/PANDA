@@ -11,17 +11,30 @@ out = list()
 for (i in mat_files) {
   x <- readMat(paste0(os,
                       i))
-  subdata <- data.frame(reward = unlist(x$Data[[1]][1]), #whether a reward or punishment was given
-                        response = unlist(x$Data[[1]][2]), # number of presses made
-                        ins_stim = unlist(x$Data[[1]][3]), #which stimulus got presented
-                        correct = unlist(x$Data[[1]][4]), #whether the correct action was taken
-                        rt_first = unlist(x$Data[[1]][5]), #time of first press relative to ins onset
-                        instr_resp = unlist(x$Data[[1]][7])) #correct response for each trial -- 1 = go, 2 = no-go
-  
+  stim <- data.frame(x$Data[[4]][1])
+  subdata <- data.frame(stim1 = stim[1,], #Pav stimulus shown
+                        stim2 = stim[2,], #Pav stimulus shown
+                        query_resp = unlist(x$Data[[4]][2]), # choice made
+                        correct = unlist(x$Data[[4]][3])) #did they choose the high-value stimulus?
   subdata$id <- as.numeric(sub(".*/PIT_(\\d+)_(\\d)_(\\d+)_(\\d+)_ProcessedData.mat", "\\1", i, perl=TRUE)) 
   subdata <- mutate(subdata, trial = row_number())
   
   out[[i]] <-  subdata
 }
 
-ins_data <- bind_rows(out)
+
+query_data <- bind_rows(out)
+############################
+
+x <- readMat(paste0(os,
+                    "440303/PIT_440303_1_210422_1728_ProcessedData.mat"))
+stim <- matrix(unlist(x$Data[[4]][1]), ncol = 2, byrow = TRUE)
+subdata <- data.frame(stim1 = stim[,1], #Pav stimulus shown
+                      stim2 = stim[,2], #Pav stimulus shown
+                      query_resp = unlist(x$Data[[4]][2]), # choice made
+                      correct = unlist(x$Data[[4]][3])) #did they choose the high-value stimulus?
+subdata$id <- as.numeric(sub(".*/PIT_(\\d+)_(\\d)_(\\d+)_(\\d+)_ProcessedData.mat", "\\1", i, perl=TRUE)) 
+subdata <- mutate(subdata, trial = row_number())
+
+out[[i]] <-  subdata
+

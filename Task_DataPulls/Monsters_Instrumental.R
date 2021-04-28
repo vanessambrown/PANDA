@@ -1,8 +1,8 @@
 library(tidyverse)
 library(R.matlab)
 
-os <- "/Users/timallen/Box/skinner/data/PANDA/Monsters/"
-#os <- "C:/Users/timot/Box/skinner/data/PANDA/Monsters/"
+#os <- "/Users/timallen/Box/skinner/data/PANDA/Monsters/"
+os <- "C:/Users/timot/Box/skinner/data/PANDA/Monsters/"
 setwd(paste0(os))
 
 mat_files <- list.files(pattern="*.ProcessedData.mat", recursive=TRUE)
