@@ -24,7 +24,7 @@ for (i in mat_files) {
                         instr_resp = unlist(x$Data[[2]][8])) #correct response for each trial
   
   subdata$id <- as.numeric(sub(".*/PIT_(\\d+)_(\\d)_(\\d+)_(\\d+)_ProcessedData.mat", "\\1", i, perl=TRUE)) 
-  
+  subdata <- mutate(subdata, trial = row_number())
   
   out[[i]] <-  subdata
 }
