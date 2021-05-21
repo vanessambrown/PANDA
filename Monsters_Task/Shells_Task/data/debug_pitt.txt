@@ -1,0 +1,1039 @@
+............. Instrumental training
+............ Displaying instructions  ******************************
+ **** Something went WRONG ****
+ ******************************
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_99999999_1_201218_1658
+............ Data will be saved as                              
+............ PIT_99999999_1_201218_1658                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+............. Instrumental training
+............ Displaying instructions  ******************************
+ **** Something went WRONG ****
+ ******************************
+load('C:\Users\timot\Documents\MATLAB\Shells_Task\data\PIT_9999_1_201218_1655_exppart1.crashed.mat')
+load('C:\Users\timot\Documents\MATLAB\Shells_Task\data\PIT_99999999_1_201218_1658_exppart1.crashed.mat')
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_99999999_1_201218_1705
+............ Data will be saved as                              
+............ PIT_99999999_1_201218_1705                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+PTB-INFO: Multi-display setup in explicit multi-display mode detected. Using the following mapping:
+PTB-INFO: Screen 0 corresponds to the full Windows desktop area. Useful for stereo presentations in stereomode=4 ...
+PTB-INFO: Screen 1 corresponds to the display area of the monitor with the Windows-internal name \\.\DISPLAY1 ...
+PTB-INFO: Screen 2 corresponds to the display area of the monitor with the Windows-internal name \\.\DISPLAY14 ...
+
+PTB-INFO: Your version of Matlab 64-Bit is global system DPI aware. On Windows-8 or later, fullscreen onscreen windows will only work 
+PTB-INFO: properly timing-wise when displayed on displays with the same pixel density as your systems primary display monitor.
+PTB-INFO: For your multi-display setup the stimulus display monitor must have a DPI of (96, 96), matching that of
+PTB-INFO: your primary display monitor. Ideally you will only display on the primary display in the first place.
+PTB-INFO: Displaying on anything with a different DPI will cause mysterious visual timing problems, sync failures etc.
+PTB-INFO: Read 'help RetinaDisplay' for more info on this topic.
+............. Instrumental training
+............ Displaying instructions PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+<a href="matlab: opentoline('C:\toolbox\Psychtoolbox\PsychBasic\GetClicks.m',115,1)">115 </a>    end;
+if system_dependent('IsDebugMode')==1, dbquit; end
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_99999999_1_201218_1706
+............ Data will be saved as                              
+............ PIT_99999999_1_201218_1706                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+............. Instrumental training
+............ Displaying instructions  ******************************
+ **** Something went WRONG ****
+ ******************************
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_99999999_1_201218_1707
+............ Data will be saved as                              
+............ PIT_99999999_1_201218_1707                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+............. Instrumental training
+<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\runexperiment.m',80,1)">80  </a>        tic;
+PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+if system_dependent('IsDebugMode')==1, dbcont; end
+............ Displaying instructions Error in function TextSize: 	Invalid Window (or Texture) Index provided: It doesn't correspond to an open window or texture.
+Did you close it accidentally via Screen('Close') or Screen('CloseAll') ?
+ ******************************
+ **** Something went WRONG ****
+ ******************************
+dobreak
+{Undefined function or variable 'dobreak'.
+} 
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_99999999_1_201218_1708
+............ Data will be saved as                              
+............ PIT_99999999_1_201218_1708                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+............. Instrumental training
+............ Displaying instructions  ******************************
+ **** Something went WRONG ****
+ ******************************
+dobreak
+{Undefined function or variable 'dobreak'.
+} 
+tic
+dobreak
+{Undefined function or variable 'dobreak'.
+} 
+help dobreak
+--- help for <strong>break</strong> ---
+
+ <strong>break</strong> Terminate execution of WHILE or FOR loop.
+    <strong>break</strong> terminates the execution of FOR and WHILE loops.
+    In nested loops, <strong>break</strong> exits from the innermost loop only.
+ 
+    <strong>break</strong> is not defined outside of a FOR or WHILE loop.
+    Use RETURN in this context instead.
+ 
+    See also <a href="matlab:help for">for</a>, <a href="matlab:help while">while</a>, <a href="matlab:help return">return</a>, <a href="matlab:help continue">continue</a>.
+
+    <a href="matlab:doc break">Reference page for break</a>
+
+nt
+{Undefined function or variable 'nt'.
+} 
+exppart
+
+exppart =
+
+     1
+
+opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\runexperiment.m',80,1)
+dbstop if error
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_99999999_1_201218_1732
+............ Data will be saved as                              
+............ PIT_99999999_1_201218_1732                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+............. Instrumental training
+............ Displaying instructions  ******************************
+ **** Something went WRONG ****
+ ******************************
+<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\runexperiment.m',309,1)">309 </a>    rethrow(lasterror)
+opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\runexperiment.m',309,1)
+help rethrow
+ <strong>rethrow</strong>  Reissue error.
+    In order to avoid global state, it is better to use the MException 
+    object in order to reissue errors.  See help for MException/rethrow.
+ 
+    <strong>rethrow</strong>(ERR) reissues an error as stored in the structure ERR. The
+    currently running function terminates and control is returned to the
+    keyboard, unless an enclosing CATCH block is present. ERR must be a 
+    structure containing at least the following two fields:
+ 
+        message    : the text of the error message 
+        identifier : the message identifier of the error message 
+ 
+    ERR can also contain the field 'stack', identical in format to the
+    output of the DBSTACK command.  If the 'stack' field is present, MATLAB 
+    sets the stack of the rethrown error to that value.  Otherwise, the 
+    stack is set to the line at which the rethrow occurs.
+ 
+    See help for ERROR for more information about error message
+    identifiers.
+ 
+    See also <a href="matlab:help MException">MException</a>, <a href="matlab:help MException/rethrow">MException/rethrow</a>, <a href="matlab:help error">error</a>, <a href="matlab:help try">try</a>, <a href="matlab:help catch">catch</a>.
+
+    <a href="matlab:doc rethrow">Reference page for rethrow</a>
+    <a href="matlab:matlab.internal.language.introspective.overloads.displayOverloads('rethrow')">Other functions named rethrow</a>
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+dbstop if error
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_99999999_1_201218_1736
+............ Data will be saved as                              
+............ PIT_99999999_1_201218_1736                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+............. Instrumental training
+............ Displaying instructions  ******************************
+ **** Something went WRONG ****
+ ******************************
+<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\runexperiment.m',309,1)">309 </a>    rethrow(lasterror)
+if system_dependent('IsDebugMode')==1, dbquit; end
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_99999999_1_201218_1739
+............ Data will be saved as                              
+............ PIT_99999999_1_201218_1739                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+............. Instrumental training
+............ Displaying instructions {Error: <a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\pittraining_test.m',320,1)">File: pittraining_test.m Line: 320 Column: 1
+</a>Illegal use of reserved keyword "else".
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('approachtestrun', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instr_funcs\approachtestrun.m', 12)" style="font-weight:bold">approachtestrun</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instr_funcs\approachtestrun.m',12,0)">line 12</a>)
+    pittraining_test;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('instr_display', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instr_display.m', 15)" style="font-weight:bold">instr_display</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instr_display.m',15,0)">line 15</a>)
+		eval(func{page}); % must contain 'getleftrightarrow' command
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('instrpitapproach', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instrpitapproach.m', 361)" style="font-weight:bold">instrpitapproach</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instrpitapproach.m',361,0)">line 361</a>)
+instr_display;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\timot\Documents\MATLAB\Shells_Task\runexperiment.m', 81)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\runexperiment.m',81,0)">line 81</a>)
+        if doinstr; instrpitapproach; end
+} 
+<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instr_funcs\approachtestrun.m',12,1)">12  </a>    pittraining_test;
+opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instr_funcs\approachtestrun.m',12,1)
+opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\pittraining_test.m',320,1)
+if system_dependent('IsDebugMode')==1, dbquit; end
+PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_99999999_1_201218_1745
+............ Data will be saved as                              
+............ PIT_99999999_1_201218_1745                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+PTB-INFO: Multi-display setup in explicit multi-display mode detected. Using the following mapping:
+PTB-INFO: Screen 0 corresponds to the full Windows desktop area. Useful for stereo presentations in stereomode=4 ...
+PTB-INFO: Screen 1 corresponds to the display area of the monitor with the Windows-internal name \\.\DISPLAY1 ...
+PTB-INFO: Screen 2 corresponds to the display area of the monitor with the Windows-internal name \\.\DISPLAY15 ...
+
+PTB-INFO: Your version of Matlab 64-Bit is global system DPI aware. On Windows-8 or later, fullscreen onscreen windows will only work 
+PTB-INFO: properly timing-wise when displayed on displays with the same pixel density as your systems primary display monitor.
+PTB-INFO: For your multi-display setup the stimulus display monitor must have a DPI of (96, 96), matching that of
+PTB-INFO: your primary display monitor. Ideally you will only display on the primary display in the first place.
+PTB-INFO: Displaying on anything with a different DPI will cause mysterious visual timing problems, sync failures etc.
+PTB-INFO: Read 'help RetinaDisplay' for more info on this topic.
+............. Instrumental training
+............ Displaying instructions  ******************************
+ **** Something went WRONG ****
+ ******************************
+<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\runexperiment.m',309,1)">309 </a>    rethrow(lasterror)
+opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\runexperiment.m',309,1)
+if system_dependent('IsDebugMode')==1, dbquit all; end
+dbstop if error
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_99999999_1_201218_1746
+............ Data will be saved as                              
+............ PIT_99999999_1_201218_1746                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+PTB-INFO: Multi-display setup in explicit multi-display mode detected. Using the following mapping:
+PTB-INFO: Screen 0 corresponds to the full Windows desktop area. Useful for stereo presentations in stereomode=4 ...
+PTB-INFO: Screen 1 corresponds to the display area of the monitor with the Windows-internal name \\.\DISPLAY1 ...
+PTB-INFO: Screen 2 corresponds to the display area of the monitor with the Windows-internal name \\.\DISPLAY15 ...
+
+PTB-INFO: Your version of Matlab 64-Bit is global system DPI aware. On Windows-8 or later, fullscreen onscreen windows will only work 
+PTB-INFO: properly timing-wise when displayed on displays with the same pixel density as your systems primary display monitor.
+PTB-INFO: For your multi-display setup the stimulus display monitor must have a DPI of (96, 96), matching that of
+PTB-INFO: your primary display monitor. Ideally you will only display on the primary display in the first place.
+PTB-INFO: Displaying on anything with a different DPI will cause mysterious visual timing problems, sync failures etc.
+PTB-INFO: Read 'help RetinaDisplay' for more info on this topic.
+............. Instrumental training
+............ Displaying instructions {Unable to perform assignment because the indices on the left side are not compatible with the size of the right side.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stimselect', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instr_funcs\stimselect.m', 62)" style="font-weight:bold">stimselect</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instr_funcs\stimselect.m',62,0)">line 62</a>)
+    selected_stim_num(1)=rand_ind(valid_mouse==1);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('instr_display', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instr_display.m', 15)" style="font-weight:bold">instr_display</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instr_display.m',15,0)">line 15</a>)
+		eval(func{page}); % must contain 'getleftrightarrow' command
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('instrpitapproach', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instrpitapproach.m', 361)" style="font-weight:bold">instrpitapproach</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instrpitapproach.m',361,0)">line 361</a>)
+instr_display;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\timot\Documents\MATLAB\Shells_Task\runexperiment.m', 81)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\runexperiment.m',81,0)">line 81</a>)
+        if doinstr; instrpitapproach; end
+} 
+<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instr_funcs\stimselect.m',62,1)">62  </a>    selected_stim_num(1)=rand_ind(valid_mouse==1);
+PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+if system_dependent('IsDebugMode')==1, dbquit; end
+dbstop if error
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_99999999_1_201218_1747
+............ Data will be saved as                              
+............ PIT_99999999_1_201218_1747                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+............. Instrumental training
+............ Displaying instructions PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+Error in function Flip: 	Invalid Window (or Texture) Index provided: It doesn't correspond to an open window or texture.
+Did you close it accidentally via Screen('Close') or Screen('CloseAll') ?
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Screen')" style="font-weight:bold">Screen</a>
+Usage:
+
+[VBLTimestamp StimulusOnsetTime FlipTimestamp Missed Beampos] = Screen('Flip', windowPtr [, when] [, dontclear] [, dontsync] [, multiflip]);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('pittraining_test', 'C:\Users\timot\Documents\MATLAB\Shells_Task\pittraining_test.m', 148)" style="font-weight:bold">pittraining_test</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\pittraining_test.m',148,0)">line 148</a>)
+Screen('Flip',wd);	 % empty screen
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('approachtestrun', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instr_funcs\approachtestrun.m', 12)" style="font-weight:bold">approachtestrun</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instr_funcs\approachtestrun.m',12,0)">line 12</a>)
+    pittraining_test;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('instr_display', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instr_display.m', 15)" style="font-weight:bold">instr_display</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instr_display.m',15,0)">line 15</a>)
+		eval(func{page}); % must contain 'getleftrightarrow' command
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('instrpitapproach', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instrpitapproach.m', 361)" style="font-weight:bold">instrpitapproach</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instrpitapproach.m',361,0)">line 361</a>)
+instr_display;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\timot\Documents\MATLAB\Shells_Task\runexperiment.m', 81)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\runexperiment.m',81,0)">line 81</a>)
+        if doinstr; instrpitapproach; end
+} 
+<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\pittraining_test.m',148,1)">148 </a>Screen('Flip',wd);	 % empty screen 
+if system_dependent('IsDebugMode')==1, dbquit; end
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_99999999_1_201218_1751
+............ Data will be saved as                              
+............ PIT_99999999_1_201218_1751                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+............. Instrumental training
+............ Displaying instructions PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+<a href="matlab: opentoline('C:\toolbox\Psychtoolbox\PsychBasic\KbWait.m',143,1)">143 </a>end
+if system_dependent('IsDebugMode')==1, dbquit; end
+dbstop if error
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_99999999_1_201218_1800
+............ Data will be saved as                              
+............ PIT_99999999_1_201218_1800                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+............. Instrumental training
+............ Displaying instructions PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+Error in function DrawTexture: 	Invalid Window (or Texture) Index provided: It doesn't correspond to an open window or texture.
+Did you close it accidentally via Screen('Close') or Screen('CloseAll') ?
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Screen')" style="font-weight:bold">Screen</a>
+Usage:
+
+Screen('DrawTexture', windowPointer, texturePointer [,sourceRect] [,destinationRect] [,rotationAngle] [, filterMode] [, globalAlpha] [, modulateColor] [, textureShader] [,
+specialFlags] [, auxParameters]);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('pittraining_test', 'C:\Users\timot\Documents\MATLAB\Shells_Task\pittraining_test.m', 13)" style="font-weight:bold">pittraining_test</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\pittraining_test.m',13,0)">line 13</a>)
+Screen('DrawTexture',wd,graysquare,[],bgsquare);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('approachtestrun', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instr_funcs\approachtestrun.m', 12)" style="font-weight:bold">approachtestrun</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instr_funcs\approachtestrun.m',12,0)">line 12</a>)
+    pittraining_test;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('instr_display', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instr_display.m', 15)" style="font-weight:bold">instr_display</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instr_display.m',15,0)">line 15</a>)
+		eval(func{page}); % must contain 'getleftrightarrow' command
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('instrpitapproach', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instrpitapproach.m', 361)" style="font-weight:bold">instrpitapproach</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instrpitapproach.m',361,0)">line 361</a>)
+instr_display;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\timot\Documents\MATLAB\Shells_Task\runexperiment.m', 81)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\runexperiment.m',81,0)">line 81</a>)
+        if doinstr; instrpitapproach; end
+} 
+<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\pittraining_test.m',13,1)">13  </a>Screen('DrawTexture',wd,graysquare,[],bgsquare);
+if system_dependent('IsDebugMode')==1, dbquit; end
+dbstop if error
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_99999999_1_201218_1804
+............ Data will be saved as                              
+............ PIT_99999999_1_201218_1804                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+............. Instrumental training
+............ Displaying instructions PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+Error in function DrawTexture: 	Invalid Window (or Texture) Index provided: It doesn't correspond to an open window or texture.
+Did you close it accidentally via Screen('Close') or Screen('CloseAll') ?
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Screen')" style="font-weight:bold">Screen</a>
+Usage:
+
+Screen('DrawTexture', windowPointer, texturePointer [,sourceRect] [,destinationRect] [,rotationAngle] [, filterMode] [, globalAlpha] [, modulateColor] [, textureShader] [,
+specialFlags] [, auxParameters]);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('pittraining_test', 'C:\Users\timot\Documents\MATLAB\Shells_Task\pittraining_test.m', 13)" style="font-weight:bold">pittraining_test</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\pittraining_test.m',13,0)">line 13</a>)
+Screen('DrawTexture',wd,graysquare,[],bgsquare);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('approachtestrun', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instr_funcs\approachtestrun.m', 12)" style="font-weight:bold">approachtestrun</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instr_funcs\approachtestrun.m',12,0)">line 12</a>)
+    pittraining_test;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('instr_display', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instr_display.m', 15)" style="font-weight:bold">instr_display</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instr_display.m',15,0)">line 15</a>)
+		eval(func{page}); % must contain 'getleftrightarrow' command
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('instrpitapproach', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instrpitapproach.m', 361)" style="font-weight:bold">instrpitapproach</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instrpitapproach.m',361,0)">line 361</a>)
+instr_display;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\timot\Documents\MATLAB\Shells_Task\runexperiment.m', 81)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\runexperiment.m',81,0)">line 81</a>)
+        if doinstr; instrpitapproach; end
+} 
+<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\pittraining_test.m',13,1)">13  </a>Screen('DrawTexture',wd,graysquare,[],bgsquare);
+if system_dependent('IsDebugMode')==1, dbquit all; end
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_99999999_1_201218_1807
+............ Data will be saved as                              
+............ PIT_99999999_1_201218_1807                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+............. Instrumental training
+............ Displaying instructions {Unable to perform assignment because the indices on the left side are not compatible with the size of the right side.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stimselect', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instr_funcs\stimselect.m', 62)" style="font-weight:bold">stimselect</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instr_funcs\stimselect.m',62,0)">line 62</a>)
+    selected_stim_num(1)=rand_ind(valid_mouse==1);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('instr_display', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instr_display.m', 15)" style="font-weight:bold">instr_display</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instr_display.m',15,0)">line 15</a>)
+		eval(func{page}); % must contain 'getleftrightarrow' command
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('instrpitapproach', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instrpitapproach.m', 361)" style="font-weight:bold">instrpitapproach</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instrpitapproach.m',361,0)">line 361</a>)
+instr_display;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\timot\Documents\MATLAB\Shells_Task\runexperiment.m', 81)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\runexperiment.m',81,0)">line 81</a>)
+        if doinstr; instrpitapproach; end
+} 
+<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instr_funcs\stimselect.m',62,1)">62  </a>    selected_stim_num(1)=rand_ind(valid_mouse==1);
+Screen('CloseAll'
+ Screen('CloseAll'
+                  
+{Error: Invalid expression. When calling a function or indexing a variable, use parentheses. Otherwise, check for mismatched delimiters.
+} 
+Screen('CloseAll')
+if system_dependent('IsDebugMode')==1, dbquit; end
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_99999999_1_201218_1808
+............ Data will be saved as                              
+............ PIT_99999999_1_201218_1808                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+............. Instrumental training
+............ Displaying instructions PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+<a href="matlab: opentoline('C:\toolbox\Psychtoolbox\PsychBasic\KbWait.m',143,1)">143 </a>end
+if system_dependent('IsDebugMode')==1, dbquit; end
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_99999999_1_201219_1228
+............ Data will be saved as                              
+............ PIT_99999999_1_201219_1228                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+............. Instrumental training
+............ Displaying instructions PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+<a href="matlab: opentoline('C:\toolbox\Psychtoolbox\PsychBasic\KbWait.m',143,1)">143 </a>end
+if system_dependent('IsDebugMode')==1, dbquit; end
+checkabort
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_99999999_1_201219_1240
+............ Data will be saved as                              
+............ PIT_99999999_1_201219_1240                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+............. Instrumental training
+............ Displaying instructions {Unable to perform assignment because the indices on the left side are not compatible with the size of the right side.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stimselect', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instr_funcs\stimselect.m', 62)" style="font-weight:bold">stimselect</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instr_funcs\stimselect.m',62,0)">line 62</a>)
+    selected_stim_num(1)=rand_ind(valid_mouse==1);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('instr_display', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instr_display.m', 15)" style="font-weight:bold">instr_display</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instr_display.m',15,0)">line 15</a>)
+		eval(func{page}); % must contain 'getleftrightarrow' command
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('instrpitapproach', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instrpitapproach.m', 361)" style="font-weight:bold">instrpitapproach</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instrpitapproach.m',361,0)">line 361</a>)
+instr_display;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\timot\Documents\MATLAB\Shells_Task\runexperiment.m', 81)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\runexperiment.m',81,0)">line 81</a>)
+        if doinstr; instrpitapproach; end
+} 
+<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instr_funcs\stimselect.m',62,1)">62  </a>    selected_stim_num(1)=rand_ind(valid_mouse==1);
+PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+if system_dependent('IsDebugMode')==1, dbquit; end
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_99999999_1_201219_1240
+............ Data will be saved as                              
+............ PIT_99999999_1_201219_1240                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+............. Instrumental training
+............ Displaying instructions <a href="matlab: opentoline('C:\toolbox\Psychtoolbox\PsychBasic\KbCheck.m',287,1)">287 </a>end
+opentoline('C:\toolbox\Psychtoolbox\PsychBasic\KbCheck.m',287,1)
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep; end
+if system_dependent('IsDebugMode')==1, dbstep out; end
+if system_dependent('IsDebugMode')==1, dbquit; end
+PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_99999999_1_201219_1248
+............ Data will be saved as                              
+............ PIT_99999999_1_201219_1248                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+............. Instrumental training
+............ Displaying instructions {Unable to perform assignment because the indices on the left side are not compatible
+with the size of the right side.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stimselect', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instr_funcs\stimselect.m', 62)" style="font-weight:bold">stimselect</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instr_funcs\stimselect.m',62,0)">line 62</a>)
+    selected_stim_num(1)=rand_ind(valid_mouse==1);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('instr_display', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instr_display.m', 15)" style="font-weight:bold">instr_display</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instr_display.m',15,0)">line 15</a>)
+		eval(func{page}); % must contain 'getleftrightarrow' command
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('instrpitapproach', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instrpitapproach.m', 361)" style="font-weight:bold">instrpitapproach</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instrpitapproach.m',361,0)">line 361</a>)
+instr_display;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\timot\Documents\MATLAB\Shells_Task\runexperiment.m', 81)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\runexperiment.m',81,0)">line 81</a>)
+        if doinstr; instrpitapproach; end
+} 
+PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_99999999_1_201219_1248
+............ Data will be saved as                              
+............ PIT_99999999_1_201219_1248                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+............. Instrumental training
+............ Displaying instructions <a href="matlab: opentoline('C:\toolbox\Psychtoolbox\PsychBasic\KbCheck.m',287,1)">287 </a>end
+nargin
+
+ans =
+
+     1
+
+IsWin
+
+ans =
+
+  <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a>
+
+   1
+
+allowPsychHID
+
+allowPsychHID =
+
+     1
+
+~isempty(deviceNumber)
+
+ans =
+
+  <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a>
+
+   0
+
+GetKeypadIndices
+
+ans =
+
+     []
+
+deviceNumber
+
+deviceNumber =
+
+     []
+
+Screen('GetMouseHelper', -1, [], deviceNumber)
+
+ans =
+
+     1
+
+PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+if system_dependent('IsDebugMode')==1, dbquit; end
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_99999999_1_201219_1317
+............ Data will be saved as                              
+............ PIT_99999999_1_201219_1317                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+............. Instrumental training
+............ Displaying instructions {Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('num2str', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\strfun\num2str.p', 43)" style="font-weight:bold">num2str</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\strfun\num2str.p',43,0)">line 43</a>)
+Not enough input arguments.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('instrpitapproach', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instrpitapproach.m', 364)" style="font-weight:bold">instrpitapproach</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instrpitapproach.m',364,0)">line 364</a>)
+    text={['The next part of the experiment starts in ' num2str (6-k) ' seconds.']};
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\timot\Documents\MATLAB\Shells_Task\runexperiment.m', 81)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\runexperiment.m',81,0)">line 81</a>)
+        if doinstr; instrpitapproach; end
+} 
+PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+func
+
+func =
+
+  1×27 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+  Columns 1 through 10
+
+    {0×0 double}    {0×0 double}    {'stimselect'}    {'stimselect'}    {0×0 double}    {0×0 double}    {0×0 double}    {0×0 double}    {0×0 double}    {0×0 double}
+
+  Columns 11 through 19
+
+    {0×0 double}    {0×0 double}    {0×0 double}    {0×0 double}    {'approachgo'}    {'approachgoactive'}    {0×0 double}    {0×0 double}    {0×0 double}
+
+  Columns 20 through 27
+
+    {'approachgoactiv…'}    {0×0 double}    {0×0 double}    {'approachgoexp'}    {0×0 double}    {'approachnogo'}    {'approachtestrun'}    {'checkunderstood'}
+
+i
+
+i =
+
+    27
+
+selectiontask
+
+selectiontask =
+
+  1×27 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+  Columns 1 through 11
+
+    {0×0 double}    {0×0 double}    {'alc'}    {'nic'}    {0×0 double}    {0×0 double}    {0×0 double}    {0×0 double}    {0×0 double}    {0×0 double}    {0×0 double}
+
+  Columns 12 through 21
+
+    {0×0 double}    {0×0 double}    {0×0 double}    {0×0 double}    {0×0 double}    {0×0 double}    {0×0 double}    {0×0 double}    {0×0 double}    {0×0 double}
+
+  Columns 22 through 27
+
+    {0×0 double}    {0×0 double}    {0×0 double}    {0×0 double}    {0×0 double}    {0×0 double}
+
+DrawFormattedText(wd,tx{page},'center',ypos{page},txtcolor,60,[],[],1.3)
+{Index exceeds array bounds.
+} 
+instrpitapproach
+............ Displaying instructions Error in function TextSize: 	Invalid Window (or Texture) Index provided: It doesn't correspond to an open window or texture.
+Did you close it accidentally via Screen('Close') or Screen('CloseAll') ?
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Screen')" style="font-weight:bold">Screen</a>
+Usage:
+
+oldTextSize=Screen('TextSize', windowPtr [,textSize]);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('DrawFormattedText', 'C:\toolbox\Psychtoolbox\PsychBasic\DrawFormattedText.m', 289)" style="font-weight:bold">DrawFormattedText</a> (<a href="matlab: opentoline('C:\toolbox\Psychtoolbox\PsychBasic\DrawFormattedText.m',289,0)">line 289</a>)
+theight = Screen('TextSize', win) * vSpacing;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('instr_display', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instr_display.m', 13)" style="font-weight:bold">instr_display</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instr_display.m',13,0)">line 13</a>)
+	DrawFormattedText(wd,tx{page},'center',ypos{page},txtcolor,60,[],[],1.3);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('instrpitapproach', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instrpitapproach.m', 361)" style="font-weight:bold">instrpitapproach</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instrpitapproach.m',361,0)">line 361</a>)
+instr_display;
+} 
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_99999999_1_201219_1329
+............ Data will be saved as                              
+............ PIT_99999999_1_201219_1329                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+............. Instrumental training
+............ Displaying instructions {Unable to perform assignment because the left and right sides have a different number of elements.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('stimselect', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instr_funcs\stimselect.m', 64)" style="font-weight:bold">stimselect</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instr_funcs\stimselect.m',64,0)">line 64</a>)
+    selected_stim_num(2)=rand_ind(valid_mouse==1);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('instr_display', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instr_display.m', 15)" style="font-weight:bold">instr_display</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instr_display.m',15,0)">line 15</a>)
+		eval(func{page}); % must contain 'getleftrightarrow' command
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('instrpitapproach', 'C:\Users\timot\Documents\MATLAB\Shells_Task\instrpitapproach.m', 361)" style="font-weight:bold">instrpitapproach</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\instrpitapproach.m',361,0)">line 361</a>)
+instr_display;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\timot\Documents\MATLAB\Shells_Task\runexperiment.m', 81)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\runexperiment.m',81,0)">line 81</a>)
+        if doinstr; instrpitapproach; end
+} 
+PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+for k=1:5
+    text={['The next part of the experiment starts in ' num2str (6-k) ' seconds.']};
+   %text={['Der nächste Teil des Experiments fängt in ' num2str(6-k) ' Sekunden an.']};
+    displaytext(text,wd,wdw,wdh,txtcolor,0,0);
+    WaitSecs(1);
+end
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('num2str', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\strfun\num2str.p', 43)" style="font-weight:bold">num2str</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\strfun\num2str.p',43,0)">line 43</a>)
+Not enough input arguments.
+} 
+for k=1:5
+    text={['The next part of the experiment starts in ' num2str (6-k) ' seconds.']};
+   %text={['Der nächste Teil des Experiments fängt in ' num2str(6-k) ' Sekunden an.']};
+    displaytext(text,wd,wdw,wdh,txtcolor,0,0);
+    WaitSecs(1);
+end
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('num2str', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\strfun\num2str.p', 43)" style="font-weight:bold">num2str</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\strfun\num2str.p',43,0)">line 43</a>)
+Not enough input arguments.
+} 
+text={['The next part of the experiment starts in ' num2str (6-k) ' seconds.']};
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('num2str', 'C:\Program Files\MATLAB\R2018a\toolbox\matlab\strfun\num2str.p', 43)" style="font-weight:bold">num2str</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2018a\toolbox\matlab\strfun\num2str.p',43,0)">line 43</a>)
+Not enough input arguments.
+} 
+
+text={['The next part of the experiment starts in ' num2str(6-k) ' seconds.']};
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_99999999_1_201219_1333
+............ Data will be saved as                              
+............ PIT_99999999_1_201219_1333                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+............. Instrumental training
+............ Displaying instructions PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+<a href="matlab: opentoline('C:\toolbox\Psychtoolbox\PsychBasic\KbWait.m',143,1)">143 </a>end
+if system_dependent('IsDebugMode')==1, dbquit; end
+runexperiment
+{Error: <a href="matlab: opentoline('C:\Users\timot\Documents\MATLAB\Shells_Task\runexperiment.m',41,1)">File: runexperiment.m Line: 41 Column: 1
+</a>At least one END is missing: the statement may begin here.
+} 
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_99999999_1_201219_1337
+............ Data will be saved as                              
+............ PIT_99999999_1_201219_1337                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+............. Instrumental training
+............ Displaying instructions PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+Error in function TextSize: 	Invalid Window (or Texture) Index provided: It doesn't correspond to an open window or texture.
+Did you close it accidentally via Screen('Close') or Screen('CloseAll') ?
+ ******************************
+ **** Something went WRONG ****
+ ******************************
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_99999999_1_201219_1340
+............ Data will be saved as                              
+............ PIT_99999999_1_201219_1340                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+............. Instrumental training
+............ Displaying instructions PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+<a href="matlab: opentoline('C:\toolbox\Psychtoolbox\PsychBasic\KbWait.m',143,1)">143 </a>end
+if system_dependent('IsDebugMode')==1, dbquit; end
+strcmpi(key,'y')
+
+ans =
+
+  <a href="matlab:helpPopup logical" style="font-weight:bold">logical</a>
+
+   0
+
+uiopen('C:\Users\timot\Downloads\exp_new_20-09-15 (2)\exp_new_20-09-15\instr_funcs\checkunderstood.m',1)
+key
+
+key =
+
+    'RightArrow'
+
+clear all
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_99999999_1_201219_1352
+............ Data will be saved as                              
+............ PIT_99999999_1_201219_1352                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+............. Instrumental training
+............ Displaying instructions .........done
+PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+
+--------------------------------------------------------------------------------
+          Access violation detected at Sat Dec 19 01:54:07 2020 -0500
+--------------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding           : Disabled - No sandbox or build area path
+  Crash Mode               : continue (default)
+  Default Encoding         : windows-1252
+  Deployed                 : false
+  Graphics Driver          : Unknown hardware 
+  Graphics card 1          : NVIDIA ( 0x10de ) NVIDIA GeForce MX130 Version 23.21.13.9125 (2018-3-16)
+  Graphics card 2          : DisplayLink ( 0x0 ) DisplayLink USB Device Version 8.2.1952.0 (2017-5-22)
+  Graphics card 3          : Intel Corporation ( 0x8086 ) Intel(R) UHD Graphics 620 Version 26.20.100.7262 (2019-10-11)
+  JAWT Patch Status:       : Patch applied
+  Java Version             : Java 1.8.0_144-b01 with Oracle Corporation Java HotSpot(TM) 64-Bit Server VM mixed mode
+  MATLAB Architecture      : win64
+  MATLAB Entitlement ID    : 1536166
+  MATLAB Root              : C:\Program Files\MATLAB\R2018a
+  MATLAB Version           : 9.4.0.813654 (R2018a)
+  OpenGL                   : hardware
+  Operating System         : Microsoft Windows 10 Home
+  Process ID               : 20720
+  Processor ID             : x86 Family 6 Model 142 Stepping 10, GenuineIntel
+  Session Key              : 8eb5989e-1e3b-42d2-9cf2-5c68730cee3b
+  Window System            : Version 10.0 (Build 19041)
+
+Fault Count: 1
+
+
+Abnormal termination
+
+Register State (from fault):
+  RAX = 0000000000000000  RBX = 0000000000000244
+  RCX = 00007ff9086a1064  RDX = 0000000000000000
+  RSP = 00000000043f7220  RBP = 0000000000000000
+  RSI = 0000000000000320  RDI = 00000000dfe50c40
+ 
+   R8 = 00000000043f70c8   R9 = 0000000000000001
+  R10 = 0000000000000000  R11 = 00000000043f7180
+  R12 = 0000000000000001  R13 = 0000000000000000
+  R14 = 00007ff8e3ef5720  R15 = 0000000000000000
+ 
+  RIP = 00007ff8e3e93c77  EFL = 00010202
+ 
+   CS = 0033   FS = 0053   GS = 002b
+
+Stack Trace (from fault):
+[  0] 0x00007ff8e3e93c77 C:\toolbox\Psychtoolbox\PsychBasic\MatlabWindowsFilesR2007a\Screen.mexw64+00408695 mexFunction+00343527
+[  1] 0x00007ff8e3e8d774 C:\toolbox\Psychtoolbox\PsychBasic\MatlabWindowsFilesR2007a\Screen.mexw64+00382836 mexFunction+00317668
+[  2] 0x00007ff8e3e8f040 C:\toolbox\Psychtoolbox\PsychBasic\MatlabWindowsFilesR2007a\Screen.mexw64+00389184 mexFunction+00324016
+[  3] 0x00007ff8e3ea0f44 C:\toolbox\Psychtoolbox\PsychBasic\MatlabWindowsFilesR2007a\Screen.mexw64+00462660 mexFunction+00397492
+[  4] 0x00007ff8e3e40233 C:\toolbox\Psychtoolbox\PsychBasic\MatlabWindowsFilesR2007a\Screen.mexw64+00066099 mexFunction+00000931
+[  5] 0x00000000fc626594                               bin\win64\libmex.dll+00288148 MexRetrieveVersion+00002916
+[  6] 0x00000000fc62678c                               bin\win64\libmex.dll+00288652 MexRetrieveVersion+00003420
+[  7] 0x00000000fc6268de                               bin\win64\libmex.dll+00288990 MexRetrieveVersion+00003758
+[  8] 0x00000000fc612ec3                               bin\win64\libmex.dll+00208579 mexUnlock_800+00024147
+[  9] 0x00000000162ec51a                     bin\win64\pgo\m_dispatcher.dll+00050458 Mfh_file::dispatch_fh_impl+00001114
+[ 10] 0x00000000162ec0b2                     bin\win64\pgo\m_dispatcher.dll+00049330 Mfh_file::dispatch_fh+00000062
+[ 11] 0x00000000162e4674                     bin\win64\pgo\m_dispatcher.dll+00018036 Mfunction_handle::dispatch+00000420
+[ 12] 0x00000000171a0189                            bin\win64\pgo\m_lxe.dll+00393609
+[ 13] 0x000000001722a808                            bin\win64\pgo\m_lxe.dll+00960520 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00121832
+[ 14] 0x000000001722b403                            bin\win64\pgo\m_lxe.dll+00963587 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00124899
+[ 15] 0x000000001722c836                            bin\win64\pgo\m_lxe.dll+00968758 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00130070
+[ 16] 0x000000001722d3f0                            bin\win64\pgo\m_lxe.dll+00971760 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00133072
+[ 17] 0x000000001722c97f                            bin\win64\pgo\m_lxe.dll+00969087 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00130399
+[ 18] 0x000000001722ca7e                            bin\win64\pgo\m_lxe.dll+00969342 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00130654
+[ 19] 0x00000000171ae8a5                            bin\win64\pgo\m_lxe.dll+00452773
+[ 20] 0x00000000171ab335                            bin\win64\pgo\m_lxe.dll+00439093
+[ 21] 0x00000000171aa82e                            bin\win64\pgo\m_lxe.dll+00436270
+[ 22] 0x00000000171a8b35                            bin\win64\pgo\m_lxe.dll+00428853
+[ 23] 0x00000000171a8e9e                            bin\win64\pgo\m_lxe.dll+00429726
+[ 24] 0x00000000171a8e29                            bin\win64\pgo\m_lxe.dll+00429609
+[ 25] 0x00000000162ec51a                     bin\win64\pgo\m_dispatcher.dll+00050458 Mfh_file::dispatch_fh_impl+00001114
+[ 26] 0x00000000162ec0b2                     bin\win64\pgo\m_dispatcher.dll+00049330 Mfh_file::dispatch_fh+00000062
+[ 27] 0x00000000162e4674                     bin\win64\pgo\m_dispatcher.dll+00018036 Mfunction_handle::dispatch+00000420
+[ 28] 0x00000000171a2aa1                            bin\win64\pgo\m_lxe.dll+00404129
+[ 29] 0x0000000017228e25                            bin\win64\pgo\m_lxe.dll+00953893 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00115205
+[ 30] 0x000000001722a808                            bin\win64\pgo\m_lxe.dll+00960520 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00121832
+[ 31] 0x000000001722b403                            bin\win64\pgo\m_lxe.dll+00963587 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00124899
+[ 32] 0x000000001722c836                            bin\win64\pgo\m_lxe.dll+00968758 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00130070
+[ 33] 0x000000001722d3f0                            bin\win64\pgo\m_lxe.dll+00971760 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00133072
+[ 34] 0x000000001722c97f                            bin\win64\pgo\m_lxe.dll+00969087 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00130399
+[ 35] 0x000000001722ca7e                            bin\win64\pgo\m_lxe.dll+00969342 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00130654
+[ 36] 0x00000000171ae8a5                            bin\win64\pgo\m_lxe.dll+00452773
+[ 37] 0x00000000171ab335                            bin\win64\pgo\m_lxe.dll+00439093
+[ 38] 0x00000000171aa82e                            bin\win64\pgo\m_lxe.dll+00436270
+[ 39] 0x00000000171a8b35                            bin\win64\pgo\m_lxe.dll+00428853
+[ 40] 0x00000000171a8e9e                            bin\win64\pgo\m_lxe.dll+00429726
+[ 41] 0x00000000171a8e29                            bin\win64\pgo\m_lxe.dll+00429609
+[ 42] 0x00000000162ec51a                     bin\win64\pgo\m_dispatcher.dll+00050458 Mfh_file::dispatch_fh_impl+00001114
+[ 43] 0x00000000162ec0b2                     bin\win64\pgo\m_dispatcher.dll+00049330 Mfh_file::dispatch_fh+00000062
+[ 44] 0x00000000162e4674                     bin\win64\pgo\m_dispatcher.dll+00018036 Mfunction_handle::dispatch+00000420
+[ 45] 0x00000000171a2aa1                            bin\win64\pgo\m_lxe.dll+00404129
+[ 46] 0x0000000017228e25                            bin\win64\pgo\m_lxe.dll+00953893 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00115205
+[ 47] 0x000000001722a808                            bin\win64\pgo\m_lxe.dll+00960520 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00121832
+[ 48] 0x000000001722b403                            bin\win64\pgo\m_lxe.dll+00963587 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00124899
+[ 49] 0x000000001722c836                            bin\win64\pgo\m_lxe.dll+00968758 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00130070
+[ 50] 0x000000001722d3f0                            bin\win64\pgo\m_lxe.dll+00971760 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00133072
+[ 51] 0x000000001722c97f                            bin\win64\pgo\m_lxe.dll+00969087 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00130399
+[ 52] 0x000000001722ca7e                            bin\win64\pgo\m_lxe.dll+00969342 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00130654
+[ 53] 0x00000000171ae8a5                            bin\win64\pgo\m_lxe.dll+00452773
+[ 54] 0x00000000171ab335                            bin\win64\pgo\m_lxe.dll+00439093
+[ 55] 0x00000000171aa82e                            bin\win64\pgo\m_lxe.dll+00436270
+[ 56] 0x00000000171b1b9a                            bin\win64\pgo\m_lxe.dll+00465818
+[ 57] 0x00000000171b133d                            bin\win64\pgo\m_lxe.dll+00463677
+[ 58] 0x00000000171b144e                            bin\win64\pgo\m_lxe.dll+00463950
+[ 59] 0x0000000017351d9c                            bin\win64\pgo\m_lxe.dll+02170268 mwboost::serialization::singleton<mwboost::archive::detail::pointer_oserializer<mwboost::archive::binary_oarchive,MathWorks::lxe::PreLineExecutionEvent> >::get_instance+00475644
+[ 60] 0x0000000017351d4a                            bin\win64\pgo\m_lxe.dll+02170186 mwboost::serialization::singleton<mwboost::archive::detail::pointer_oserializer<mwboost::archive::binary_oarchive,MathWorks::lxe::PreLineExecutionEvent> >::get_instance+00475562
+[ 61] 0x000000001718051d                            bin\win64\pgo\m_lxe.dll+00263453
+[ 62] 0x0000000016438acf                    bin\win64\pgo\m_interpreter.dll+00297679 inEvalCmdWithLocalReturn+00000063
+[ 63] 0x00000000fb60bedb                          bin\win64\libmwbridge.dll+00114395 mnParser+00001595
+[ 64] 0x0000000016076564                                  bin\win64\mcr.dll+00222564 mcr::runtime::setInterpreterThreadSingletonToCurrent+00091332
+[ 65] 0x00000000160797ae                                  bin\win64\mcr.dll+00235438 mcr::runtime::setInterpreterThreadSingletonToCurrent+00104206
+[ 66] 0x0000000016096c8a                                  bin\win64\mcr.dll+00355466 mcrRegisterExternalFunction+00007930
+[ 67] 0x00000000160989bc                                  bin\win64\mcr.dll+00362940 mcrRegisterExternalFunction+00015404
+[ 68] 0x0000000016095bff                                  bin\win64\mcr.dll+00351231 mcrRegisterExternalFunction+00003695
+[ 69] 0x0000000016096c46                                  bin\win64\mcr.dll+00355398 mcrRegisterExternalFunction+00007862
+[ 70] 0x0000000016095ce3                                  bin\win64\mcr.dll+00351459 mcrRegisterExternalFunction+00003923
+[ 71] 0x0000000016098ff6                                  bin\win64\mcr.dll+00364534 mcrRegisterExternalFunction+00016998
+[ 72] 0x00000000fd014f67                                  bin\win64\iqm.dll+00544615 iqm::IqmPlugin<cmddistributor::PackagedTaskIIP>::getIIP+00016215
+[ 73] 0x00000000fd01567f                                  bin\win64\iqm.dll+00546431 iqm::PackagedTaskPlugin::execute+00000911
+[ 74] 0x00000000fd014fed                                  bin\win64\iqm.dll+00544749 iqm::IqmPlugin<cmddistributor::PackagedTaskIIP>::getIIP+00016349
+[ 75] 0x00000000fd0154c3                                  bin\win64\iqm.dll+00545987 iqm::PackagedTaskPlugin::execute+00000467
+[ 76] 0x00000000fcfed9ea                                  bin\win64\iqm.dll+00383466 iqm::Iqm::setupIqmFcnPtrs+00071994
+[ 77] 0x00000000fcfed84c                                  bin\win64\iqm.dll+00383052 iqm::Iqm::setupIqmFcnPtrs+00071580
+[ 78] 0x00000000fcfce722                                  bin\win64\iqm.dll+00255778 iqm::Iqm::deliver+00003730
+[ 79] 0x00000000fcfcf749                                  bin\win64\iqm.dll+00259913 iqm::Iqm::deliver+00007865
+[ 80] 0x00000001001aa211                        bin\win64\libmwservices.dll+01810961 services::system_events::PpeDispatchHook::dispatchOne+00030865
+[ 81] 0x00000001001b7ff3                        bin\win64\libmwservices.dll+01867763 sysq::addProcessPendingEventsUnitTestHook+00004659
+[ 82] 0x00000001001b81e0                        bin\win64\libmwservices.dll+01868256 sysq::addProcessPendingEventsUnitTestHook+00005152
+[ 83] 0x00000001001b9576                        bin\win64\libmwservices.dll+01873270 sysq::getCondition+00003446
+[ 84] 0x00000001001bb0e6                        bin\win64\libmwservices.dll+01880294 svWS_ProcessPendingEvents+00000230
+[ 85] 0x0000000016080737                                  bin\win64\mcr.dll+00263991 mcr::runtime::setInterpreterThreadSingletonToCurrent+00132759
+[ 86] 0x0000000016082360                                  bin\win64\mcr.dll+00271200 mcr::runtime::setInterpreterThreadSingletonToCurrent+00139968
+[ 87] 0x000000001605e9b7                                  bin\win64\mcr.dll+00125367 mcr_process_events+00001959
+[ 88] 0x0000000015f2fef5                             bin\win64\MVMLocal.dll+00327413 mvm_server::inproc::LocalFactory::terminate+00139589
+[ 89] 0x00000000fa9605b9                                  bin\win64\mvm.dll+01246649 mvm::detail::initLocalMvmHack+00000793
+[ 90] 0x00000000fa960dcb                                  bin\win64\mvm.dll+01248715 mvm::detail::SessionImpl::privateSession+00000555
+[ 91] 0x00000000fa960ff1                                  bin\win64\mvm.dll+01249265 mvm::detail::SessionImpl::privateSession+00001105
+[ 92] 0x000000014000780d                               bin\win64\MATLAB.exe+00030733
+[ 93] 0x000000014000862f                               bin\win64\MATLAB.exe+00034351
+[ 94] 0x00007ff9093f7034                   C:\WINDOWS\System32\KERNEL32.DLL+00094260 BaseThreadInitThunk+00000020
+[ 95] 0x00007ff90ac7d0d1                      C:\WINDOWS\SYSTEM32\ntdll.dll+00315601 RtlUserThreadStart+00000033
+
+
+This error was detected while a MEX-file was running. If the MEX-file
+is not an official MathWorks function, please examine its source code
+for errors. Please consult the External Interfaces Guide for information
+on debugging MEX-files.
+** This crash report has been saved to disk as C:\Users\timot\AppData\Local\Temp\matlab_crash_dump.20720-1 **
+
+
+Caught MathWorks::System::FatalException
