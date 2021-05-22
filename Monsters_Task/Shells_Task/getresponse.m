@@ -1,7 +1,7 @@
 % Get response for various input devices. Used in files pit.m, pittraining.m and
 % pittraining_test.m. Returns mainly three variables: 
 % - buttons is 1 if something was pressed, 0 if not
-% - key is the identify of the key pressed
+% - key is the identity of the key pressed
 % - t is the time of the keypress
 
 if strcmpi(respkey,'mouse');	% ........... MOUSE input. .............................
@@ -14,13 +14,6 @@ if strcmpi(respkey,'mouse');	% ........... MOUSE input. ........................
 	end
 	t = GetSecs;
     
-elseif strcmpi(respkey,'joystick')  % ........... JOYSTICK input. .............................
-    
-    [joy_pos, buttons] = mat_joy(0);
-    
-    t = GetSecs;
-
-
 else                         % .......... Input through devices or keyboard .........
 
 	if usekbqueue	           % KbQueue is more accurate for USB devices

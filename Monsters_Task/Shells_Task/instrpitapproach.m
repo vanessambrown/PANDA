@@ -2,28 +2,7 @@ fprintf('............ Displaying instructions ');
 i=0; clear tx ypos func;
 func{1}=[];
 
-if ~exist('nt'); % if this is the first session
-    
-    
-    if strcmp(devicetype,'cur_joystick')
-        i=i+1;
-        ypos{i}=yposm;
-        tx{i} = ['Experimenter: Please keep the joystick pushed as far away from you as possible and then press "Start" and "Stop".'];
-        func{i}='getjoystickpos_push_instr';
-        
-        
-        i=i+1;
-        ypos{i}=yposm;
-        tx{i} = ['Experimenter: Please keep the joystick pulled towards you as much as possible and then press "Start" and "Stop".'];
-        func{i}='getjoystickpos_pull_instr';
-        
-        i=i+1;
-        ypos{i}=yposm;
-        tx{i} = ['Experimenter: Please leave the joystick in the middle position and then press "Start" and "Stop".'];
-        func{i}='getjoystickpos_zero_instr';
-        
-    end
-    
+if ~exist('nt') % if this is the first session
     
     i=i+1;
     ypos{i}=yposm;
@@ -50,15 +29,9 @@ ypos{i}=yposm;
 
 i=i+1;
 ypos{i}=yposm;
-if strcmpi(respkey,'joystick')
-    if shrooms; tx{i}='You can decide whether to collect a shell or throw it away.';
-    else        tx{i}='You can decide whether to collect a leaf or throw it away.';
-    end
-else
     if shrooms; tx{i}='You can decide whether to collect a shell or leave it.';    
     else        tx{i}='You can choose whether to hide or run away from each monster you encounter.';        
     end
-end
 
 i=i+1;
 ypos{i}=yposm;
@@ -80,19 +53,11 @@ end
     
 i=i+1;
 ypos{i}=yposm;
-if strcmpi(respkey,'joystick')
-    if shrooms
-        tx{i}='Every now and then, you might pick up a good shell or throw away a bad one and still lose money. Try not to be distracted by it when this happens.';
-    else
-        tx{i}='Every now and then, you might pick up a good leaf or throw away a bad one and still lose money. Try not to be distracted by it when this happens.';
-    end
-else
     if shrooms
         tx{i}='Every now and then, you might pick up a good shell or leave a bad one and still lose money. Try not to be distracted by it when this happens.';
     else
         tx{i}='Every now and then, you might make the right decision but still get caught. Try not to be distracted by it when this happens.';
     end
-end
 
 %add statement about tracking performance    
 i=i+1;
@@ -111,36 +76,22 @@ end
 
 i=i+1;
 ypos{i}=yposm;
-if strcmpi(respkey,'joystick')
-    if shrooms
-        tx{i}='To collect a shell, use the joystick and pull it towards you.';
-    else tx{i}='To collect a leaf, use the joystick and pull it towards you.';
-    end
-else
     ypos{i}=ypost;
     if shrooms; tx{i}='To collect a shell, the blue point has to be moved onto the shell.';
     else;       tx{i}='To run away from a monster, the blue point has to be moved onto the gray safety zone.';
     end
-end
 func{i}='withdrawgo';
 
 
 i=i+1;
 ypos{i}=ypost;
-if strcmpi(respkey,'joystick')
-    if shrooms
-        tx{i}='This will make the shell bigger until it eventually disappears.';
-    else tx{i}='This will make the leaf bigger until it eventually disappears.';
-    end
-else
     if     strcmpi(devicetype,'keyboard');	taste = 'the mouse button'; 
-    elseif strcmpi(dominanthand,'right');	taste = 'the button under your right index finger'; 
-    elseif strcmpi(dominanthand,'left');	taste = 'the button under your left index finger'; 
+    elseif strcmpi(devicetype,'MRRC');	taste = 'the button under your right index finger'; 
     end
      if shrooms; tx{i}=['You can do this by repeatedly pressing ' taste '. It does not matter where you click. Each press of the button moves the point a little closer to the shell. Try it out.'];
      else        tx{i}=['You can do this by repeatedly pressing ' taste '. It does not matter where you click. Each press of the button moves the point a little closer to the gray safety zone. Try it out.'];
     end
-end
+
 func{i}='withdrawgoactive';
 
 if ~strcmpi(respkey,'joystick')
@@ -154,7 +105,6 @@ end
 %% This part is not applicable for joystick
 i=i+1;
 ypos{i}=yposm;
-if ~strcmpi(respkey,'joystick')
     if shrooms; tx{i}='The more you press, the more likely you are to collect the shell.';    
     else        tx{i}='The more you press, the more likely you are to make it to the gray safety zone.';
     end
@@ -180,52 +130,18 @@ if ~strcmpi(respkey,'joystick')
     ypos{i}=yposm;
     tx{i}='During the task, we will only show you where the point starts and ends, but not where it is in between.';
     
-    
     i=i+1;
     ypos{i}=ypost;
     tx{i}='Now try again. This time it will be just like in the real task.';
     func{i}='withdrawgoexp';
-    
-elseif strcmpi(respkey,'joystick')
-    tx{i}='You have to pull the shell towards you with the joystick until it disappears in order to collect it.';
-    
-    i=i+1;
-    ypos{i}=yposm;
-    tx{i}='Caution! Let the joystick return to the center position after each attempt.';
-end
 
-%% leave condition is applicable for joystick; people need to be instructed about pushing to leave bad shells
+%% people need to be instructed about pushing to leave bad shells
 
 i=i+1;
 ypos{i}=yposm;
-if strcmpi(respkey,'joystick')
-    tx{i}=['Sometimes you will see bad ' obj '. The only way to earn money from bad ' obj ' is to throw them away.'];
-    i=i+1;
-    ypos{i}=yposm;
-    if shrooms
-        tx{i}='To throw away a shell, push the joystick away from you.';
-    else tx{i}='To throw away a shell, push the joystick away from you.';
-    end
-    
-    i=i+1;
-    ypos{i}=ypost;
-    if shrooms
-        tx{i}='This makes the shell smaller and smaller until it eventually disappears. Give it a try.';
-    else tx{i}='This makes the leaf smaller and smaller until it eventually disappears. Give it a try.';
-    end
-    func{i}='withdrawnogo';
-    
-    i=i+1;
-    ypos{i}=yposm;
-    if shrooms; tx{i}='You should have thrown that shell away by now. You have to push the shell away from you with the joystick until it disappears in order to throw it away.';
-    else        tx{i}='You should have thrown that leaf away by now. You have to push the leaf away from you with the joystick until it disappears in order to throw it away.';
-    end
-    
-else
     if shrooms;    tx{i}=['Sometimes you will see bad ' obj '. The only way to earn money from bad ' obj ' is to do nothing and leave them where they are.'];
     else           tx{i}=['For some ' obj ', you will be more likely to escape if you hide. To hide, simply do nothing at all.'];
     end
-end
 
 i=i+1;
 ypos{i}=ypost;
@@ -236,16 +152,11 @@ end
     func{i}='withdrawnogo';
 end
 
-if strcmpi(respkey,'joystick')
-    if shrooms; tx{i}=['In the experiment you have ' num2str(round(nogodelay_train*10)/10) ' seconds to collect or throw away a shell. Whenever you do not move the joystick or move it completely, you lose 20 cents.'];
-    else        tx{i}=['In the experiment you have ' num2str(round(nogodelay_train*10)/10) ' seconds to collect or throw away a leaf. Whenever you do not move the joystick or move it completely, you lose 20 cents.'];
-    end
+if shrooms; tx{i}=['During the experiment, you will have ' num2str(round(nogodelay_train*10)/10) ' seconds to collect or leave a shell. You can press as often as you want. If you do not press or do not press often enough, the computer will assume you do not want the shell.'];
 else
-    if shrooms; tx{i}=['During the experiment, you will have ' num2str(round(nogodelay_train*10)/10) ' seconds to collect or leave a shell. You can press as often as you want. If you do not press or do not press often enough, the computer will assume you do not want the shell.'];
-    else
-        tx{i}=['During the task, you will have ' num2str(round(nogodelay_train*10)/10) ' seconds to either hide or run away. You can press as often as you want. If you do not press or do not press often enough, the computer will assume you want to hide.'];
-    end
+            tx{i}=['During the task, you will have ' num2str(round(nogodelay_train*10)/10) ' seconds to either hide or run away. You can press as often as you want. If you do not press or do not press often enough, the computer will assume you want to hide.'];
 end
+
 
 %....................... Instrumental test run
 i=i+1;

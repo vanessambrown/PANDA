@@ -2,46 +2,27 @@ fprintf('............ Displaying instructions ');
 i=0; clear tx ypos func;
 func{1}=[];
 
-if shrooms;  obj='Shells'; else; obj='monsters';end
-
-if strcmp(devicetype,'cur_joystick')
-    i=i+1;
-    ypos{i}=yposm;
-    tx{i} = ['Experimenter: Please keep the joystick pushed as far away from you as possible and then press "Start" and "Stop".'];
-    func{i}='getjoystickpos_push_pit';
-    
-    
-    i=i+1;
-    ypos{i}=yposm;
-    tx{i} = ['Experimenter: Please keep the joystick pulled towards you as much as possible and then press "Start" and "Stop".'];
-    func{i}='getjoystickpos_pull_pit';
-    
-    i=i+1;
-    ypos{i}=yposm;
-    tx{i} = ['Experimenter: Please leave the joystick in the middle position and then press "Start" and "Stop".'];
-    func{i}='getjoystickpos_zero_pit';
-    
+if shrooms
+    obj='Shells'; 
+else
+    obj='monsters';
 end
-
 
 i=i+1;
 ypos{i}=yposm;
 if shrooms
     tx{i}=['Ok, now comes the most important part. You will now go back to collecting ' obj ' .'];
-else tx{i}=['Ok, now comes the most important part of the task. Imagine that you are on your journey again when you reencounter the monsters.'];
+else
+    tx{i}=['Ok, now comes the most important part of the task. Imagine that you are on your journey again when you reencounter the monsters.'];
 end
 
 i=i+1;
 ypos{i}=yposm;
-if strcmpi(respkey,'joystick')
-    tx{i}=['Keep collecting the ' obj ' that were good and continue to throw away the bad ones. You will continue to receive 20 cents each for this.'];
-else
     if shrooms
         tx{i}=['Keep collecting the ' obj ' that were good and leave the bad ones behind. You will continue to receive 20 cents each for this.'];    
     else
         tx{i}=['Decide whether to run away or hide from each monster, just like before. Keep choosing whichever action has helped you escape that monster in the past.'];
     end
-end
 
 i=i+1;
 ypos{i}=yposm;
@@ -63,39 +44,32 @@ i=i+1;
 ypos{i}=yposm;
 if shrooms
     tx{i}='So focus on making as much money as possible by collecting shells properly.';
-else tx{i}='Your focus should be on choosing the action that helps you avoid each monster.'
+else
+    tx{i}='Your focus should be on choosing the action that helps you avoid each monster.';
 end
 
 i=i+1;
 ypos{i}=yposm;
 if shrooms
     tx{i}='How much you win or lose in each round, be it because of the abstract shape in the background or because of the shell, is no longer displayed. Your total balance at the end of the experiment will be paid out to you.';
-else tx{i}='There is one other important difference in this part of the task. Sometimes, you may not see whether you got caught or escaped in each round. However, the computer will continue to track your performance, so just keep choosing the action that you think will help you escape the monster.';
+else
+    tx{i}='There is one other important difference in this part of the task. Sometimes, you may not see whether you got caught or escaped in each round. However, the computer will continue to track your performance, so just keep choosing the action that you think will help you escape the monster.';
 end
 
 i=i+1;
 ypos{i}=yposm;
 
-if strcmpi(respkey,'joystick')
-    if shrooms
-        tx{i}=['You have ' num2str(round(nogodelay_pit*10)/10) ' seconds to collect or throw away a shell. Press the forward button to begin.'];
-        %tx{i}=['Sie haben wieder ' num2str(round(nogodelay_pit*10)/10) ' Sekunden Zeit, um eine Muschel einzusammeln oder wegzuwerfen. Drücken Sie nochmals die Vorwärts-Taste, um anzufangen.'];
-    else tx{i}=['You have ' num2str(round(nogodelay_pit*10)/10) ' seconds to collect or throw away a leaf. Press the forward button to begin.'];
-    %else tx{i}=['Sie haben wieder ' num2str(round(nogodelay_pit*10)/10) ' Sekunden Zeit, um ein Blatt einzusammeln oder wegzuwerfen. Drücken Sie nochmals die Vorwärts-Taste, um anzufangen.'];
-    end
+if shrooms
+    tx{i}=['You have ' num2str(round(nogodelay_pit*10)/10) ' seconds to collect or leave a shell. Press the forward button to begin.'];
 else
-    if shrooms
-        tx{i}=['You have ' num2str(round(nogodelay_pit*10)/10) ' seconds to collect or leave a shell. Press the forward button to begin.'];
-    else tx{i}=['You have ' num2str(round(nogodelay_pit*10)/10) ' seconds to either hide or run away. The research assistant will start the task now.']
-         func{i}='checkunderstood';
-    end
+    tx{i}=['You have ' num2str(round(nogodelay_pit*10)/10) ' seconds to either hide or run away. The research assistant will start the task now.']
+    func{i}='checkunderstood';
 end
 
 instr_display;
 
 for k=1:5
     text={['The next part of the experiment starts in ' num2str(6-k) ' seconds.']};
-    if small_screen_berlin_scanning; Screen('FillRect', wd , black, frameBlack ); end
     displaytext(text,wd,wdw,wdh,txtcolor,0,0);
     WaitSecs(1);
 end

@@ -37,7 +37,7 @@ HideCursor;
 %ListenChar(2);
 
 %................... open a screen
-Screen('Preference','Verbosity',0);
+%Screen('Preference','Verbosity',0);
 imagingmode=kPsychNeedFastBackingStore;
 
 
@@ -77,40 +77,30 @@ wdht_low = wdht - (.1*wdht); % set height to be 10% smaller to allow for feedbac
             %% UPDATE MIRROR SCREEN FOR fMRI 03-02-2020 -------------------
             %% this is site-specific to Berlin; unlikely to be needed for
             %% MRI in Pitt, can ignore---------
-%         
-%     [wdw, wdh]=Screen('WindowSize', wd);    % Get screen size
-%     txtsize     = round(wdh/12);            % relative text size: adjust text size to screen size
-%     if txtsize>max_txtsize; txtsize=max_txtsize; end; % enforce maximal text size here
-%     Screen('TextSize',wd,txtsize);            % Set size of text
-% 
-
-        % Make a backup copy of the current transformation matrix for later
-        % use/restoration of default state:
-        % Screen('glPushMatrix', wd); % not needed
  
-        % Translate origin into the geometric center of text:
-        if scanning==1 & strcmpi(exploc,'b') &  exppart==3
-            Screen('glTranslate', wd, wdwt/2, wdht/2, 0);
-            
-            % Apply a scaling transform which flips the direction of 
-            x-Axis,
-            % thereby mirroring the drawn text horizontally:
-            mirrorANDupsidedown = 0;  % this is what Berlin needs for MRI setup (flip vertically and horizontally)
-            upsideDown = 0;
-            mirror = 1;
-            if upsideDown
-                Screen('glScale', wd, 1, -1, 1);
-            elseif mirrorANDupsidedown
-                Screen('glScale', wd, -1, -1, 1);
-            elseif mirror
-                Screen('glScale', wd, -1, 1, 1);
-            else
-                 Screen('glScale', wd, 1, 1, 1);
-            end
-            
-            % We need to undo the translations...
-            Screen('glTranslate', wd, -wdwt/2, -wdht/2, 0);
-        end
+%         % Translate origin into the geometric center of text:
+%         if scanning==1 & strcmpi(exploc,'b') &  exppart==3
+%             Screen('glTranslate', wd, wdwt/2, wdht/2, 0);
+%             
+%             % Apply a scaling transform which flips the direction of 
+%             x-Axis,
+%             % thereby mirroring the drawn text horizontally:
+%             mirrorANDupsidedown = 0;  % this is what Berlin needs for MRI setup (flip vertically and horizontally)
+%             upsideDown = 0;
+%             mirror = 1;
+%             if upsideDown
+%                 Screen('glScale', wd, 1, -1, 1);
+%             elseif mirrorANDupsidedown
+%                 Screen('glScale', wd, -1, -1, 1);
+%             elseif mirror
+%                 Screen('glScale', wd, -1, 1, 1);
+%             else
+%                  Screen('glScale', wd, 1, 1, 1);
+%             end
+%             
+%             % We need to undo the translations...
+%             Screen('glTranslate', wd, -wdwt/2, -wdht/2, 0);
+%         end
 
         %% END UPDATE 02-03-2020 Mirror Sreen --------------------------
 
@@ -216,9 +206,6 @@ if shrooms  % shells
 else        % monsters
 	eval(['tmp=imread(''' pshel{2} '/monsters_instr.png'');'])
 end
-if small_screen_berlin_scanning;
-    tmp = imresize(tmp, [diff(drm(1,[2 4])) diff(drm(1,[1 3]))]);
-end
 msh(1,Nmsh+1)=Screen('MakeTexture',wd,tmp);
 
 % for test training during instructions
@@ -227,9 +214,6 @@ for k=1:4
 		eval(['tmp=imread(''' pshel{1} '/shell_instr' num2str(k) '.png'');'])
     else            % monsters
 		eval(['tmp=imread(''' pshel{2} '/monsters_train' num2str(k) '.png'');'])
-	end
-    if small_screen_berlin_scanning;
-        tmp = imresize(tmp, [diff(drm(1,[2 4])) diff(drm(1,[1 3]))]);
     end
 	mshtest(1,k)=Screen('MakeTexture',wd,tmp);
 end
@@ -351,31 +335,6 @@ for pf=1:length(piano_files)
 	soundhandle(pf) = PsychPortAudio('Open', [], [], 0, freqwav, 1);
 	PsychPortAudio('FillBuffer', soundhandle(pf), tmp);
 end
-
-	% Adjust sound levels ..............................................
-
-% 	clear tx ypos func;
-% 	i=1;
-% 	ypos{i}=wdh/2;
-% 	tx{i}='Lautstärke des tiefen Tons am output anpassen.';
-% 	if risingfreq
-% 		func{i}='if small_screen_berlin_scanning; Screen(''FillRect'', wd , black, frameBlack ); end; Screen(wd,''Flip'',[],1);PsychPortAudio(''Start'', soundhandle(1),1,0,1);WaitSecs(1);PsychPortAudio(''Stop'', soundhandle(5));checkunderstood;';
-% 	else
-% 		func{i}='if small_screen_berlin_scanning; Screen(''FillRect'', wd , black, frameBlack ); end; Screen(wd,''Flip'',[],1);PsychPortAudio(''Start'', soundhandle(5),1,0,1);WaitSecs(1);PsychPortAudio(''Stop'', soundhandle(1));checkunderstood;';
-% 	end
-% 
-% 	setsoundlevel=1;
-% 	levelfrac = 1;
-% 	i=i+1;
-% 	ypos{i}=wdh/2;
-% 	tx{i}='Lautstärke des hohen Tons in psychtoolbox anpassen (u/d). ';
-% 	if risingfreq
-% 		func{i}='tmp=5;if small_screen_berlin_scanning; Screen(''FillRect'', wd , black, frameBlack ); end; Screen(wd,''Flip'',[],1);PsychPortAudio(''Start'', soundhandle(tmp),1,0,1);WaitSecs(1);PsychPortAudio(''Stop'', soundhandle(tmp));checkunderstood;';
-% 	else
-% 		func{i}='tmp=1;if small_screen_berlin_scanning; Screen(''FillRect'', wd , black, frameBlack ); end; Screen(wd,''Flip'',[],1);PsychPortAudio(''Start'', soundhandle(tmp),1,0,1);WaitSecs(1);PsychPortAudio(''Stop'', soundhandle(tmp));checkunderstood;';
-% 	end
-% 
-% 	instr_display;
 
 end
 

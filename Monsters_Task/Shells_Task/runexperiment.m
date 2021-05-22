@@ -3,11 +3,10 @@
 %%%%%%%%%%%%%%%% Main script for PIT experiment %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 clear all;		% Tabula rasa
-aborted = 0;	% if this parameter is set to one, things will abort.
-%load('guiparams.mat');  % load the subject-specific experimental paraqqqqqqqmeters
+aborted = 0;	% if this parameter is set to one, thqqings will abort.
 modifymePIT;	% set additional experimental parameters
-%diary('data/debug_pitt.txt'); % establishes debugging diary
-scan = scanning; %pulls from modify meq
+diary('data/debug_pitt.txt'); % establishes debugging diary
+scan = scanning; %pulls from modify me
 
 
 %.................. Set experimental session
@@ -43,7 +42,7 @@ end
     % setup for stimulus presentation sequences and other stuff. We only want to
     % do this the first, time, i.e. when exppart is 1. After that, we want to
     % load the previous settings and data. This is true regardless of whether
-    % we're in the scanner for part 2 or not.
+    % we're in the scanner for part 3 or not.
     
     expparams;	% set the general experimental parameters
     
@@ -101,10 +100,10 @@ end
         if dosave; eval(['save data/' namestring  '_exppart' num2str(exppart) '.mat']);end
         T.tmp=GetSecs;	% to measure length of experiment part
         
-        %.............. Pavlovian refresher instructions ..........................
-        tic;
-        if doinstr; instrpavscanner; end
-        T.instrpav=toc;
+%         %.............. Pavlovian refresher instructions ..........................
+%         tic;
+%         if doinstr; instrpavscanner; end
+%         T.instrpav=toc;
         
         %................ Pavlovian training .......................................
         tic;
@@ -132,7 +131,7 @@ end
         %     Third part of the experiment						      %
         %     THIS CAN BE IN SCANNER OR OUTSIDE OF SCANNER       %
         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-        fprintf('............. Approach PIT session \n');
+        fprintf('............. PIT session \n');
         % save everything at the outset
         if dosave; eval(['save data/' namestring  '_exppart' num2str(exppart) '.mat']);end
         T.tmp=GetSecs;	% to measure length of experiment part
@@ -145,10 +144,7 @@ end
         if scanning
             DrawFormattedText(wd,'We are about to start...','center', 'center', txtcolor);
             Screen('Flip',wd);
-            if strcmp(exploc,'b')
-                T.fMRI_triggerT0_pit = WaitForMRITrigger_joystick(NumInitialfMRITriggers, Display);
-                %T.fMRI_triggerT0_pit = WaitForMRITrigger(MRITriggerCode, NumInitialfMRITriggers, Display);
-            elseif strcmp(exploc,'p')
+            if strcmp(exploc,'p')
                 T.fMRI_triggerT0_pit = WaitForMRITrigger(MRITriggerCode, NumInitialfMRITriggers, Display);
             else
                 T.fMRI_triggerT0_pit = WaitForMRITrigger(MRITriggerCode, NumInitialfMRITriggers, Display);
@@ -170,10 +166,7 @@ end
             fprintf('\nAcquiring final volumes\n');
             drawfixationcross(wd,2,fixationdotsize,0);
             Screen('Flip',wd);
-            if strcmp(exploc,'b')
-                T.fMRI_triggerTend_pit = WaitForMRITrigger_joystick(NumFinalfMRITriggers);
-                %T.fMRI_triggerTend_pit = WaitForMRITrigger(MRITriggerCode,NumFinalfMRITriggers);
-            elseif strcmp(exploc,'p')
+            if strcmp(exploc,'p')
                 T.fMRI_triggerTend_pit = WaitForMRITrigger(MRITriggerCode,NumFinalfMRITriggers);
             else
                 T.fMRI_triggerTend_pit = WaitForMRITrigger(MRITriggerCode,NumFinalfMRITriggers);

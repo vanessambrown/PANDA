@@ -13,11 +13,20 @@ fprintf('............            MODIFYME.M\n'); fprintf('............ \n')
 %----------------------------------------------------------------------------
 %        Patient Information 
 %----------------------------------------------------------------------------
-subjn    = '9999';  % Subject ID. This number has to be > 1000 
+subjn    = '2222';  % Subject ID. This number has to be > 1000 
                     % *** subject number has to be in single quotes ***
+dominanthand     = 'left';     % 'right' or 'left' % for "left" this did not work
+
+%----------------------------------------------------------------------------
+%        Is the third part inside the fMRI scanner? 
+%          Set this to one for when the third part is inside the scanner
+%----------------------------------------------------------------------------
+scanning = 1;  % 0 = entirely outside scanner %set scanning to 0/1
+               % 1 = third part inside scanner 
+
 %---------------------------------------------------------------------------
 
-debug   = 0;      % if this is set to 1, then a short version of the experiment is
+debug   = 1;      % if this is set to 1, then a short version of the experiment is
                   % run. For testing/debugging. 
 doinstr = 1;      % present instructions?
 
@@ -26,24 +35,18 @@ doinstr = 1;      % present instructions?
 %        This should ALWAYS be set to 1 when doing experiments obviously
 %----------------------------------------------------------------------------
 dosave = 1;         % save output? 
-                  
-%----------------------------------------------------------------------------
-%        Is the third part inside the fMRI scanner? 
-%          Set this to one for when the third part is inside the scanner
-%----------------------------------------------------------------------------
-scanning = 0;  % 0 = entirely outside scanner %set scanning to 0/1
-               % 1 = third part inside scanner                    
+                                     
 
 %----------------------------------------------------------------------------
 %        LEAVE THESE ALONE
 %----------------------------------------------------------------------------
 approach = 0; 	% withdrawal variant
 exploc   = 'p';     % 'p' for pittsburgh, 'b' for berlin
-dominanthand     = 'right';     % 'right' or 'left' % for "left" this did not work
 PIT_version = 2;    % version 1 -> shells, version 2 -> monsters
 session  = '1';     
 payment  = 1;       % is this subject being paid / should payment info be displayed
                     % at the end? 
+
                     
 %----------------------------------------------------------------------------
 %        Input device type  
@@ -54,19 +57,18 @@ payment  = 1;       % is this subject being paid / should payment info be displa
 %----------------------------------------------------------------------------
 devicetype_part1 = 'keyboard'; %'cur_joystick';  
 devicetype_part2 = 'keyboard'; %'cur_joystick';  
-devicetype_part3 = 'keyboard'; %'cur_joystick'; % if you implement another joystick variable, please ensure the pit part 3 timing (in expparams.m, variable nogodelay_pit))
+if scanning == 1
+    devicetype_part3 = 'MRRC'; 
+    else
+    devicetype_part3 = 'keyboard';
+end
 devicetype_part4 = 'keyboard';	
-
-%----------------------------------------------------------------------------
-% joystick ID
-joyid_ins=0; % instrumental joystick ID
-joyid_pit=0; % pit joystick ID
 
 %----------------------------------------------------------------------------
 %        EXPERIMENT VERSION 
 %        PLEASE check this is correct! 
 %----------------------------------------------------------------------------
-expversion = '09.02.200921';
+expversion = '05.21.2021.01';
 
 %----------------------------------------------------------------------------
 %        MONITOR SIZE  and VIEWING DISTANCE 

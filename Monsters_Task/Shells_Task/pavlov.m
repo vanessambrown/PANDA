@@ -102,43 +102,8 @@ stim_trig = UpdateStimulusTrigger(exploc, scanning, exppart, eyetrack, stim_trig
 WaitSecs(pavUSfixdelay-(GetSecs-T.pav_US_onset(np)));	 % fixed delay
 
 
-
-
-% % ........... remove CS, draw two fixation crosses at the CS and US positions
-% for k=[1 3]; drawfixationcross(wd,k,fixationdotsize,1);end
-% if small_screen_berlin_scanning; Screen('FillRect', wd , black, frameBlack ); end % draw frame
-% T.pav_CS_offset(np) = Screen('Flip',wd);
-% stim_trig = UpdateStimulusTrigger(exploc, scanning, exppart, eyetrack, stim_trig, [pav_CS_off np]);
-% 
-% WaitSecs(pavISfixdelay-(GetSecs-T.pav_CS_offset(np))); % fixed delay - allow separation of CS and US 
-% 
-% % ........... deterministically show US outcome (alone)
-% Screen('DrawTexture',wd,outcomep(pavpres(np)),[],drmo(4-posp(np),:)); 
-% % write outcome explicitly, too 
-% if Z.Pavout(pavpres(np))>0
-% 	txt=['+ ' num2str(Z.Pavout(pavpres(np))) ' Euro'];
-% 		[wt]=Screen(wd,'TextBounds',txt);
-% 		xpos=drmd(4-posp(np),1)-wt(3)/2;
-% 		ypos=drmo(4-posp(np),4)+1.5*wt(4);
-% 		Screen('Drawtext',wd,txt,xpos,ypos,green);
-% elseif Z.Pavout(pavpres(np))<0
-% 	txt=['- ' num2str(abs(Z.Pavout(pavpres(np)))) ' Euro'];
-% 		[wt]=Screen(wd,'TextBounds',txt);
-% 		xpos=drmd(4-posp(np),1)-wt(3)/2;
-% 		ypos=drmo(4-posp(np),4)+.8*wt(4);
-% 		Screen('Drawtext',wd,txt,xpos,ypos,red);
-% end
-% drawfixationcross(wd,posp(np),fixationdotsize,1);	% fixation cross opposite outcome 
-% if small_screen_berlin_scanning; Screen('FillRect', wd , black, frameBlack ); end % draw frame
-% T.pav_US_onset(np) = Screen('Flip',wd);
-% stim_trig = UpdateStimulusTrigger(exploc, scanning, exppart, eyetrack, stim_trig, [pav_US_on np]);
-% 
-% WaitSecs(pavUSfixdelay-(GetSecs-T.pav_US_onset(np)));	 % fixed delay 
-
 if doaudio;PsychPortAudio('Stop', soundhandle(pavpres(np)));end %soundhandle is 0, 1, 3
 
-% drawfixationcross(wd,2,fixationdotsize,0);
-%if small_screen_berlin_scanning; Screen('FillRect', wd , black, frameBlack ); end % draw frame
 T.pav_offset(np) = Screen('Flip',wd);
 stim_trig = UpdateStimulusTrigger(exploc, scanning, exppart, eyetrack, stim_trig, [pav_US_off np]);
 

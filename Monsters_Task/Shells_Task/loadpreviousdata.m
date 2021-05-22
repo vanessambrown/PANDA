@@ -11,7 +11,7 @@ uiopen('load');
 
 % ............ First check the subject name, session and type match 
 if ~strcmpi(subjn,tmpsubjn) | ~strcmpi(session,tmpsession) | ~strcmpi(type,tmptype)
-	error(['Subject information is incorrect. Please check you''re running the coirrect subjet (check modifyme.m and loaded data file match.']);
+	error(['Subject information is incorrect. Please check you''re running the correct subject (check modifyme.m and loaded data file match.']);
 end
 
 % ............ Check we've loaded the previous experiment part 

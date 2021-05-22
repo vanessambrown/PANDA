@@ -1,6 +1,5 @@
 
 Screen('DrawTexture',wd,arrow,[],arrowsquare);
-if small_screen_berlin_scanning; Screen('FillRect', wd , black, frameBlack ); end % draw frame
 Screen('Flip',wd);
 
 if usekbqueue	           % KbQueue is more accurate for USB devices

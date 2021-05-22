@@ -6,16 +6,13 @@ i=i+1;
 ypos{i}=yposm;
 if ~scanning
     tx{i}='Welcome to the next part of the task. Please use the arrow keys to scroll forwards and backwards again.';
-    %tx{i}='Der erste Teil des Experiments ist nun zu Ende. Wir werden Ihnen jetzt den nächsten Teil erklären. Benutzen Sie wieder die Pfeiltasten, um vorwärts und zurück zu blättern.';
 else
     tx{i}='Welcome to the next part of the task. Please use the arrow keys to scroll forwards and backwards again.';
-    %tx{i}='Der erste Teil des Experiments ist nun zu Ende. Wir werden Ihnen jetzt den nächsten Teil erklären. Benutzen Sie wieder die Pfeiltasten, um vorwärts und zurück zu blättern.';
 end
 
 i=i+1;
 ypos{i}=ypostt;
 tx{i}='Imagine once again that you are on a long journey, when you encounter a series of magic caves. For example, you might see this:';
-%tx{i}='Ihnen werden nun abstrakte Formen präsentiert. Zum Beispiel sehen Sie diese:';
 func{i}='Screen(''Drawtexture'',wd,shapeinstr(1),[],drm(2,:));getleftrightarrow;';
 
 i=i+1;
@@ -39,10 +36,10 @@ i=i+1;
 ypos{i}=yposm;
 tx{i}='This part of the experiment takes a long time so that you can accurately memorize what each cave is associated with. Please pay close attention to this part of the experiment.';
 
-%i=i+1;
-%ypos{i}=yposm;
-%tx{i}= 'It''s time to start. But first, please briefly explain to the research assistant what this part of the task is about.';
-%func{i}='checkunderstood';
+i=i+1;
+ypos{i}=yposm;
+tx{i}= 'It''s time to start. But first, please briefly explain to the research assistant what this part of the task is about.';
+func{i}='checkunderstood';
 
 instr_display;
 

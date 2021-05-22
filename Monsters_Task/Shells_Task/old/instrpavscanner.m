@@ -12,7 +12,6 @@ instr_display;
 
 for k=1:5
 	text={['The next part of the experiment starts in ' num2str(6-k) ' seconds.']};
-    %text={['Der nächste Teil des Experiments fängt in ' num2str(6-k) ' Sekunden an.']};
 		displaytext(text,wd,wdw,wdh,txtcolor,0,0);
 		WaitSecs(1);
 end

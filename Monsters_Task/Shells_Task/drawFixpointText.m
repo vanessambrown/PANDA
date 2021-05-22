@@ -1,6 +1,5 @@
 % drawFixpointText
 
-% zeige einen Fixationspunkt und darüber Text
 % show a fixation point and text above it
 [wt]=Screen(wd,'TextBounds',txt{1});
 xpos = wdw/2-wt(3)/2;

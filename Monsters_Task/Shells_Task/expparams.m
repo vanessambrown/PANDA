@@ -25,12 +25,8 @@ pavISfixdelay = 3;		 % Fixed interstimulus delay between CS and US
 pavITIfixdelay = 2;      % Fixed inter trial interval for Pavlovian conditioning
 
 nogodelay_train = 2;     % Response time window during training
-if strcmp(devicetype_part3,'joystick')  | strcmp(devicetype_part3,'cur_joystick')             % Response time window during PIT
-    nogodelay_pit = 2;
-else
-    nogodelay_pit = 3;
-end
-pitdelay=.6;				 % time delay between background and instrumental onset during PIT
+nogodelay_pit = 3;       % Response time window during PIT
+pitdelay=.6;		     % time delay between background and instrumental onset during PIT
 pressth = 6;             % number of times need to press to get all the way to other stimulus
 th = 4;                  % threshold between go and nogo
 
@@ -47,23 +43,13 @@ sounddur_instr = 1.5;   % max duration of sound instrumental trials [in seconds]
 ITI_max=6; 	 				 % minimal ITI
 ITI_min=2;  	 			 % maximal ITI
 
-if strcmpi(exploc,'b') && scanning==1 && exppart==3
-    small_screen_berlin_scanning = 0;
-else
-    small_screen_berlin_scanning = 0;
-end
-
-
 %----------------------------------------------------------------------------
 %        MRI triggers
 %----------------------------------------------------------------------------
 
-if      strcmpi(exploc,'b'); MRITriggerCode	= '5%';
-elseif  strcmpi(exploc,'p'); MRITriggerCode	= '5%';
-end
+MRITriggerCode	= '5%';
 NumInitialfMRITriggers	= 4;
 NumFinalfMRITriggers	= 15;
-NumPostEyetrackerCalibraionfMRITriggers = 2;
 
 %----------------------------------------------------------------------------
 %        Text size - this should now automatically adjust with screen size

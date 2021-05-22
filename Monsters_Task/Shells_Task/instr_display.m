@@ -2,11 +2,6 @@ if length(func) < i
 	func{i}=[]; 
 end
 
-%if length(selectiontask) < i
-%	selectiontask{i}=[]; 
-%end
-
-
 Pages	= i;
 page	= 1;
 while 1 

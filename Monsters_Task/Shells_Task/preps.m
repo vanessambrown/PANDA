@@ -46,8 +46,6 @@ if scanning;
 		i = ITIPav > (ITI_max-ITI_min);
 	end
 	Z.ITIPav = ITIPav+ITI_min;
-%	ITIPit = Z.ITIPit; 
-%	ITIPav = Z.ITIPav; 
 	save PITITIs.mat Z ITIPit ITIPav;
 else
 	clear ITIPit
@@ -70,10 +68,6 @@ else
 %	ITIPit = Z.ITIPit; 
 %	ITIPav = Z.ITIPav; 
 	save PITITIs.mat Z ITIPit ITIPav;
-%else
-%	load PITITIs.mat ITI ITIPav
-%	[foo,i]=sort(rand(1,length(ITI)));    Z.ITI = ITI(i); 
-%	[foo,i]=sort(rand(1,length(ITIPav))); Z.ITIPav = ITIPav(i);
 end
 
 
