@@ -47,9 +47,9 @@ ITI_min=2;  	 			 % maximal ITI
 %        MRI triggers
 %----------------------------------------------------------------------------
 
-MRITriggerCode	= '5%';
-NumInitialfMRITriggers	= 4;
-NumFinalfMRITriggers	= 15;
+MRITriggerCode	= {'=+'};
+NumInitialfMRITriggers	= 3;
+NumFinalfMRITriggers	= 3;
 
 %----------------------------------------------------------------------------
 %        Text size - this should now automatically adjust with screen size
