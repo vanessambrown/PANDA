@@ -13,7 +13,7 @@ fprintf('............            MODIFYME.M\n'); fprintf('............ \n')
 %----------------------------------------------------------------------------
 %        Patient Information 
 %----------------------------------------------------------------------------
-subjn    = '2222';  % Subject ID. This number has to be > 1000 
+subjn    = '777777';  % Subject ID. This number has to be > 1000 
                     % *** subject number has to be in single quotes ***
 dominanthand     = 'left';     % 'right' or 'left' % for "left" this did not work
 
@@ -26,7 +26,7 @@ scanning = 1;  % 0 = entirely outside scanner %set scanning to 0/1
 
 %---------------------------------------------------------------------------
 
-debug   = 1;      % if this is set to 1, then a short version of the experiment is
+debug   = 0;      % if this is set to 1, then a short version of the experiment is
                   % run. For testing/debugging. 
 doinstr = 1;      % present instructions?
 
