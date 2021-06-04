@@ -58,7 +58,7 @@ else                         % .......... Input through devices or keyboard ....
 		DrawFormattedText(wd,text,'center','center',col,60);
 		Screen('Flip', wd);
 		WaitSecs(1);
-		error('Pressed abort key --- aborting experiment')
+		error('Pressed abort key --- aborting experiment');
 	else buttons = 0; 
 	end
 

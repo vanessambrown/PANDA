@@ -47,7 +47,7 @@ ITI_min=2;  	 			 % maximal ITI
 %        MRI triggers
 %----------------------------------------------------------------------------
 
-MRITriggerCode	= {'='};
+MRITriggerCode	= {'=+'};
 NumInitialfMRITriggers	= 3;
 NumFinalfMRITriggers	= 3;
 

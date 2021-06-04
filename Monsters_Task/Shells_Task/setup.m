@@ -58,7 +58,9 @@ elseif strcmpi(exploc,'p')
     %Screen('Preference','SkipSyncTests',2); %adding due to problem with dual graphics card & psychtoolbox -- fix before running in lab/scanner
     %wd=Screen('OpenWindow', screenNumber,bgcol(2),[],[],2,[],[],imagingmode);
     screens = Screen('Screens');
-    [wd, rect] = PsychImaging('OpenWindow',screenNumber, bgcol(2),[0 0 1024 768]);
+    %[wd, rect] = PsychImaging('OpenWindow',screenNumber, bgcol(2),[0 0 1024 768]);
+    [wd, rect] = PsychImaging('OpenWindow',screenNumber, bgcol(2));
+    %[wd, rect] = PsychImaging('OpenWindow',screenNumber, bgcol(2),[0 0 1240 768]);
     [~, ~] = Screen('WindowSize', wd); 
 elseif strcmpi(exploc,'b')
     Screen('Preference','SkipSyncTests',2);
