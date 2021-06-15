@@ -12,6 +12,7 @@
 Screen('DrawTexture',wd,bgshape(mpresp(npit)),[],bgr);
 if doaudio; PsychPortAudio('Start', soundhandle(mpresp(npit)),1,0,1);end
 T.pit_fillscreen(npit) = Screen('Flip',wd,[],1); % Pav background onset time
+if ~scanning; sendparport(sparport.parportcodes.p3csonset); end %parport code marking cs tile onset
 %stim_trig = UpdateStimulusTrigger(exploc, scanning, exppart, eyetrack, stim_trig, [pit_bg npit]);
 
 WaitSecs(pitdelay-(GetSecs-(T.pit_fillscreen(npit))));
@@ -42,7 +43,8 @@ Screen('gluDisk',wd,blue,dotpos(1),dotpos(2),dotsize);
 Screen('gluDisk',wd,0,dotpos(1),dotpos(2),dotsize/2);
 
 T.pit_onset(npit) = Screen('Flip',wd);	% stimulus onset time
-%stim_trig = UpdateStimulusTrigger(exploc, scanning, exppart, eyetrack, stim_trig, [pit_on npit]);
+if ~scanning; sendparport(sparport.parportcodes.p3stimonset); end; %parport code marking instrumental stimulus onset
+
 
 %.............. GET RESPONSE
 ch(npit)	= 0;
@@ -103,13 +105,13 @@ if ~strcmpi(respkey,'joystick')
 end
 
 T.pit_drawdot(npit) = Screen('Flip',wd);
-%stim_trig = UpdateStimulusTrigger(exploc, scanning, exppart, eyetrack, stim_trig, [pit_dot npit]);
+if ~scanning; sendparport(sparport.parportcodes.p3choice); end; %parport code marking choice confirmation
 
 % draw central fixation cross
 drawfixationcross(wd,2,fixationdotsize,0);
 WaitSecs(.4-(GetSecs-T.pit_drawdot(npit)));
 T.pit_ITIfixcross(npit) = Screen('Flip',wd);
-%stim_trig = UpdateStimulusTrigger(exploc, scanning, exppart, eyetrack, stim_trig, [pit_fix npit]);
+if ~scanning; sendparport(sparport.parportcodes.p3itionset); end; %parport code marking start of ITI
 
 %............ CORRECT?
 
@@ -183,6 +185,8 @@ if ~strcmpi(respkey,'joystick')
 end
 
 T.pit_actionchosen(npit) = Screen('Flip',wd);
+if ~scanning; sendparport(sparport.parportcodes.p3choice); end; %parport code marking choice confirmation
+
 
 %% but administer the punishment whether they were right or wrong
 
@@ -195,6 +199,7 @@ Screen('DrawTexture',wd,outcomei(2),[],[0 0 wdwt wdht_low]); %administer the pun
     Screen('Drawtext',wd,txt,xpos,ypos,red);
 
 T.pit_feedback(npit) = Screen('Flip',wd);
+if ~scanning; sendparport(sparport.parportcodes.p3feedback); end; %parport code to mark punishment on trials 2 and 4
 if doaudio_instr == 1; PsychPortAudio('Start', soundinstr(pitwav),1,0,1); end
 
 WaitSecs(1.1)
@@ -203,6 +208,7 @@ WaitSecs(1.1)
 drawfixationcross(wd,2,fixationdotsize,0);
 WaitSecs(.4-(GetSecs-T.pit_drawdot(npit)));
 T.pit_ITIfixcross(npit) = Screen('Flip',wd);
+if~scanning; sendparport(sparport.parportcodes.p3itionset); end; %parport code marking start of ITI
 
 end
 

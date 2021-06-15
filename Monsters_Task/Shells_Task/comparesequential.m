@@ -4,6 +4,7 @@ cit = cit + 1;
 % draw Pavlovian stimulus 1 
 Screen('DrawTexture',wd,shape(cppres(1,cit)),[],drm(1,:));
 Screen('Flip',wd);
+sendparport(sparport.parportcodes.p4stimAonset); % send parport code marking onset of Stim A
 if doaudio;PsychPortAudio('Start', soundhandle(cppres(1,cit)),1,0,1);end
 
 WaitSecs(1.0);
@@ -11,6 +12,7 @@ WaitSecs(1.0);
 % draw Pavlovian stimulus 2 
 Screen('DrawTexture',wd,shape(cppres(2,cit)),[],drm(3,:));
 Screen('Flip',wd);
+sendparport(sparport.parportcodes.p4stimBonset); % send parport code marking onset of Stim B
 if doaudio;PsychPortAudio('Start', soundhandle(cppres(2,cit)),1,0,1);end
 
 WaitSecs(1.0);
@@ -23,6 +25,7 @@ WaitSecs(0.4);
 Screen('DrawTexture',wd,shape(cppres(1,cit)),[],drm(1,:));
 Screen('DrawTexture',wd,shape(cppres(2,cit)),[],drm(3,:));
 T.comp_onset(cit) = Screen('Flip',wd);
+sendparport(sparport.parportcodes.p4dualonset); % send parport code marking onset of both stim together
 
 redraw = 0;
 if usekbqueue	           % KbQueue is more accurate for USB devices
@@ -76,6 +79,7 @@ while 1 %(GetSecs - T.comp_onset(cit))<Z.choicetime_query
 end
 
 Screen('Flip',wd);
+sendparport(sparport.parportcodes.p4choice); %parport code marking choice of favored CS
 
 WaitSecs(.5);
 

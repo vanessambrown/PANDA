@@ -28,6 +28,11 @@ scanning = 1;  % 0 = entirely outside scanner %set scanning to 0/1
 %       Are we collecting psychophys data with biopac?
 %---------------------------------------------------------------------------
 psychophys = 1; 
+locpath=fileparts(mfilename('fullpath')); %path of this script
+if psychophys
+    getParPortInfo; %obtain subject information and check for prior output
+end
+
 
 %---------------------------------------------------------------------------
 

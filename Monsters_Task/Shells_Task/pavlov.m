@@ -12,8 +12,9 @@ fprintf('Pavlovian training trial %i\r',np);
 Screen('DrawTexture',wd,shape(pavpres(np)),[],drm (  posp(np),:));
 drawfixationcross(wd,4-posp(np),fixationdotsize,1);
 T.pav_CS_onset(np) = Screen('Flip',wd);
-eyetrack = 0;
-stim_trig = UpdateStimulusTrigger(exploc, scanning, exppart, eyetrack, stim_trig, [pav_CS_on np]);
+sendparport(sparport.parportcodes.p2csonset); % parport code marking the fractal onset
+%eyetrack = 0;
+%stim_trig = UpdateStimulusTrigger(exploc, scanning, exppart, eyetrack, stim_trig, [pav_CS_on np]);
 
 if doaudio;PsychPortAudio('Start', soundhandle(pavpres(np)),1,0,1);end
 
@@ -56,6 +57,7 @@ if Z.Pavout(pavpres(np))~=0
 end
 
 T.pav_CSUS_onset(np) = Screen('Flip',wd);
+sendparport(sparport.parportcodes.p2usonset); % parport code marking the us onset
 
 WaitSecs(pavCSUSfixdelay-(GetSecs-T.pav_CSUS_onset(np)));
 
@@ -97,6 +99,7 @@ elseif Z.Pavout(pavpres(np))==0 % draw two fixation crosses (at CS and US positi
 end
 
 T.pav_US_onset(np) = Screen('Flip',wd);
+sendparport(sparport.parportcodes.p2usonly); % parport code marking the us only presenation (cs is removed)
 stim_trig = UpdateStimulusTrigger(exploc, scanning, exppart, eyetrack, stim_trig, [pav_US_on np]);
 
 WaitSecs(pavUSfixdelay-(GetSecs-T.pav_US_onset(np)));	 % fixed delay
@@ -105,6 +108,7 @@ WaitSecs(pavUSfixdelay-(GetSecs-T.pav_US_onset(np)));	 % fixed delay
 if doaudio;PsychPortAudio('Stop', soundhandle(pavpres(np)));end %soundhandle is 0, 1, 3
 
 T.pav_offset(np) = Screen('Flip',wd);
+sendparport(sparport.parportcodes.p2itionset); %parport code marking start of ITI
 stim_trig = UpdateStimulusTrigger(exploc, scanning, exppart, eyetrack, stim_trig, [pav_US_off np]);
 
 WaitSecs(pavITIfixdelay-(GetSecs-T.pav_offset(np)));
