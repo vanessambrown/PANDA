@@ -23,6 +23,11 @@ dominanthand     = 'left';     % 'right' or 'left' % for "left" this did not wor
 %----------------------------------------------------------------------------
 scanning = 1;  % 0 = entirely outside scanner %set scanning to 0/1
                % 1 = third part inside scanner 
+               
+%---------------------------------------------------------------------------
+%       Are we collecting psychophys data with biopac?
+%---------------------------------------------------------------------------
+psychophys = 1; 
 
 %---------------------------------------------------------------------------
 

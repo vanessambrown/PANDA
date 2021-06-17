@@ -56,6 +56,12 @@ end
     
     setdevicetype;  % set device type; this may change between parts
     setup;			% setup display, stimulus coordinates, load images etc.
+    
+    if psychophys
+        getPartPortInfo;
+        initialize_parport; %initialize the parallel port for psychophys
+        subject.parportaddress = 'D010'; %main computer in the eye-tracking room
+    end
 
     
     if exppart==1	   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -72,17 +78,21 @@ end
         
         %.............. instruction for Instrumental training ......................
         tic;
+        sparport.parportcodes.expstart = 1; %parport code marking start of experiment
         if doinstr; instrpitapproach; end
         T.instrpitapproach=toc;
         
         %.............. Instrumental training ......................................
         tic;
         dobreak = 0;
+        sparport.parportcodes.startp1 = 11; %send parport marking start of P1 trials
         for nt = 1:Z.Ntrain
             pittraining;
             if dobreak; break; end	% if criterion reached, end instrumental training
         end
+        sparport.parportcodes.endp1 = 12; %send parport marking end of P1 trials
         T.pittrainingapproach=toc;
+        
         
 
         
@@ -107,12 +117,13 @@ end
         
         %................ Pavlovian training .......................................
         tic;
+        sparport.parportcodes.startp2 = 21; %parport code marking start of P2 trials
         for np = 1:Z.Npav;	
             pavlov;				
-        end						
+        end			
+        sparport.parportcodes.endp2 = 22; %parport code marking end of P2 trials
         T.pavapproach=toc;
         
-        WaitSecs( 10 );
      
         %we are not scanning part 2
         % acquire some final volumes until end of HRF
@@ -156,9 +167,11 @@ end
         
         %................ PIT ......................................................
         tic;
+        sparport.parportcodes.startp3 = 31; %parport code marking start of P3 trials
         for npit = 1:Z.Npit
             pit;
         end
+        sparport.parportcodes.endp3 = 32; %parport code marking end of P3 trials
         T.pitapproach=toc;
         
         % acquire some final volumes until end of HRF
@@ -186,9 +199,11 @@ end
         fprintf('............. Pavlovian CS query trials \n')
         if doinstr; instrcompare; end
         tic;
+        sparport.parportcodes.startp4 = 41; %parport code marking start of P4 trials
         for npp = 1:Z.Nquerypav
             comparesequential;
         end
+        sparport.parportcodes.endp4 = 42; %parport code marking end of P4 trials
         T.querypav=toc;
 
         %.............. payment ....................................................
@@ -205,7 +220,10 @@ end
             fprintf('\n******************************\n')
             WaitSecs(7);
         end
+        
         displaytext({'The experiment is now over. Thank you.'},wd,wdw,wdh,txtcolor,0,1);
+        
+        subject.parportcodes.endexperiment = 2; %parpart code marking end of experiment
         
         T.exppart4 = GetSecs-T.tmp;
     end
