@@ -21,7 +21,7 @@ pstim = 'stimuli';
 pshel = {'shells';'monsters'};    % instrumental stimuli for the two sessions
 
 %pittsburgh fixed screen size
-wdwb = round(1366*visAngFrac);
+wdwb = round(1248*visAngFrac);
 wdhb = round(768*visAngFrac);
 
 %................... tiling backgrounds 
@@ -37,9 +37,9 @@ imagingmode=kPsychNeedFastBackingStore;
 
 
 % Due to the scanner display setting, we need to select the primary monitor as stimulus monitor.
-if     scanning==1 & strcmpi(exploc,'p') & exppart==3
+if     scanning==1 && strcmpi(exploc,'p') && exppart==3
 	screenNumber = 2;
-elseif scanning==1 & strcmpi(exploc,'b') &  exppart==3
+elseif scanning==1 && strcmpi(exploc,'b') &&  exppart==3
 	screenNumber = max(Screen('Screens'));
 else
 	screenNumber = max(Screen('Screens'));		% select the last monitor.
@@ -49,17 +49,13 @@ smallscreen=debug;
 if smallscreen
 	Screen('Preference','SkipSyncTests',2); % ONLY do this for quick debugging;
 	wd=Screen('OpenWindow', screenNumber,bgcol(2),[0 20 800 600],[],2,[],[],imagingmode); % make small PTB screen on my laptop screen
-elseif strcmpi(exploc,'p')
+elseif scanning == 0 && strcmpi(exploc,'p')
     %Screen('Preference','SkipSyncTests',2); %adding due to problem with dual graphics card & psychtoolbox -- fix before running in lab/scanner
-    wd=Screen('OpenWindow', screenNumber,bgcol(2),[3 0 1023 768],[],2,[],[],imagingmode);
-%    screens = Screen('Screens');
-%    [wd, rect] = PsychImaging('OpenWindow',screenNumber, bgcol(2),[0 0 1366 768]);
-%    [~, ~] = Screen('WindowSize', wd); 
-elseif strcmpi(exploc,'b')
-    Screen('Preference','SkipSyncTests',2);
-    wd=Screen('OpenWindow', screenNumber,bgcol(2),[],[],2,[],[],imagingmode);
-%     wd=Screen('OpenWindow', screenNumber,bgcol(2),[0 0 1440 900],[],2);			% Get Screen. This is always size of the display.
-    %showHideWinTaskbarMex(0)
+    wd=Screen('OpenWindow', screenNumber,bgcol(2),[],[],2,[],[],imagingmode); %automatically grab the resolution
+elseif scanning == 1 && strcmpi(exploc,'p')
+    screens = Screen('Screens');
+    [wd, rect] = PsychImaging('OpenWindow',screenNumber, bgcol(2),[0 0 1248 768]);
+    [~, ~] = Screen('WindowSize', wd);
 end
 
 KbName('UnifyKeyNames'); % need this for KbName to behave

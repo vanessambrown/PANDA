@@ -58,7 +58,7 @@ end
     setup;			% setup display, stimulus coordinates, load images etc.
     
     if psychophys
-        getPartPortInfo;
+        getParPortInfo;
         initialize_parport; %initialize the parallel port for psychophys
         subject.parportaddress = 'D010'; %main computer in the eye-tracking room
     end
