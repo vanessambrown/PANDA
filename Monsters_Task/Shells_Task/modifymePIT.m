@@ -13,7 +13,7 @@ fprintf('............            MODIFYME.M\n'); fprintf('............ \n')
 %----------------------------------------------------------------------------
 %        Patient Information 
 %----------------------------------------------------------------------------
-subjn    = '555555';  % Subject ID. This number has to be > 1000 
+subjn    = '1';  % Subject ID. This number has to be > 1000 
                     % *** subject number has to be in single quotes ***
 dominanthand     = 'left';     % 'right' or 'left' % for "left" this did not work
 

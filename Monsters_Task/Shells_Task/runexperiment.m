@@ -3,7 +3,7 @@
 %%%%%%%%%%%%%%%% Main script for PIT experiment %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 clear all;		% Tabula rasa
-aborted = 0;	% if this parameter is set to one, thqqings will abort.
+aborted = 0;	% if this parameter is set to one, things will abort.
 modifymePIT;	% set additional experimental parameters
 diary('data/debug_pitt.txt'); % establishes debugging diary
 scan = scanning; %pulls from modify me

@@ -20,13 +20,8 @@ abortkey = 'q';
 pstim = 'stimuli';
 pshel = {'shells';'monsters'};    % instrumental stimuli for the two sessions
 
-% berlin fixed screen size 
-wdwb = round(1024*visAngFrac);%700;%
-wdhb = round( 768*visAngFrac);%525;%
-%wdwb=600; wdhb=400;	% berlin fixed screen size 
-
 %pittsburgh fixed screen size
-wdwb = round(1024*visAngFrac);
+wdwb = round(1366*visAngFrac);
 wdhb = round(768*visAngFrac);
 
 %................... tiling backgrounds 
@@ -43,7 +38,7 @@ imagingmode=kPsychNeedFastBackingStore;
 
 % Due to the scanner display setting, we need to select the primary monitor as stimulus monitor.
 if     scanning==1 & strcmpi(exploc,'p') & exppart==3
-	screenNumber = max(Screen('Screens'));
+	screenNumber = 2;
 elseif scanning==1 & strcmpi(exploc,'b') &  exppart==3
 	screenNumber = max(Screen('Screens'));
 else
@@ -56,12 +51,10 @@ if smallscreen
 	wd=Screen('OpenWindow', screenNumber,bgcol(2),[0 20 800 600],[],2,[],[],imagingmode); % make small PTB screen on my laptop screen
 elseif strcmpi(exploc,'p')
     %Screen('Preference','SkipSyncTests',2); %adding due to problem with dual graphics card & psychtoolbox -- fix before running in lab/scanner
-    %wd=Screen('OpenWindow', screenNumber,bgcol(2),[],[],2,[],[],imagingmode);
-    screens = Screen('Screens');
-    %[wd, rect] = PsychImaging('OpenWindow',screenNumber, bgcol(2),[0 0 1024 768]);
-    [wd, rect] = PsychImaging('OpenWindow',screenNumber, bgcol(2));
-    %[wd, rect] = PsychImaging('OpenWindow',screenNumber, bgcol(2),[0 0 1240 768]);
-    [~, ~] = Screen('WindowSize', wd); 
+    wd=Screen('OpenWindow', screenNumber,bgcol(2),[3 0 1023 768],[],2,[],[],imagingmode);
+%    screens = Screen('Screens');
+%    [wd, rect] = PsychImaging('OpenWindow',screenNumber, bgcol(2),[0 0 1366 768]);
+%    [~, ~] = Screen('WindowSize', wd); 
 elseif strcmpi(exploc,'b')
     Screen('Preference','SkipSyncTests',2);
     wd=Screen('OpenWindow', screenNumber,bgcol(2),[],[],2,[],[],imagingmode);
