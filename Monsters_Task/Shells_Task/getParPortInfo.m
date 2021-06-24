@@ -1,3 +1,5 @@
+global sparport
+
 sparport = struct(); %start with empty sparport struct
 
 %parallel port codes for running SPOTT with BIOPAC psychophys

@@ -21,7 +21,7 @@ pstim = 'stimuli';
 pshel = {'shells';'monsters'};    % instrumental stimuli for the two sessions
 
 %pittsburgh fixed screen size
-wdwb = round(1248*visAngFrac);
+wdwb = round(1280*visAngFrac);
 wdhb = round(768*visAngFrac);
 
 %................... tiling backgrounds 
@@ -37,7 +37,7 @@ imagingmode=kPsychNeedFastBackingStore;
 
 
 % Due to the scanner display setting, we need to select the primary monitor as stimulus monitor.
-if     scanning==1 && strcmpi(exploc,'p') && exppart==3
+if  scanning==1 && strcmpi(exploc,'p') && exppart==3
 	screenNumber = 2;
 elseif scanning==1 && strcmpi(exploc,'b') &&  exppart==3
 	screenNumber = max(Screen('Screens'));
@@ -54,7 +54,7 @@ elseif scanning == 0 && strcmpi(exploc,'p')
     wd=Screen('OpenWindow', screenNumber,bgcol(2),[],[],2,[],[],imagingmode); %automatically grab the resolution
 elseif scanning == 1 && strcmpi(exploc,'p')
     screens = Screen('Screens');
-    [wd, rect] = PsychImaging('OpenWindow',screenNumber, bgcol(2),[0 0 1248 768]);
+    [wd, rect] = PsychImaging('OpenWindow',screenNumber, bgcol(2),[0 0 1280 768]);
     [~, ~] = Screen('WindowSize', wd);
 end
 

@@ -29,7 +29,8 @@ if ~strcmpi(respkey,'joystick')
 end
 
 T.pittraining_onset(nt)= Screen('Flip',wd);	% stimulus onset time
- 
+parport = io64();
+parportstatus = io64(parport); 
 %send parallel port code after flip to signal stimulus onset
 sendparport(sparport.parportcodes.p1stimonset);
 
@@ -144,7 +145,7 @@ Screen('gluDisk',wd,0,dotpos(1),dotpos(2),dotsize/2);
 
 T.pittraining_actionchosen(nt) = Screen('Flip',wd);
 %send parport code to flag action chosen
-sparport.parportcodes.p1actionchosen = 14;
+sendparport(sparport.parportcodes.p1actionchosen);
 
     if crt(nt)==crtfb(nt);
         r(nt) = 1;	 % store rewards in vector r
@@ -179,7 +180,7 @@ WaitSecs(1.1-(GetSecs-T.pittraining_actionchosen(nt)));
 T.pittraining_feedback(nt) = Screen('Flip',wd);
 
 % send parport code to mark feedback 
-sparport.parportcodes.p1feedback = 15;
+sendparport(sparport.parportcodes.p1feedback);
 
 if doaudio_instr == 1 && r(nt)<0; PsychPortAudio('Start', soundinstr(2),1,0,1); end
 

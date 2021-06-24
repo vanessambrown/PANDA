@@ -1,4 +1,6 @@
 %initialize parallel port
+global parport parportstatus
+
 try
     parport = io64();
     parportstatus = io64(parport);

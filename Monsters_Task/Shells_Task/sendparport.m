@@ -1,4 +1,4 @@
-function sendparport(code, address, durationsecs);
+function sendparport(code, address, durationsecs)
 global parport parportstatus sparport;
 
 if nargin < 2

@@ -901,3 +901,2006 @@ Data file name: PIT_1_1_210617_1819
 ............ PIT_1_1_210617_1819                                       
 ............ in the folder 'data'
 ............ Setting up the psychtoolbox screen   
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] no
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\runexperiment.m', 35)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\runexperiment.m',35,0)">line 35</a>)
+\n *** Ok, please check. *** \n
+} 
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? yes
+
+ *** ERROR *** Please enter 1, 2, 3 or 4:
+	 1 (part 1 is instrumental training, always outside scanner)
+	 2 (part 2 is Pavlovian training) and 
+	 3 (part 3 PIT, can be in scanner)
+	 (part 4 contains only the query trials outside the scanner)Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+
+Data file name: PIT_1_1_210618_1343
+............ Data will be saved as                              
+............ PIT_1_1_210618_1343                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab 64-Bit (Version 3.0.17 - Build date: Apr 13 2021).
+PTB-INFO: OS support status: Windows 10 (Version 10.0) supported and tested to some limited degree.
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: For information about paid priority support, community membership and commercial services, please type
+PTB-INFO: 'PsychPaidSupportAndServices'.
+
+PTB-INFO: Most graphics cards will not support proper syncing to vertical retrace when
+PTB-INFO: running in windowed mode (non-fullscreen). If PTB aborts with 'Synchronization failure'
+PTB-INFO: you can disable the sync test via call to Screen('Preference', 'SkipSyncTests', 2); .
+PTB-INFO: You won't get proper stimulus onset timestamps though, so windowed mode may be of limited use.
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAMSettings', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is Intel :: Intel(R) HD Graphics 4600 :: 4.3.0 - Build 20.19.15.5126
+PTB-INFO: VBL startline = 768 , VBL Endline = 768
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.665835 ms [60.002995 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.706410 ms [59.857264 Hz]. (50 valid samples taken, stddev=0.580743 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.666667 ms [60.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-WARNING: ==============================================================================================================================
+PTB-WARNING: WINDOWS DWM DESKTOP COMPOSITOR IS ACTIVE! ALL FLIP STIMULUS ONSET TIMESTAMPS WILL BE VERY LIKELY UNRELIABLE AND LESS ACCURATE!
+PTB-WARNING: STIMULUS ONSET TIMING WILL BE UNRELIABLE AS WELL, AND GRAPHICS PERFORMANCE MAY BE SEVERELY REDUCED! STIMULUS IMAGES MAY NOT
+PTB-WARNING: SHOW UP AT ALL! DO NOT USE THIS MODE FOR RUNNING REAL EXPERIMENT SESSIONS WITH ANY REQUIREMENTS FOR ACCURATE TIMING!
+PTB-WARNING: ==============================================================================================================================
+
+WARNING: Couldn't compute a reliable estimate of monitor refresh interval! Trouble with VBL syncing?!?
+
+
+----- ! PTB - ERROR: SYNCHRONIZATION FAILURE ! -----
+
+One or more internal checks (see Warnings above) indicate that synchronization
+of Psychtoolbox to the vertical retrace (VBL) is not working on your setup.
+
+This will seriously impair proper stimulus presentation and stimulus presentation timing!
+Please read 'help SyncTrouble' for information about how to solve or work-around the problem.
+You can force Psychtoolbox to continue, despite the severe problems, by adding the command
+Screen('Preference', 'SkipSyncTests', 1); at the top of your script, if you really know what you are doing.
+
+
+
+
+PTB-ERROR: Screen('Flip'); beamposition timestamping computed an *impossible stimulus onset value* of 1215061.748618 secs, which would indicate that
+PTB-ERROR: stimulus onset happened *before* it was actually requested! (Earliest theoretically possible 1215061.750053 secs).
+
+PTB-ERROR: Some more diagnostic values (only for experts): rawTimestamp = 1215061.753317, scanline = 215
+PTB-ERROR: Some more diagnostic values (only for experts): line_pre_swaprequest = 59, line_post_swaprequest = 140, time_post_swaprequest = 1215061.751755
+PTB-ERROR: Some more diagnostic values (only for experts): preflip_vblcount = 0, preflip_vbltimestamp = 1215061.748786
+PTB-ERROR: Some more diagnostic values (only for experts): postflip_vblcount = 0, postflip_vbltimestamp = -1.000000, vbltimestampquery_retrycount = 0
+
+PTB-ERROR: This error can be due to either of the following causes:
+PTB-ERROR: Very unlikely: Something is broken in your systems beamposition timestamping. I've disabled high precision
+PTB-ERROR: timestamping for now. Returned timestamps will be less robust and accurate.
+
+PTB-ERROR: The most likely cause would be that Synchronization of stimulus onset (buffer swap) to the
+PTB-ERROR: vertical blank interval VBL is not working properly, or swap completion signalling to PTB is broken.
+PTB-ERROR: Please run the script PerceptualVBLSyncTest to check this. With non-working sync to VBL, all stimulus timing
+PTB-ERROR: is futile. Also run OSXCompositorIdiocyTest on macOS. Also read 'help SyncTrouble' !
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is open
+............. Instrumental training
+............ Displaying instructions PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+
+
+PTB-INFO: There are still 33 textures, offscreen windows or proxy windows open. Screen('CloseAll') will auto-close them.
+PTB-INFO: This may be fine for studies where you only use a few textures or windows, but a large number of open
+PTB-INFO: textures or offscreen windows can be an indication that you forgot to dispose no longer needed items
+PTB-INFO: via a proper call to Screen('Close', [windowOrTextureIndex]); , e.g., at the end of each trial. These
+PTB-INFO: stale objects linger around and can consume significant memory ressources, causing degraded performance,
+PTB-INFO: timing trouble (if the system has to resort to disk paging) and ultimately out of memory conditions or
+PTB-INFO: crashes. Please check your code. (Screen('Close') is a quick way to release all textures and offscreen windows)
+
+
+
+INFO: PTB's Screen('Flip', 10) command seems to have missed the requested stimulus presentation deadline
+INFO: a total of 3 times out of a total of 22 flips during this session.
+
+INFO: This number is fairly accurate (and indicative of real timing problems in your own code or your system)
+INFO: if you provided requested stimulus onset times with the 'when' argument of Screen('Flip', window [, when]);
+INFO: If you called Screen('Flip', window); without the 'when' argument, this count is more of a ''mild'' indicator
+INFO: of timing behaviour than a hard reliable measurement. Large numbers may indicate problems and should at least
+INFO: deserve your closer attention. Cfe. 'help SyncTrouble', the FAQ section at www.psychtoolbox.org and the
+INFO: examples in the PDF presentation in PsychDocumentation/Psychtoolbox3-Slides.pdf for more info and timing tips.
+
+Error in function TextSize: 	Invalid Window (or Texture) Index provided: It doesn't correspond to an open window or texture.
+Did you close it accidentally via Screen('Close') or Screen('CloseAll') ?
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Screen')" style="font-weight:bold">Screen</a>
+Usage:
+
+oldTextSize=Screen('TextSize', windowPtr [,textSize]);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('DrawFormattedText', 'C:\toolbox\Psychtoolbox\PsychBasic\DrawFormattedText.m', 289)" style="font-weight:bold">DrawFormattedText</a> (<a href="matlab: opentoline('C:\toolbox\Psychtoolbox\PsychBasic\DrawFormattedText.m',289,0)">line 289</a>)
+theight = Screen('TextSize', win) * vSpacing;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('withdrawgoactive', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\instr_funcs\withdrawgoactive.m', 29)" style="font-weight:bold">withdrawgoactive</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\instr_funcs\withdrawgoactive.m',29,0)">line 29</a>)
+		DrawFormattedText(wd,tx{page},'center',ypos{page},txtcolor,60,[],[],2);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('instr_display', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\instr_display.m', 10)" style="font-weight:bold">instr_display</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\instr_display.m',10,0)">line 10</a>)
+		eval(func{page}); % must contain 'getleftrightarrow' command
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('instrpitapproach', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\instrpitapproach.m', 172)" style="font-weight:bold">instrpitapproach</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\instrpitapproach.m',172,0)">line 172</a>)
+instr_display;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\runexperiment.m', 82)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\runexperiment.m',82,0)">line 82</a>)
+        if doinstr; instrpitapproach; end
+} 
+runexperiment
+inpoutx64 driver uninstalled.
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_1_1_210618_1346
+............ Data will be saved as                              
+............ PIT_1_1_210618_1346                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab 64-Bit (Version 3.0.17 - Build date: Apr 13 2021).
+PTB-INFO: OS support status: Windows 10 (Version 10.0) supported and tested to some limited degree.
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: For information about paid priority support, community membership and commercial services, please type
+PTB-INFO: 'PsychPaidSupportAndServices'.
+
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAMSettings', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is Intel :: Intel(R) HD Graphics 4600 :: 4.3.0 - Build 20.19.15.5126
+PTB-INFO: VBL startline = 768 , VBL Endline = 768
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.665845 ms [60.002959 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.674058 ms [59.973403 Hz]. (50 valid samples taken, stddev=0.175591 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.666667 ms [60.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: ==============================================================================================================================
+PTB-INFO: WINDOWS DWM DESKTOP COMPOSITOR IS ACTIVE. On this Windows-10 or later system, Psychtoolbox can no longer reliably detect if
+PTB-INFO: this will cause trouble for timing and integrity of visual stimuli or not. You might be just fine, or you could be in trouble.
+PTB-INFO: Use external measurement equipment and independent procedures to verify reliability of timing if you care about proper timing.
+PTB-INFO: ==============================================================================================================================
+PTB-INFO: Psychtoolbox imaging pipeline starting up for window with requested imagingmode 1025 ...
+PTB-INFO: Will use 8 bits per color component framebuffer for stimulus drawing.
+PTB-INFO: Will use 8 bits per color component framebuffer for stimulus post-processing (if any).
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is open
+............. Instrumental training
+............ Displaying instructions .........done
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sendparport', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m', 8)" style="font-weight:bold">sendparport</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m',8,0)">line 8</a>)
+Parallel port address not passed to sendparport
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('pittraining', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\pittraining.m', 34)" style="font-weight:bold">pittraining</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\pittraining.m',34,0)">line 34</a>)
+sendparport(sparport.parportcodes.p1stimonset);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\runexperiment.m', 90)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\runexperiment.m',90,0)">line 90</a>)
+            pittraining;
+} 
+PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+
+
+PTB-INFO: There are still 33 textures, offscreen windows or proxy windows open. Screen('CloseAll') will auto-close them.
+PTB-INFO: This may be fine for studies where you only use a few textures or windows, but a large number of open
+PTB-INFO: textures or offscreen windows can be an indication that you forgot to dispose no longer needed items
+PTB-INFO: via a proper call to Screen('Close', [windowOrTextureIndex]); , e.g., at the end of each trial. These
+PTB-INFO: stale objects linger around and can consume significant memory ressources, causing degraded performance,
+PTB-INFO: timing trouble (if the system has to resort to disk paging) and ultimately out of memory conditions or
+PTB-INFO: crashes. Please check your code. (Screen('Close') is a quick way to release all textures and offscreen windows)
+
+
+
+INFO: PTB's Screen('Flip', 10) command seems to have missed the requested stimulus presentation deadline
+INFO: a total of 18 times out of a total of 101 flips during this session.
+
+INFO: This number is fairly accurate (and indicative of real timing problems in your own code or your system)
+INFO: if you provided requested stimulus onset times with the 'when' argument of Screen('Flip', window [, when]);
+INFO: If you called Screen('Flip', window); without the 'when' argument, this count is more of a ''mild'' indicator
+INFO: of timing behaviour than a hard reliable measurement. Large numbers may indicate problems and should at least
+INFO: deserve your closer attention. Cfe. 'help SyncTrouble', the FAQ section at www.psychtoolbox.org and the
+INFO: examples in the PDF presentation in PsychDocumentation/Psychtoolbox3-Slides.pdf for more info and timing tips.
+
+opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m',8,0)
+runexperiment
+inpoutx64 driver uninstalled.
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? yes1
+
+ *** ERROR *** Please enter 1, 2, 3 or 4:
+	 1 (part 1 is instrumental training, always outside scanner)
+	 2 (part 2 is Pavlovian training) and 
+	 3 (part 3 PIT, can be in scanner)
+	 (part 4 contains only the query trials outside the scanner)Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? yes
+
+ *** ERROR *** Please enter 1, 2, 3 or 4:
+	 1 (part 1 is instrumental training, always outside scanner)
+	 2 (part 2 is Pavlovian training) and 
+	 3 (part 3 PIT, can be in scanner)
+	 (part 4 contains only the query trials outside the scanner)Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_1_1_210618_1351
+............ Data will be saved as                              
+............ PIT_1_1_210618_1351                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab 64-Bit (Version 3.0.17 - Build date: Apr 13 2021).
+PTB-INFO: OS support status: Windows 10 (Version 10.0) supported and tested to some limited degree.
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: For information about paid priority support, community membership and commercial services, please type
+PTB-INFO: 'PsychPaidSupportAndServices'.
+
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAMSettings', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is Intel :: Intel(R) HD Graphics 4600 :: 4.3.0 - Build 20.19.15.5126
+PTB-INFO: VBL startline = 768 , VBL Endline = 768
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.666045 ms [60.002238 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.673754 ms [59.974496 Hz]. (50 valid samples taken, stddev=0.089384 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.666667 ms [60.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: ==============================================================================================================================
+PTB-INFO: WINDOWS DWM DESKTOP COMPOSITOR IS ACTIVE. On this Windows-10 or later system, Psychtoolbox can no longer reliably detect if
+PTB-INFO: this will cause trouble for timing and integrity of visual stimuli or not. You might be just fine, or you could be in trouble.
+PTB-INFO: Use external measurement equipment and independent procedures to verify reliability of timing if you care about proper timing.
+PTB-INFO: ==============================================================================================================================
+PTB-INFO: Psychtoolbox imaging pipeline starting up for window with requested imagingmode 1025 ...
+PTB-INFO: Will use 8 bits per color component framebuffer for stimulus drawing.
+PTB-INFO: Will use 8 bits per color component framebuffer for stimulus post-processing (if any).
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is open
+............. Instrumental training
+{Dot indexing is not supported for variables of this type.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sendparport', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m', 6)" style="font-weight:bold">sendparport</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m',6,0)">line 6</a>)
+        address = sparport.parportaddress;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('pittraining', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\pittraining.m', 34)" style="font-weight:bold">pittraining</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\pittraining.m',34,0)">line 34</a>)
+sendparport(sparport.parportcodes.p1stimonset);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\runexperiment.m', 90)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\runexperiment.m',90,0)">line 90</a>)
+            pittraining;
+} 
+PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+
+
+PTB-INFO: There are still 33 textures, offscreen windows or proxy windows open. Screen('CloseAll') will auto-close them.
+PTB-INFO: This may be fine for studies where you only use a few textures or windows, but a large number of open
+PTB-INFO: textures or offscreen windows can be an indication that you forgot to dispose no longer needed items
+PTB-INFO: via a proper call to Screen('Close', [windowOrTextureIndex]); , e.g., at the end of each trial. These
+PTB-INFO: stale objects linger around and can consume significant memory ressources, causing degraded performance,
+PTB-INFO: timing trouble (if the system has to resort to disk paging) and ultimately out of memory conditions or
+PTB-INFO: crashes. Please check your code. (Screen('Close') is a quick way to release all textures and offscreen windows)
+
+
+
+INFO: PTB's Screen('Flip', 10) command seems to have missed the requested stimulus presentation deadline
+INFO: a total of 4 times out of a total of 6 flips during this session.
+
+INFO: This number is fairly accurate (and indicative of real timing problems in your own code or your system)
+INFO: if you provided requested stimulus onset times with the 'when' argument of Screen('Flip', window [, when]);
+INFO: If you called Screen('Flip', window); without the 'when' argument, this count is more of a ''mild'' indicator
+INFO: of timing behaviour than a hard reliable measurement. Large numbers may indicate problems and should at least
+INFO: deserve your closer attention. Cfe. 'help SyncTrouble', the FAQ section at www.psychtoolbox.org and the
+INFO: examples in the PDF presentation in PsychDocumentation/Psychtoolbox3-Slides.pdf for more info and timing tips.
+
+opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m',6,0)
+clear all
+inpoutx64 driver uninstalled.
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_1_1_210618_1357
+............ Data will be saved as                              
+............ PIT_1_1_210618_1357                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab 64-Bit (Version 3.0.17 - Build date: Apr 13 2021).
+PTB-INFO: OS support status: Windows 10 (Version 10.0) supported and tested to some limited degree.
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: For information about paid priority support, community membership and commercial services, please type
+PTB-INFO: 'PsychPaidSupportAndServices'.
+
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAMSettings', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is Intel :: Intel(R) HD Graphics 4600 :: 4.3.0 - Build 20.19.15.5126
+PTB-INFO: VBL startline = 768 , VBL Endline = 768
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.665980 ms [60.002474 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.672552 ms [59.978820 Hz]. (50 valid samples taken, stddev=0.084614 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.666667 ms [60.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: ==============================================================================================================================
+PTB-INFO: WINDOWS DWM DESKTOP COMPOSITOR IS ACTIVE. On this Windows-10 or later system, Psychtoolbox can no longer reliably detect if
+PTB-INFO: this will cause trouble for timing and integrity of visual stimuli or not. You might be just fine, or you could be in trouble.
+PTB-INFO: Use external measurement equipment and independent procedures to verify reliability of timing if you care about proper timing.
+PTB-INFO: ==============================================================================================================================
+PTB-INFO: Psychtoolbox imaging pipeline starting up for window with requested imagingmode 1025 ...
+PTB-INFO: Will use 8 bits per color component framebuffer for stimulus drawing.
+PTB-INFO: Will use 8 bits per color component framebuffer for stimulus post-processing (if any).
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is open
+............. Instrumental training
+{Dot indexing is not supported for variables of this type.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sendparport', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m', 6)" style="font-weight:bold">sendparport</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m',6,0)">line 6</a>)
+        address = sparport.parportaddress;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('pittraining', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\pittraining.m', 34)" style="font-weight:bold">pittraining</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\pittraining.m',34,0)">line 34</a>)
+sendparport(sparport.parportcodes.p1stimonset);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\runexperiment.m', 90)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\runexperiment.m',90,0)">line 90</a>)
+            pittraining;
+} 
+PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+
+
+PTB-INFO: There are still 33 textures, offscreen windows or proxy windows open. Screen('CloseAll') will auto-close them.
+PTB-INFO: This may be fine for studies where you only use a few textures or windows, but a large number of open
+PTB-INFO: textures or offscreen windows can be an indication that you forgot to dispose no longer needed items
+PTB-INFO: via a proper call to Screen('Close', [windowOrTextureIndex]); , e.g., at the end of each trial. These
+PTB-INFO: stale objects linger around and can consume significant memory ressources, causing degraded performance,
+PTB-INFO: timing trouble (if the system has to resort to disk paging) and ultimately out of memory conditions or
+PTB-INFO: crashes. Please check your code. (Screen('Close') is a quick way to release all textures and offscreen windows)
+
+
+
+INFO: PTB's Screen('Flip', 10) command seems to have missed the requested stimulus presentation deadline
+INFO: a total of 2 times out of a total of 6 flips during this session.
+
+INFO: This number is fairly accurate (and indicative of real timing problems in your own code or your system)
+INFO: if you provided requested stimulus onset times with the 'when' argument of Screen('Flip', window [, when]);
+INFO: If you called Screen('Flip', window); without the 'when' argument, this count is more of a ''mild'' indicator
+INFO: of timing behaviour than a hard reliable measurement. Large numbers may indicate problems and should at least
+INFO: deserve your closer attention. Cfe. 'help SyncTrouble', the FAQ section at www.psychtoolbox.org and the
+INFO: examples in the PDF presentation in PsychDocumentation/Psychtoolbox3-Slides.pdf for more info and timing tips.
+
+sparport
+
+sparport = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+    parportduration: 0.0020
+       parportcodes: [1×1 struct]
+     parportaddress: 'D010'
+
+sparport.parportaddress
+
+ans =
+
+    'D010'
+
+opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m',6,0)
+opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\pittraining.m',34,0)
+runexperiment
+inpoutx64 driver uninstalled.
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_1_1_210618_1400
+............ Data will be saved as                              
+............ PIT_1_1_210618_1400                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab 64-Bit (Version 3.0.17 - Build date: Apr 13 2021).
+PTB-INFO: OS support status: Windows 10 (Version 10.0) supported and tested to some limited degree.
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: For information about paid priority support, community membership and commercial services, please type
+PTB-INFO: 'PsychPaidSupportAndServices'.
+
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAMSettings', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is Intel :: Intel(R) HD Graphics 4600 :: 4.3.0 - Build 20.19.15.5126
+PTB-INFO: VBL startline = 768 , VBL Endline = 768
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.665839 ms [60.002981 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.666156 ms [60.001838 Hz]. (50 valid samples taken, stddev=0.079324 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.666667 ms [60.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: ==============================================================================================================================
+PTB-INFO: WINDOWS DWM DESKTOP COMPOSITOR IS ACTIVE. On this Windows-10 or later system, Psychtoolbox can no longer reliably detect if
+PTB-INFO: this will cause trouble for timing and integrity of visual stimuli or not. You might be just fine, or you could be in trouble.
+PTB-INFO: Use external measurement equipment and independent procedures to verify reliability of timing if you care about proper timing.
+PTB-INFO: ==============================================================================================================================
+PTB-INFO: Psychtoolbox imaging pipeline starting up for window with requested imagingmode 1025 ...
+PTB-INFO: Will use 8 bits per color component framebuffer for stimulus drawing.
+PTB-INFO: Will use 8 bits per color component framebuffer for stimulus post-processing (if any).
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is open
+............. Instrumental training
+<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\pittraining.m',34,1)">34  </a>sendparport(sparport.parportcodes.p1stimonset);
+PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+
+
+PTB-INFO: There are still 33 textures, offscreen windows or proxy windows open. Screen('CloseAll') will auto-close them.
+PTB-INFO: This may be fine for studies where you only use a few textures or windows, but a large number of open
+PTB-INFO: textures or offscreen windows can be an indication that you forgot to dispose no longer needed items
+PTB-INFO: via a proper call to Screen('Close', [windowOrTextureIndex]); , e.g., at the end of each trial. These
+PTB-INFO: stale objects linger around and can consume significant memory ressources, causing degraded performance,
+PTB-INFO: timing trouble (if the system has to resort to disk paging) and ultimately out of memory conditions or
+PTB-INFO: crashes. Please check your code. (Screen('Close') is a quick way to release all textures and offscreen windows)
+
+
+
+INFO: PTB's Screen('Flip', 10) command seems to have missed the requested stimulus presentation deadline
+INFO: a total of 2 times out of a total of 6 flips during this session.
+
+INFO: This number is fairly accurate (and indicative of real timing problems in your own code or your system)
+INFO: if you provided requested stimulus onset times with the 'when' argument of Screen('Flip', window [, when]);
+INFO: If you called Screen('Flip', window); without the 'when' argument, this count is more of a ''mild'' indicator
+INFO: of timing behaviour than a hard reliable measurement. Large numbers may indicate problems and should at least
+INFO: deserve your closer attention. Cfe. 'help SyncTrouble', the FAQ section at www.psychtoolbox.org and the
+INFO: examples in the PDF presentation in PsychDocumentation/Psychtoolbox3-Slides.pdf for more info and timing tips.
+
+sparport
+
+sparport = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+    parportduration: 0.0020
+       parportcodes: [1×1 struct]
+     parportaddress: 'D010'
+
+sparport.parportcodes
+
+ans = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+          expstart: 1
+            expend: 2
+           startp1: 11
+             endp1: 12
+           startp2: 21
+             endp2: 22
+           startp3: 31
+             endp3: 32
+           startp4: 41
+             endp4: 42
+       p1stimonset: 13
+    p1actionchosen: 14
+        p1feedback: 15
+       p2stimonset: 23
+         p2usonset: 24
+          p2usonly: 25
+        p2itionset: 26
+         p3csonset: 33
+       p3stimonset: 34
+          p3choice: 35
+        p3feedback: 36
+        p3itionset: 37
+      p4stimAonset: 43
+      p4stimBonset: 44
+       p4dualonset: 45
+          p4choice: 46
+
+sendparport(sparport.parportcodes.p1stimonset)
+{Dot indexing is not supported for variables of this type.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sendparport', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m', 6)" style="font-weight:bold">sendparport</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m',6,0)">line 6</a>)
+        address = sparport.parportaddress;
+} 
+plstimonset = sparport.parportcodes.plstimonset;
+{Unrecognized field name "plstimonset".
+} 
+plstimonset = sparport.parportcodes.p1stimonset;
+p1stimonset = sparport.parportcodes.plstimonset;
+{Unrecognized field name "plstimonset".
+} 
+p1stimonset = sparport.parportcodes.p1stimonset;
+sendparport(p1stimonset);
+{Dot indexing is not supported for variables of this type.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sendparport', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m', 6)" style="font-weight:bold">sendparport</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m',6,0)">line 6</a>)
+        address = sparport.parportaddress;
+} 
+opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m',6,0)
+sparport
+
+sparport = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+    parportduration: 0.0020
+       parportcodes: [1×1 struct]
+     parportaddress: 'D010'
+
+sendparport(p1stimonset,sparport.parportaddress);
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('io64')" style="font-weight:bold">io64</a>
+Parameter is not an ObjectHandle type.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sendparport', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m', 26)" style="font-weight:bold">sendparport</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m',26,0)">line 26</a>)
+io64(parport, address, code); %send code
+} 
+which sendparport
+C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m
+sendparport(sparport.parportcodes.p1stimonset,sparport.parportaddress);
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('io64')" style="font-weight:bold">io64</a>
+Parameter is not an ObjectHandle type.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sendparport', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m', 26)" style="font-weight:bold">sendparport</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m',26,0)">line 26</a>)
+io64(parport, address, code); %send code
+} 
+opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m',26,0)
+sendparport(sparport.parportcodes.p1stimonset,sparport.parportaddress);
+<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m',26,1)">26  </a>io64(parport, address, code); %send code
+address
+
+address =
+
+       53264
+
+code
+
+code =
+
+    13
+
+parport
+
+parport =
+
+     []
+
+if system_dependent('IsDebugMode')==1, dbquit all; end
+runexperiment
+inpoutx64 driver uninstalled.
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_1_1_210618_1409
+............ Data will be saved as                              
+............ PIT_1_1_210618_1409                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab 64-Bit (Version 3.0.17 - Build date: Apr 13 2021).
+PTB-INFO: OS support status: Windows 10 (Version 10.0) supported and tested to some limited degree.
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: For information about paid priority support, community membership and commercial services, please type
+PTB-INFO: 'PsychPaidSupportAndServices'.
+
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAMSettings', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is Intel :: Intel(R) HD Graphics 4600 :: 4.3.0 - Build 20.19.15.5126
+PTB-INFO: VBL startline = 768 , VBL Endline = 768
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.665953 ms [60.002569 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.667124 ms [59.998354 Hz]. (50 valid samples taken, stddev=0.066750 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.666667 ms [60.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: ==============================================================================================================================
+PTB-INFO: WINDOWS DWM DESKTOP COMPOSITOR IS ACTIVE. On this Windows-10 or later system, Psychtoolbox can no longer reliably detect if
+PTB-INFO: this will cause trouble for timing and integrity of visual stimuli or not. You might be just fine, or you could be in trouble.
+PTB-INFO: Use external measurement equipment and independent procedures to verify reliability of timing if you care about proper timing.
+PTB-INFO: ==============================================================================================================================
+PTB-INFO: Psychtoolbox imaging pipeline starting up for window with requested imagingmode 1025 ...
+PTB-INFO: Will use 8 bits per color component framebuffer for stimulus drawing.
+PTB-INFO: Will use 8 bits per color component framebuffer for stimulus post-processing (if any).
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is open
+............. Instrumental training
+<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\pittraining.m',34,1)">34  </a>sendparport(sparport.parportcodes.p1stimonset);
+PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+
+
+PTB-INFO: There are still 33 textures, offscreen windows or proxy windows open. Screen('CloseAll') will auto-close them.
+PTB-INFO: This may be fine for studies where you only use a few textures or windows, but a large number of open
+PTB-INFO: textures or offscreen windows can be an indication that you forgot to dispose no longer needed items
+PTB-INFO: via a proper call to Screen('Close', [windowOrTextureIndex]); , e.g., at the end of each trial. These
+PTB-INFO: stale objects linger around and can consume significant memory ressources, causing degraded performance,
+PTB-INFO: timing trouble (if the system has to resort to disk paging) and ultimately out of memory conditions or
+PTB-INFO: crashes. Please check your code. (Screen('Close') is a quick way to release all textures and offscreen windows)
+
+
+
+INFO: PTB's Screen('Flip', 10) command seems to have missed the requested stimulus presentation deadline
+INFO: a total of 3 times out of a total of 6 flips during this session.
+
+INFO: This number is fairly accurate (and indicative of real timing problems in your own code or your system)
+INFO: if you provided requested stimulus onset times with the 'when' argument of Screen('Flip', window [, when]);
+INFO: If you called Screen('Flip', window); without the 'when' argument, this count is more of a ''mild'' indicator
+INFO: of timing behaviour than a hard reliable measurement. Large numbers may indicate problems and should at least
+INFO: deserve your closer attention. Cfe. 'help SyncTrouble', the FAQ section at www.psychtoolbox.org and the
+INFO: examples in the PDF presentation in PsychDocumentation/Psychtoolbox3-Slides.pdf for more info and timing tips.
+
+sendparport(sparport.parportcodes.p1stimonset,sparport.parportaddress);
+<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m',26,1)">26  </a>io64(parport, address, code); %send code
+which io64
+C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\io64.mexw64
+if system_dependent('IsDebugMode')==1, dbquit; end
+if system_dependent('IsDebugMode')==1, dbquit; end
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_1_1_210618_1412
+............ Data will be saved as                              
+............ PIT_1_1_210618_1412                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab 64-Bit (Version 3.0.17 - Build date: Apr 13 2021).
+PTB-INFO: OS support status: Windows 10 (Version 10.0) supported and tested to some limited degree.
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: For information about paid priority support, community membership and commercial services, please type
+PTB-INFO: 'PsychPaidSupportAndServices'.
+
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAMSettings', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is Intel :: Intel(R) HD Graphics 4600 :: 4.3.0 - Build 20.19.15.5126
+PTB-INFO: VBL startline = 768 , VBL Endline = 768
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.665918 ms [60.002694 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.669856 ms [59.988521 Hz]. (50 valid samples taken, stddev=0.058856 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.666667 ms [60.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: ==============================================================================================================================
+PTB-INFO: WINDOWS DWM DESKTOP COMPOSITOR IS ACTIVE. On this Windows-10 or later system, Psychtoolbox can no longer reliably detect if
+PTB-INFO: this will cause trouble for timing and integrity of visual stimuli or not. You might be just fine, or you could be in trouble.
+PTB-INFO: Use external measurement equipment and independent procedures to verify reliability of timing if you care about proper timing.
+PTB-INFO: ==============================================================================================================================
+PTB-INFO: Psychtoolbox imaging pipeline starting up for window with requested imagingmode 1025 ...
+PTB-INFO: Will use 8 bits per color component framebuffer for stimulus drawing.
+PTB-INFO: Will use 8 bits per color component framebuffer for stimulus post-processing (if any).
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is open
+............. Instrumental training
+{Dot indexing is not supported for variables of this type.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sendparport', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m', 6)" style="font-weight:bold">sendparport</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m',6,0)">line 6</a>)
+        address = sparport.parportaddress;
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('pittraining', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\pittraining.m', 34)" style="font-weight:bold">pittraining</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\pittraining.m',34,0)">line 34</a>)
+sendparport(sparport.parportcodes.p1stimonset);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\runexperiment.m', 90)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\runexperiment.m',90,0)">line 90</a>)
+            pittraining;
+} 
+PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+
+
+PTB-INFO: There are still 33 textures, offscreen windows or proxy windows open. Screen('CloseAll') will auto-close them.
+PTB-INFO: This may be fine for studies where you only use a few textures or windows, but a large number of open
+PTB-INFO: textures or offscreen windows can be an indication that you forgot to dispose no longer needed items
+PTB-INFO: via a proper call to Screen('Close', [windowOrTextureIndex]); , e.g., at the end of each trial. These
+PTB-INFO: stale objects linger around and can consume significant memory ressources, causing degraded performance,
+PTB-INFO: timing trouble (if the system has to resort to disk paging) and ultimately out of memory conditions or
+PTB-INFO: crashes. Please check your code. (Screen('Close') is a quick way to release all textures and offscreen windows)
+
+
+
+INFO: PTB's Screen('Flip', 10) command seems to have missed the requested stimulus presentation deadline
+INFO: a total of 3 times out of a total of 6 flips during this session.
+
+INFO: This number is fairly accurate (and indicative of real timing problems in your own code or your system)
+INFO: if you provided requested stimulus onset times with the 'when' argument of Screen('Flip', window [, when]);
+INFO: If you called Screen('Flip', window); without the 'when' argument, this count is more of a ''mild'' indicator
+INFO: of timing behaviour than a hard reliable measurement. Large numbers may indicate problems and should at least
+INFO: deserve your closer attention. Cfe. 'help SyncTrouble', the FAQ section at www.psychtoolbox.org and the
+INFO: examples in the PDF presentation in PsychDocumentation/Psychtoolbox3-Slides.pdf for more info and timing tips.
+
+opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\pittraining.m',34,0)
+runexperiment
+inpoutx64 driver uninstalled.
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_1_1_210618_1413
+............ Data will be saved as                              
+............ PIT_1_1_210618_1413                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab 64-Bit (Version 3.0.17 - Build date: Apr 13 2021).
+PTB-INFO: OS support status: Windows 10 (Version 10.0) supported and tested to some limited degree.
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: For information about paid priority support, community membership and commercial services, please type
+PTB-INFO: 'PsychPaidSupportAndServices'.
+
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAMSettings', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is Intel :: Intel(R) HD Graphics 4600 :: 4.3.0 - Build 20.19.15.5126
+PTB-INFO: VBL startline = 768 , VBL Endline = 768
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.665755 ms [60.003282 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.668098 ms [59.994848 Hz]. (50 valid samples taken, stddev=0.041403 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.666667 ms [60.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: ==============================================================================================================================
+PTB-INFO: WINDOWS DWM DESKTOP COMPOSITOR IS ACTIVE. On this Windows-10 or later system, Psychtoolbox can no longer reliably detect if
+PTB-INFO: this will cause trouble for timing and integrity of visual stimuli or not. You might be just fine, or you could be in trouble.
+PTB-INFO: Use external measurement equipment and independent procedures to verify reliability of timing if you care about proper timing.
+PTB-INFO: ==============================================================================================================================
+PTB-INFO: Psychtoolbox imaging pipeline starting up for window with requested imagingmode 1025 ...
+PTB-INFO: Will use 8 bits per color component framebuffer for stimulus drawing.
+PTB-INFO: Will use 8 bits per color component framebuffer for stimulus post-processing (if any).
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is open
+............. Instrumental training
+<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\pittraining.m',34,1)">34  </a>sendparport(sparport.parportcodes.p1stimonset);
+PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+
+
+PTB-INFO: There are still 33 textures, offscreen windows or proxy windows open. Screen('CloseAll') will auto-close them.
+PTB-INFO: This may be fine for studies where you only use a few textures or windows, but a large number of open
+PTB-INFO: textures or offscreen windows can be an indication that you forgot to dispose no longer needed items
+PTB-INFO: via a proper call to Screen('Close', [windowOrTextureIndex]); , e.g., at the end of each trial. These
+PTB-INFO: stale objects linger around and can consume significant memory ressources, causing degraded performance,
+PTB-INFO: timing trouble (if the system has to resort to disk paging) and ultimately out of memory conditions or
+PTB-INFO: crashes. Please check your code. (Screen('Close') is a quick way to release all textures and offscreen windows)
+
+
+
+INFO: PTB's Screen('Flip', 10) command seems to have missed the requested stimulus presentation deadline
+INFO: a total of 2 times out of a total of 6 flips during this session.
+
+INFO: This number is fairly accurate (and indicative of real timing problems in your own code or your system)
+INFO: if you provided requested stimulus onset times with the 'when' argument of Screen('Flip', window [, when]);
+INFO: If you called Screen('Flip', window); without the 'when' argument, this count is more of a ''mild'' indicator
+INFO: of timing behaviour than a hard reliable measurement. Large numbers may indicate problems and should at least
+INFO: deserve your closer attention. Cfe. 'help SyncTrouble', the FAQ section at www.psychtoolbox.org and the
+INFO: examples in the PDF presentation in PsychDocumentation/Psychtoolbox3-Slides.pdf for more info and timing tips.
+
+sendparport(sparport.parportcodes.p1stimonset,sparport.parportaddress);
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('io64')" style="font-weight:bold">io64</a>
+Parameter is not an ObjectHandle type.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sendparport', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m', 26)" style="font-weight:bold">sendparport</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m',26,0)">line 26</a>)
+io64(parport, address, code); %send code
+} 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_1_1_210618_1417
+............ Data will be saved as                              
+............ PIT_1_1_210618_1417                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab 64-Bit (Version 3.0.17 - Build date: Apr 13 2021).
+PTB-INFO: OS support status: Windows 10 (Version 10.0) supported and tested to some limited degree.
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: For information about paid priority support, community membership and commercial services, please type
+PTB-INFO: 'PsychPaidSupportAndServices'.
+
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAMSettings', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is Intel :: Intel(R) HD Graphics 4600 :: 4.3.0 - Build 20.19.15.5126
+PTB-INFO: VBL startline = 768 , VBL Endline = 768
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.663229 ms [60.012380 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.666110 ms [60.002004 Hz]. (50 valid samples taken, stddev=0.120426 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.666667 ms [60.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: ==============================================================================================================================
+PTB-INFO: WINDOWS DWM DESKTOP COMPOSITOR IS ACTIVE. On this Windows-10 or later system, Psychtoolbox can no longer reliably detect if
+PTB-INFO: this will cause trouble for timing and integrity of visual stimuli or not. You might be just fine, or you could be in trouble.
+PTB-INFO: Use external measurement equipment and independent procedures to verify reliability of timing if you care about proper timing.
+PTB-INFO: ==============================================================================================================================
+PTB-INFO: Psychtoolbox imaging pipeline starting up for window with requested imagingmode 1025 ...
+PTB-INFO: Will use 8 bits per color component framebuffer for stimulus drawing.
+PTB-INFO: Will use 8 bits per color component framebuffer for stimulus post-processing (if any).
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is open
+............. Instrumental training
+<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\pittraining.m',34,1)">34  </a>sendparport(sparport.parportcodes.p1stimonset);
+PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+
+
+PTB-INFO: There are still 33 textures, offscreen windows or proxy windows open. Screen('CloseAll') will auto-close them.
+PTB-INFO: This may be fine for studies where you only use a few textures or windows, but a large number of open
+PTB-INFO: textures or offscreen windows can be an indication that you forgot to dispose no longer needed items
+PTB-INFO: via a proper call to Screen('Close', [windowOrTextureIndex]); , e.g., at the end of each trial. These
+PTB-INFO: stale objects linger around and can consume significant memory ressources, causing degraded performance,
+PTB-INFO: timing trouble (if the system has to resort to disk paging) and ultimately out of memory conditions or
+PTB-INFO: crashes. Please check your code. (Screen('Close') is a quick way to release all textures and offscreen windows)
+
+
+
+INFO: PTB's Screen('Flip', 10) command seems to have missed the requested stimulus presentation deadline
+INFO: a total of 3 times out of a total of 6 flips during this session.
+
+INFO: This number is fairly accurate (and indicative of real timing problems in your own code or your system)
+INFO: if you provided requested stimulus onset times with the 'when' argument of Screen('Flip', window [, when]);
+INFO: If you called Screen('Flip', window); without the 'when' argument, this count is more of a ''mild'' indicator
+INFO: of timing behaviour than a hard reliable measurement. Large numbers may indicate problems and should at least
+INFO: deserve your closer attention. Cfe. 'help SyncTrouble', the FAQ section at www.psychtoolbox.org and the
+INFO: examples in the PDF presentation in PsychDocumentation/Psychtoolbox3-Slides.pdf for more info and timing tips.
+
+sendparport(sparport.parportcodes.p1stimonset,sparport.parportaddress);
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('io64')" style="font-weight:bold">io64</a>
+Parameter is not an ObjectHandle type.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sendparport', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m', 26)" style="font-weight:bold">sendparport</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m',26,0)">line 26</a>)
+io64(parport, address, code); %send code
+} 
+opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m',26,0)
+if system_dependent('IsDebugMode')==1, dbquit; end
+testparport
+[Warning: The value of local variables may have been changed to match the globals.  Future versions of MATLAB will require
+that you declare a variable to be global before you use that variable.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('testparport', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\testparport.m', 2)" style="font-weight:bold">testparport</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\testparport.m',2,0)">line 2</a>)] 
+[Warning: The value of local variables may have been changed to match the globals.  Future versions of MATLAB will require
+that you declare a variable to be global before you use that variable.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('testparport', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\testparport.m', 2)" style="font-weight:bold">testparport</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\testparport.m',2,0)">line 2</a>)] 
+[Warning: The value of local variables may have been changed to match the globals.  Future versions of MATLAB will require
+that you declare a variable to be global before you use that variable.] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('testparport', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\testparport.m', 2)" style="font-weight:bold">testparport</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\testparport.m',2,0)">line 2</a>)] 
+64-bit Windows
+InpOutx64 driver is open
+sending 255
+sending 255
+sending 255
+sending 255
+sending 255
+sending 255
+sending 255
+sending 255
+sending 255
+sending 255
+testparport
+64-bit Windows
+InpOutx64 driver is open
+sending 255
+sending 255
+sending 255
+sending 255
+sending 255
+sending 255
+sending 255
+sending 255
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('testparport', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\testparport.m', 14)" style="font-weight:bold">testparport</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\testparport.m',14,0)">line 14</a>)
+} 
+edit initialize_parport.m
+parport = io64();
+parportstatus = io64(parport);
+64-bit Windows
+InpOutx64 driver is open
+parportstatus
+
+parportstatus =
+
+  <a href="matlab:helpPopup uint16" style="font-weight:bold">uint16</a>
+
+   0
+
+sparport
+
+sparport = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+     parportaddress: 'D010'
+    parportduration: 2
+
+edit getParPortInfo.m
+getParPortInfo
+sparport
+
+sparport = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+    parportduration: 0.0020
+       parportcodes: [1×1 struct]
+
+sparport.parportcodes.p1stimonset
+
+ans =
+
+    13
+
+testparport
+64-bit Windows
+InpOutx64 driver is open
+sending 255
+sending 255
+sending 255
+sending 255
+sending 255
+sending 255
+sending 255
+sending 255
+sending 255
+sending 255
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('testparport', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\testparport.m', 14)" style="font-weight:bold">testparport</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\testparport.m',14,0)">line 14</a>)
+} 
+sendparport(sparport.parportcodes.p1stimonset);
+runexperiment
+inpoutx64 driver uninstalled.
+inpoutx64 driver uninstalled.
+inpoutx64 driver uninstalled.
+inpoutx64 driver uninstalled.
+inpoutx64 driver uninstalled.
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_1_1_210618_1429
+............ Data will be saved as                              
+............ PIT_1_1_210618_1429                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab 64-Bit (Version 3.0.17 - Build date: Apr 13 2021).
+PTB-INFO: OS support status: Windows 10 (Version 10.0) supported and tested to some limited degree.
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: For information about paid priority support, community membership and commercial services, please type
+PTB-INFO: 'PsychPaidSupportAndServices'.
+
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAMSettings', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is Intel :: Intel(R) HD Graphics 4600 :: 4.3.0 - Build 20.19.15.5126
+PTB-INFO: VBL startline = 768 , VBL Endline = 768
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.664906 ms [60.006339 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.670990 ms [59.984440 Hz]. (50 valid samples taken, stddev=0.068397 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.666667 ms [60.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: ==============================================================================================================================
+PTB-INFO: WINDOWS DWM DESKTOP COMPOSITOR IS ACTIVE. On this Windows-10 or later system, Psychtoolbox can no longer reliably detect if
+PTB-INFO: this will cause trouble for timing and integrity of visual stimuli or not. You might be just fine, or you could be in trouble.
+PTB-INFO: Use external measurement equipment and independent procedures to verify reliability of timing if you care about proper timing.
+PTB-INFO: ==============================================================================================================================
+PTB-INFO: Psychtoolbox imaging pipeline starting up for window with requested imagingmode 1025 ...
+PTB-INFO: Will use 8 bits per color component framebuffer for stimulus drawing.
+PTB-INFO: Will use 8 bits per color component framebuffer for stimulus post-processing (if any).
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is open
+............. Instrumental training
+<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\pittraining.m',34,1)">34  </a>sendparport(sparport.parportcodes.p1stimonset);
+PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+
+
+PTB-INFO: There are still 33 textures, offscreen windows or proxy windows open. Screen('CloseAll') will auto-close them.
+PTB-INFO: This may be fine for studies where you only use a few textures or windows, but a large number of open
+PTB-INFO: textures or offscreen windows can be an indication that you forgot to dispose no longer needed items
+PTB-INFO: via a proper call to Screen('Close', [windowOrTextureIndex]); , e.g., at the end of each trial. These
+PTB-INFO: stale objects linger around and can consume significant memory ressources, causing degraded performance,
+PTB-INFO: timing trouble (if the system has to resort to disk paging) and ultimately out of memory conditions or
+PTB-INFO: crashes. Please check your code. (Screen('Close') is a quick way to release all textures and offscreen windows)
+
+sendparport(sparport.parportcodes.p1stimonset);
+{Dot indexing is not supported for variables of this type.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sendparport', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m', 6)" style="font-weight:bold">sendparport</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m',6,0)">line 6</a>)
+        address = sparport.parportaddress;
+} 
+parport
+
+parport =
+
+  <a href="matlab:helpPopup uint64" style="font-weight:bold">uint64</a>
+
+   2923645070688
+
+whos
+  Name                          Size             Bytes  Class     Attributes
+
+  Display                       1x1                568  struct              
+  FixcheckBoxHalf_frac          1x1                  8  double              
+  FixcheckBoxHalf_pix           1x1                  8  double              
+  FixcheckBox_frac              1x1                  8  double              
+  ITIPav                        1x80               640  double              
+  ITIPit                        1x180             1440  double              
+  ITI_max                       1x1                  8  double              
+  ITI_min                       1x1                  8  double              
+  MRITriggerCode                1x1                108  cell                
+  Ncp                           1x1                  8  double              
+  Nmsh                          1x1                  8  double              
+  Nsqx                          1x1                  8  double              
+  NumFinalfMRITriggers          1x1                  8  double              
+  NumInitialfMRITriggers        1x1                  8  double              
+  PIT_version                   1x1                  8  double              
+  T                             1x1                528  struct              
+  Z                             1x1               4400  struct              
+  aborted                       1x1                  8  double              
+  abortkey                      1x1                  2  char                
+  af                            1x1                  8  double              
+  ains                          1x180             1440  double              
+  ainst                         1x120              960  double              
+  ans                           1x1                  8  double              
+  approach                      1x1                  8  double              
+  arrow                         1x1                  8  double              
+  arrowsquare                   1x4                 32  double              
+  aversive_files                1x2                 16  double              
+  bgcol                         1x2                 16  double              
+  bgr                           1x4                 32  double              
+  bgshape                       1x5                 40  double              
+  bgsquare                      1x4                 32  double              
+  black                         1x3                 24  double              
+  blacksquare                   1x1                  8  double              
+  block                         1x1                  8  double              
+  blue                          1x3                 24  double              
+  bluebox                       2x8                128  double              
+  blw                           1x1                  8  double              
+  breaklength                   1x1                  8  double              
+  cit                           1x1                  8  double              
+  citadd                        1x1                  8  double              
+  cppres                        2x30               480  double              
+  crtfb                         1x120              960  double              
+  crtfb0                        6x20               960  double              
+  debug                         1x1                  8  double              
+  devicetype                    1x8                 16  char                
+  devicetype_part1              1x8                 16  char                
+  devicetype_part2              1x8                 16  char                
+  devicetype_part3              1x8                 16  char                
+  devicetype_part4              1x8                 16  char                
+  doaudio                       1x1                  8  double              
+  doaudio_instr                 1x1                  8  double              
+  dobreak                       1x1                  8  double              
+  doinstr                       1x1                  8  double              
+  dominanthand                  1x4                  8  char                
+  dosave                        1x1                  8  double              
+  dotcolend                     1x3                 24  double              
+  dotpos                        2x1                 16  double              
+  dotsize                       1x1                  8  double              
+  dr                            2x4                 64  double              
+  drm                           3x4                 96  double              
+  drmd                          3x2                 48  double    global    
+  drmf                          2x4x3              192  double    global    
+  drmo                          3x4                 96  double              
+  english                       1x1                  8  double              
+  exploc                        1x1                  2  char                
+  exppart                       1x1                  8  double              
+  expversion                    1x13                26  char                
+  fixationcontrol               1x1                  8  double              
+  fixationcontrol_off           1x1                  8  double              
+  fixationdotsize               1x1                  8  double              
+  fixationfailure               1x1                  8  double              
+  foo                           1x1                  8  double              
+  freqwav                       1x1                  8  double              
+  graysquare                    1x1                  8  double              
+  green                         1x3                 24  double              
+  i1                            1x30               240  double              
+  i2                            1x40               320  double              
+  imagingmode                   1x1                  8  double              
+  j                             1x1                  8  double              
+  k                             1x1                  8  double              
+  key                           1x256             2048  double              
+  leftkey                       1x9                 18  char                
+  lr                            1x180             1440  double              
+  lrt                           1x120              960  double              
+  maxpayout                     1x1                  8  double              
+  minpayout                     1x1                  8  double              
+  monitor_size_xmm              1x1                  8  double              
+  monitor_size_ymm              1x1                  8  double              
+  mpres                         1x180             1440  double              
+  mpresp                        1x180             1440  double              
+  mprest                        1x120              960  double              
+  msh                           1x7                 56  double              
+  mshind                        1x6                 48  double              
+  mshtest                       1x4                 32  double              
+  namestring                    1x19                38  char                
+  namestring2                   1x7                 14  char                
+  nbx                           1x1                  8  double              
+  nby                           1x1                  8  double              
+  nogodelay_pit                 1x1                  8  double              
+  nogodelay_train               1x1                  8  double              
+  nt                            1x1                  8  double              
+  orange                        1x3                 24  double              
+  outcomei                      1x3                 24  double              
+  outcomep                      1x5                 40  double              
+  parport                       1x1                  8  uint64    global    
+  parportstatus                 1x1                  2  uint16    global    
+  pavCSUSfixdelay               1x1                  8  double              
+  pavCSfixdelay                 1x1                  8  double              
+  pavISfixdelay                 1x1                  8  double              
+  pavITIfixdelay                1x1                  8  double              
+  pavUSfixdelay                 1x1                  8  double              
+  pav_CS_off                    1x1                  8  double              
+  pav_CS_on                     1x1                  8  double              
+  pav_FC_off                    1x1                  8  double              
+  pav_FC_on                     1x1                  8  double              
+  pav_US_off                    1x1                  8  double              
+  pav_US_on                     1x1                  8  double              
+  pav_stim                      1x11                22  char                
+  pavind                        1x5                 40  double              
+  pavout                        1x80               640  double              
+  pavpres                       1x80               640  double              
+  pavpres1                      1x40               320  double              
+  pavpres2                      1x40               320  double              
+  payment                       1x1                  8  double              
+  pitdelay                      1x1                  8  double              
+  posp                          1x80               640  double              
+  pressth                       1x1                  8  double              
+  presstimes                  180x60             86400  double              
+  presstimest                 120x40             38400  double              
+  pshel                         2x1                236  cell                
+  pstim                         1x7                 14  char                
+  psychophys                    1x1                  8  double              
+  red                           1x3                 24  double              
+  respkey                       1x5                 10  char                
+  rightkey                      1x10                20  char                
+  scan                          1x1                  8  double              
+  scanning                      1x1                  8  double              
+  screenNumber                  1x1                  8  double              
+  session                       1x1                  2  char                
+  setsoundlevel                 1x1                  8  double              
+  shape                         1x5                 40  double              
+  shapeinstr                    1x2                 16  double              
+  shrooms                       1x1                  8  double              
+  smallscreen                   1x1                  8  double              
+  sounddur                      1x1                  8  double              
+  sounddur_instr                1x1                  8  double              
+  soundinstr                    1x2                 16  double              
+  sparport                      1x1               5096  struct              
+  stim_change_appr              1x3                 24  double              
+  stim_change_avoid             1x3                 24  double              
+  stim_trig                     0x0                  0  double              
+  subjn                         1x1                  2  char                
+  text                          1x2                246  cell                
+  th                            1x1                  8  double              
+  tmp                           2x4                 64  double              
+  tmp1                          5x6                240  double              
+  tmp2                          5x8                320  double              
+  txtcolor                      1x3                 24  double              
+  txtfractsize                  1x1                  8  double              
+  txtsize                       1x1                  8  double              
+  usekbqueue                    1x1                  8  double              
+  viewing_dist                  1x1                  8  double              
+  visAngFrac                    1x1                  8  double              
+  wd                            1x1                  8  double              
+  wdh                           1x1                  8  double              
+  wdhb                          1x1                  8  double              
+  wdht                          1x1                  8  double              
+  wdht_low                      1x1                  8  double              
+  wdw                           1x1                  8  double              
+  wdwb                          1x1                  8  double              
+  wdwt                          1x1                  8  double              
+  white                         1x3                 24  double              
+  x0                            1x1                  8  double              
+  xfrac                         1x1                  8  double              
+  xl0                           1x1                  8  double              
+  xls                           1x1                  8  double              
+  y0                            1x1                  8  double              
+  yellow                        1x3                 24  double              
+  yfrac                         1x1                  8  double              
+  yl0                           1x1                  8  double              
+  yposb                         1x1                  8  double              
+  yposm                         1x6                 12  char                
+  ypost                         1x1                  8  double              
+  ypostt                        1x1                  8  double              
+
+sparport.parportaddress
+
+ans =
+
+    'D010'
+
+sparport.parportduration
+
+ans =
+
+    0.0020
+
+sparport.parportduration
+
+ans =
+
+    0.0020
+
+sparport.parportduration = 2
+
+sparport = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+    parportduration: 2
+       parportcodes: [1×1 struct]
+     parportaddress: 'D010'
+
+sendparport(sparport.parportcodes.p1stimonset);
+{Dot indexing is not supported for variables of this type.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sendparport', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m', 6)" style="font-weight:bold">sendparport</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m',6,0)">line 6</a>)
+        address = sparport.parportaddress;
+} 
+sparport.parportduration = 0.02
+
+sparport = 
+
+  <a href="matlab:helpPopup struct" style="font-weight:bold">struct</a> with fields:
+
+    parportduration: 0.0200
+       parportcodes: [1×1 struct]
+     parportaddress: 'D010'
+
+parport = io64();
+parportstatus = io64(parport); 
+64-bit Windows
+InpOutx64 driver is open
+sendparport(sparport.parportcodes.p1stimonset);
+{Dot indexing is not supported for variables of this type.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('sendparport', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m', 6)" style="font-weight:bold">sendparport</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\sendparport.m',6,0)">line 6</a>)
+        address = sparport.parportaddress;
+} 
+dbquit
+sca
+getParPortInfo
+runexperiment
+inpoutx64 driver uninstalled.
+inpoutx64 driver uninstalled.
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_1_1_210618_1434
+............ Data will be saved as                              
+............ PIT_1_1_210618_1434                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab 64-Bit (Version 3.0.17 - Build date: Apr 13 2021).
+PTB-INFO: OS support status: Windows 10 (Version 10.0) supported and tested to some limited degree.
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: For information about paid priority support, community membership and commercial services, please type
+PTB-INFO: 'PsychPaidSupportAndServices'.
+
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAMSettings', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is Intel :: Intel(R) HD Graphics 4600 :: 4.3.0 - Build 20.19.15.5126
+PTB-INFO: VBL startline = 768 , VBL Endline = 768
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.665549 ms [60.004024 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.673630 ms [59.974942 Hz]. (50 valid samples taken, stddev=0.066601 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.666667 ms [60.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: ==============================================================================================================================
+PTB-INFO: WINDOWS DWM DESKTOP COMPOSITOR IS ACTIVE. On this Windows-10 or later system, Psychtoolbox can no longer reliably detect if
+PTB-INFO: this will cause trouble for timing and integrity of visual stimuli or not. You might be just fine, or you could be in trouble.
+PTB-INFO: Use external measurement equipment and independent procedures to verify reliability of timing if you care about proper timing.
+PTB-INFO: ==============================================================================================================================
+PTB-INFO: Psychtoolbox imaging pipeline starting up for window with requested imagingmode 1025 ...
+PTB-INFO: Will use 8 bits per color component framebuffer for stimulus drawing.
+PTB-INFO: Will use 8 bits per color component framebuffer for stimulus post-processing (if any).
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is open
+............. Instrumental training
+64-bit Windows
+InpOutx64 driver is open
+Instrumental training trial 164-bit Windows
+InpOutx64 driver is open
+Instrumental training trial 2
+
+PTB-ERROR: Screen('Flip'); beamposition timestamping computed an *impossible stimulus onset value* of 1198.581877 secs, which would indicate that
+PTB-ERROR: stimulus onset happened *before* it was actually requested! (Earliest theoretically possible 1198.591139 secs).
+
+PTB-ERROR: Some more diagnostic values (only for experts): rawTimestamp = 1198.596445, scanline = 670
+PTB-ERROR: Some more diagnostic values (only for experts): line_pre_swaprequest = 416, line_post_swaprequest = 592, time_post_swaprequest = 1198.594840
+PTB-ERROR: Some more diagnostic values (only for experts): preflip_vblcount = 0, preflip_vbltimestamp = 1198.582112
+PTB-ERROR: Some more diagnostic values (only for experts): postflip_vblcount = 0, postflip_vbltimestamp = -1.000000, vbltimestampquery_retrycount = 0
+
+PTB-ERROR: This error can be due to either of the following causes:
+PTB-ERROR: Very unlikely: Something is broken in your systems beamposition timestamping. I've disabled high precision
+PTB-ERROR: timestamping for now. Returned timestamps will be less robust and accurate.
+
+PTB-ERROR: The most likely cause would be that Synchronization of stimulus onset (buffer swap) to the
+PTB-ERROR: vertical blank interval VBL is not working properly, or swap completion signalling to PTB is broken.
+PTB-ERROR: Please run the script PerceptualVBLSyncTest to check this. With non-working sync to VBL, all stimulus timing
+PTB-ERROR: is futile. Also run OSXCompositorIdiocyTest on macOS. Also read 'help SyncTrouble' !
+64-bit Windows
+InpOutx64 driver is open
+Instrumental training trial 364-bit Windows
+InpOutx64 driver is open
+Instrumental training trial 464-bit Windows
+InpOutx64 driver is open
+
+
+PTB-INFO: There are still 33 textures, offscreen windows or proxy windows open. Screen('CloseAll') will auto-close them.
+PTB-INFO: This may be fine for studies where you only use a few textures or windows, but a large number of open
+PTB-INFO: textures or offscreen windows can be an indication that you forgot to dispose no longer needed items
+PTB-INFO: via a proper call to Screen('Close', [windowOrTextureIndex]); , e.g., at the end of each trial. These
+PTB-INFO: stale objects linger around and can consume significant memory ressources, causing degraded performance,
+PTB-INFO: timing trouble (if the system has to resort to disk paging) and ultimately out of memory conditions or
+PTB-INFO: crashes. Please check your code. (Screen('Close') is a quick way to release all textures and offscreen windows)
+
+
+
+INFO: PTB's Screen('Flip', 10) command seems to have missed the requested stimulus presentation deadline
+INFO: a total of 4 times out of a total of 27 flips during this session.
+
+INFO: This number is fairly accurate (and indicative of real timing problems in your own code or your system)
+INFO: if you provided requested stimulus onset times with the 'when' argument of Screen('Flip', window [, when]);
+INFO: If you called Screen('Flip', window); without the 'when' argument, this count is more of a ''mild'' indicator
+INFO: of timing behaviour than a hard reliable measurement. Large numbers may indicate problems and should at least
+INFO: deserve your closer attention. Cfe. 'help SyncTrouble', the FAQ section at www.psychtoolbox.org and the
+INFO: examples in the PDF presentation in PsychDocumentation/Psychtoolbox3-Slides.pdf for more info and timing tips.
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('checkabort', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\checkabort.m', 12)" style="font-weight:bold">checkabort</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\checkabort.m',12,0)">line 12</a>)
+Pressed abort key--- aborting experiment
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('pittraining', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\pittraining.m', 200)" style="font-weight:bold">pittraining</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\pittraining.m',200,0)">line 200</a>)
+checkabort; 		% Allow for abortion of experiment
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\runexperiment.m', 90)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\runexperiment.m',90,0)">line 90</a>)
+            pittraining;
+} 
+pittraining
+Error in function DrawTexture: 	Invalid Window (or Texture) Index provided: It doesn't correspond to an open window or texture.
+Did you close it accidentally via Screen('Close') or Screen('CloseAll') ?
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Screen')" style="font-weight:bold">Screen</a>
+Usage:
+
+Screen('DrawTexture', windowPointer, texturePointer [,sourceRect] [,destinationRect] [,rotationAngle] [, filterMode] [,
+globalAlpha] [, modulateColor] [, textureShader] [, specialFlags] [, auxParameters]);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('pittraining', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\pittraining.m', 14)" style="font-weight:bold">pittraining</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\pittraining.m',14,0)">line 14</a>)
+Screen('DrawTexture',wd,graysquare,[],bgsquare);
+} 
+runexperiment
+inpoutx64 driver uninstalled.
+inpoutx64 driver uninstalled.
+inpoutx64 driver uninstalled.
+inpoutx64 driver uninstalled.
+inpoutx64 driver uninstalled.
+inpoutx64 driver uninstalled.
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] yes
+
+Data file name: PIT_1_1_210618_1435
+............ Data will be saved as                              
+............ PIT_1_1_210618_1435                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab 64-Bit (Version 3.0.17 - Build date: Apr 13 2021).
+PTB-INFO: OS support status: Windows 10 (Version 10.0) supported and tested to some limited degree.
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: For information about paid priority support, community membership and commercial services, please type
+PTB-INFO: 'PsychPaidSupportAndServices'.
+
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAMSettings', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is Intel :: Intel(R) HD Graphics 4600 :: 4.3.0 - Build 20.19.15.5126
+PTB-INFO: VBL startline = 768 , VBL Endline = 768
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.665659 ms [60.003627 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.671238 ms [59.983548 Hz]. (50 valid samples taken, stddev=0.046566 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.666667 ms [60.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-INFO: ==============================================================================================================================
+PTB-INFO: WINDOWS DWM DESKTOP COMPOSITOR IS ACTIVE. On this Windows-10 or later system, Psychtoolbox can no longer reliably detect if
+PTB-INFO: this will cause trouble for timing and integrity of visual stimuli or not. You might be just fine, or you could be in trouble.
+PTB-INFO: Use external measurement equipment and independent procedures to verify reliability of timing if you care about proper timing.
+PTB-INFO: ==============================================================================================================================
+PTB-INFO: Psychtoolbox imaging pipeline starting up for window with requested imagingmode 1025 ...
+PTB-INFO: Will use 8 bits per color component framebuffer for stimulus drawing.
+PTB-INFO: Will use 8 bits per color component framebuffer for stimulus post-processing (if any).
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is open
+............. Instrumental training
+64-bit Windows
+InpOutx64 driver is open
+<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\pittraining.m',35,1)">35  </a>sendparport(sparport.parportcodes.p1stimonset);
+PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+
+
+PTB-INFO: There are still 33 textures, offscreen windows or proxy windows open. Screen('CloseAll') will auto-close them.
+PTB-INFO: This may be fine for studies where you only use a few textures or windows, but a large number of open
+PTB-INFO: textures or offscreen windows can be an indication that you forgot to dispose no longer needed items
+PTB-INFO: via a proper call to Screen('Close', [windowOrTextureIndex]); , e.g., at the end of each trial. These
+PTB-INFO: stale objects linger around and can consume significant memory ressources, causing degraded performance,
+PTB-INFO: timing trouble (if the system has to resort to disk paging) and ultimately out of memory conditions or
+PTB-INFO: crashes. Please check your code. (Screen('Close') is a quick way to release all textures and offscreen windows)
+
+
+
+INFO: PTB's Screen('Flip', 10) command seems to have missed the requested stimulus presentation deadline
+INFO: a total of 2 times out of a total of 6 flips during this session.
+
+INFO: This number is fairly accurate (and indicative of real timing problems in your own code or your system)
+INFO: if you provided requested stimulus onset times with the 'when' argument of Screen('Flip', window [, when]);
+INFO: If you called Screen('Flip', window); without the 'when' argument, this count is more of a ''mild'' indicator
+INFO: of timing behaviour than a hard reliable measurement. Large numbers may indicate problems and should at least
+INFO: deserve your closer attention. Cfe. 'help SyncTrouble', the FAQ section at www.psychtoolbox.org and the
+INFO: examples in the PDF presentation in PsychDocumentation/Psychtoolbox3-Slides.pdf for more info and timing tips.
+
+sendparport(sparport.parportcodes.p1stimonset);
+if system_dependent('IsDebugMode')==1, dbquit; end
+clear all
+inpoutx64 driver uninstalled.
+inpoutx64 driver uninstalled.
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says NOT SCANNING. Is this correct? [yes/no] no
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\runexperiment.m', 35)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\runexperiment.m',35,0)">line 35</a>)
+\n *** Ok, please check. *** \n
+} 
+clear all
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+
+Data file name: PIT_9999_1_210618_1447
+............ Data will be saved as                              
+............ PIT_9999_1_210618_1447                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab 64-Bit (Version 3.0.17 - Build date: Apr 13 2021).
+PTB-INFO: OS support status: Windows 10 (Version 10.0) supported and tested to some limited degree.
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: For information about paid priority support, community membership and commercial services, please type
+PTB-INFO: 'PsychPaidSupportAndServices'.
+
+PTB-INFO: Most graphics cards will not support proper syncing to vertical retrace when
+PTB-INFO: running in windowed mode (non-fullscreen). If PTB aborts with 'Synchronization failure'
+PTB-INFO: you can disable the sync test via call to Screen('Preference', 'SkipSyncTests', 2); .
+PTB-INFO: You won't get proper stimulus onset timestamps though, so windowed mode may be of limited use.
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAMSettings', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is Intel :: Intel(R) HD Graphics 4600 :: 4.3.0 - Build 20.19.15.5126
+PTB-INFO: VBL startline = 768 , VBL Endline = 768
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.665984 ms [60.002459 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.618600 ms [60.173540 Hz]. (50 valid samples taken, stddev=0.490760 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.666667 ms [60.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-WARNING: ==============================================================================================================================
+PTB-WARNING: WINDOWS DWM DESKTOP COMPOSITOR IS ACTIVE! ALL FLIP STIMULUS ONSET TIMESTAMPS WILL BE VERY LIKELY UNRELIABLE AND LESS ACCURATE!
+PTB-WARNING: STIMULUS ONSET TIMING WILL BE UNRELIABLE AS WELL, AND GRAPHICS PERFORMANCE MAY BE SEVERELY REDUCED! STIMULUS IMAGES MAY NOT
+PTB-WARNING: SHOW UP AT ALL! DO NOT USE THIS MODE FOR RUNNING REAL EXPERIMENT SESSIONS WITH ANY REQUIREMENTS FOR ACCURATE TIMING!
+PTB-WARNING: ==============================================================================================================================
+
+WARNING: Couldn't compute a reliable estimate of monitor refresh interval! Trouble with VBL syncing?!?
+
+
+----- ! PTB - ERROR: SYNCHRONIZATION FAILURE ! -----
+
+One or more internal checks (see Warnings above) indicate that synchronization
+of Psychtoolbox to the vertical retrace (VBL) is not working on your setup.
+
+This will seriously impair proper stimulus presentation and stimulus presentation timing!
+Please read 'help SyncTrouble' for information about how to solve or work-around the problem.
+You can force Psychtoolbox to continue, despite the severe problems, by adding the command
+Screen('Preference', 'SkipSyncTests', 1); at the top of your script, if you really know what you are doing.
+
+
+
+
+PTB-ERROR: Screen('Flip'); beamposition timestamping computed an *impossible stimulus onset value* of 1961.292923 secs, which would indicate that
+PTB-ERROR: stimulus onset happened *before* it was actually requested! (Earliest theoretically possible 1961.299698 secs).
+
+PTB-ERROR: Some more diagnostic values (only for experts): rawTimestamp = 1961.302553, scanline = 444
+PTB-ERROR: Some more diagnostic values (only for experts): line_pre_swaprequest = 307, line_post_swaprequest = 373, time_post_swaprequest = 1961.301087
+PTB-ERROR: Some more diagnostic values (only for experts): preflip_vblcount = 0, preflip_vbltimestamp = 1961.293050
+PTB-ERROR: Some more diagnostic values (only for experts): postflip_vblcount = 0, postflip_vbltimestamp = -1.000000, vbltimestampquery_retrycount = 0
+
+PTB-ERROR: This error can be due to either of the following causes:
+PTB-ERROR: Very unlikely: Something is broken in your systems beamposition timestamping. I've disabled high precision
+PTB-ERROR: timestamping for now. Returned timestamps will be less robust and accurate.
+
+PTB-ERROR: The most likely cause would be that Synchronization of stimulus onset (buffer swap) to the
+PTB-ERROR: vertical blank interval VBL is not working properly, or swap completion signalling to PTB is broken.
+PTB-ERROR: Please run the script PerceptualVBLSyncTest to check this. With non-working sync to VBL, all stimulus timing
+PTB-ERROR: is futile. Also run OSXCompositorIdiocyTest on macOS. Also read 'help SyncTrouble' !
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is open
+............. Instrumental training
+............ Displaying instructions .........done
+64-bit Windows
+InpOutx64 driver is open
+Instrumental training trial 164-bit Windows
+InpOutx64 driver is open
+Instrumental training trial 264-bit Windows
+InpOutx64 driver is open
+Instrumental training trial 364-bit Windows
+InpOutx64 driver is open
+Instrumental training trial 464-bit Windows
+InpOutx64 driver is open
+
+
+PTB-INFO: There are still 33 textures, offscreen windows or proxy windows open. Screen('CloseAll') will auto-close them.
+PTB-INFO: This may be fine for studies where you only use a few textures or windows, but a large number of open
+PTB-INFO: textures or offscreen windows can be an indication that you forgot to dispose no longer needed items
+PTB-INFO: via a proper call to Screen('Close', [windowOrTextureIndex]); , e.g., at the end of each trial. These
+PTB-INFO: stale objects linger around and can consume significant memory ressources, causing degraded performance,
+PTB-INFO: timing trouble (if the system has to resort to disk paging) and ultimately out of memory conditions or
+PTB-INFO: crashes. Please check your code. (Screen('Close') is a quick way to release all textures and offscreen windows)
+
+
+
+INFO: PTB's Screen('Flip', 10) command seems to have missed the requested stimulus presentation deadline
+INFO: a total of 11 times out of a total of 124 flips during this session.
+
+INFO: This number is fairly accurate (and indicative of real timing problems in your own code or your system)
+INFO: if you provided requested stimulus onset times with the 'when' argument of Screen('Flip', window [, when]);
+INFO: If you called Screen('Flip', window); without the 'when' argument, this count is more of a ''mild'' indicator
+INFO: of timing behaviour than a hard reliable measurement. Large numbers may indicate problems and should at least
+INFO: deserve your closer attention. Cfe. 'help SyncTrouble', the FAQ section at www.psychtoolbox.org and the
+INFO: examples in the PDF presentation in PsychDocumentation/Psychtoolbox3-Slides.pdf for more info and timing tips.
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('checkabort', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\checkabort.m', 12)" style="font-weight:bold">checkabort</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\checkabort.m',12,0)">line 12</a>)
+Pressed abort key--- aborting experiment
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('pittraining', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\pittraining.m', 200)" style="font-weight:bold">pittraining</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\pittraining.m',200,0)">line 200</a>)
+checkabort; 		% Allow for abortion of experiment
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\runexperiment.m', 90)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Shells_Task\runexperiment.m',90,0)">line 90</a>)
+            pittraining;
+} 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+
+Data file name: PIT_9999_1_210618_1505
+............ Data will be saved as                              
+............ PIT_9999_1_210618_1505                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab 64-Bit (Version 3.0.17 - Build date: Apr 13 2021).
+PTB-INFO: OS support status: Windows 10 (Version 10.0) supported and tested to some limited degree.
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: For information about paid priority support, community membership and commercial services, please type
+PTB-INFO: 'PsychPaidSupportAndServices'.
+
+PTB-INFO: Most graphics cards will not support proper syncing to vertical retrace when
+PTB-INFO: running in windowed mode (non-fullscreen). If PTB aborts with 'Synchronization failure'
+PTB-INFO: you can disable the sync test via call to Screen('Preference', 'SkipSyncTests', 2); .
+PTB-INFO: You won't get proper stimulus onset timestamps though, so windowed mode may be of limited use.
+PTB-INFO: The detected endline of the vertical blank interval is equal or lower than the startline. This indicates
+PTB-INFO: that i couldn't detect the duration of the vertical blank interval and won't be able to correct timestamps
+PTB-INFO: for it. This will introduce a very small and constant offset (typically << 1 msec). Read 'help BeampositionQueries'
+PTB-INFO: for how to correct this, should you really require that last few microseconds of precision.
+PTB-INFO: Btw. this can also mean that your systems beamposition queries are slightly broken. It may help timing precision to
+PTB-INFO: enable the beamposition workaround, as explained in 'help ConserveVRAMSettings', section 'kPsychUseBeampositionQueryWorkaround'.
+
+
+PTB-INFO: OpenGL-Renderer is Intel :: Intel(R) HD Graphics 4600 :: 4.3.0 - Build 20.19.15.5126
+PTB-INFO: VBL startline = 768 , VBL Endline = 768
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.665696 ms [60.003495 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.677878 ms [59.959666 Hz]. (50 valid samples taken, stddev=0.389258 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.666667 ms [60.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-WARNING: ==============================================================================================================================
+PTB-WARNING: WINDOWS DWM DESKTOP COMPOSITOR IS ACTIVE! ALL FLIP STIMULUS ONSET TIMESTAMPS WILL BE VERY LIKELY UNRELIABLE AND LESS ACCURATE!
+PTB-WARNING: STIMULUS ONSET TIMING WILL BE UNRELIABLE AS WELL, AND GRAPHICS PERFORMANCE MAY BE SEVERELY REDUCED! STIMULUS IMAGES MAY NOT
+PTB-WARNING: SHOW UP AT ALL! DO NOT USE THIS MODE FOR RUNNING REAL EXPERIMENT SESSIONS WITH ANY REQUIREMENTS FOR ACCURATE TIMING!
+PTB-WARNING: ==============================================================================================================================
+
+WARNING: Couldn't compute a reliable estimate of monitor refresh interval! Trouble with VBL syncing?!?
+
+
+----- ! PTB - ERROR: SYNCHRONIZATION FAILURE ! -----
+
+One or more internal checks (see Warnings above) indicate that synchronization
+of Psychtoolbox to the vertical retrace (VBL) is not working on your setup.
+
+This will seriously impair proper stimulus presentation and stimulus presentation timing!
+Please read 'help SyncTrouble' for information about how to solve or work-around the problem.
+You can force Psychtoolbox to continue, despite the severe problems, by adding the command
+Screen('Preference', 'SkipSyncTests', 1); at the top of your script, if you really know what you are doing.
+
+
+
+
+PTB-ERROR: Screen('Flip'); beamposition timestamping computed an *impossible stimulus onset value* of 3009.222154 secs, which would indicate that
+PTB-ERROR: stimulus onset happened *before* it was actually requested! (Earliest theoretically possible 3009.229679 secs).
+
+PTB-ERROR: Some more diagnostic values (only for experts): rawTimestamp = 3009.238550, scanline = 754
+PTB-ERROR: Some more diagnostic values (only for experts): line_pre_swaprequest = 329, line_post_swaprequest = 365, time_post_swaprequest = 3009.230444
+PTB-ERROR: Some more diagnostic values (only for experts): preflip_vblcount = 0, preflip_vbltimestamp = 3009.222530
+PTB-ERROR: Some more diagnostic values (only for experts): postflip_vblcount = 0, postflip_vbltimestamp = -1.000000, vbltimestampquery_retrycount = 0
+
+PTB-ERROR: This error can be due to either of the following causes:
+PTB-ERROR: Very unlikely: Something is broken in your systems beamposition timestamping. I've disabled high precision
+PTB-ERROR: timestamping for now. Returned timestamps will be less robust and accurate.
+
+PTB-ERROR: The most likely cause would be that Synchronization of stimulus onset (buffer swap) to the
+PTB-ERROR: vertical blank interval VBL is not working properly, or swap completion signalling to PTB is broken.
+PTB-ERROR: Please run the script PerceptualVBLSyncTest to check this. With non-working sync to VBL, all stimulus timing
+PTB-ERROR: is futile. Also run OSXCompositorIdiocyTest on macOS. Also read 'help SyncTrouble' !
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: Choosing deviceIndex 2 [Microsoft Sound Mapper - Output] as default output audio device.
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Microsoft Sound Mapper - Output
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: Choosing deviceIndex 2 [Microsoft Sound Mapper - Output] as default output audio device.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Microsoft Sound Mapper - Output
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is open
+............. Instrumental training
+............ Displaying instructions PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+
+
+PTB-INFO: There are still 33 textures, offscreen windows or proxy windows open. Screen('CloseAll') will auto-close them.
+PTB-INFO: This may be fine for studies where you only use a few textures or windows, but a large number of open
+PTB-INFO: textures or offscreen windows can be an indication that you forgot to dispose no longer needed items
+PTB-INFO: via a proper call to Screen('Close', [windowOrTextureIndex]); , e.g., at the end of each trial. These
+PTB-INFO: stale objects linger around and can consume significant memory ressources, causing degraded performance,
+PTB-INFO: timing trouble (if the system has to resort to disk paging) and ultimately out of memory conditions or
+PTB-INFO: crashes. Please check your code. (Screen('Close') is a quick way to release all textures and offscreen windows)
+
+<a href="matlab: opentoline('C:\toolbox\Psychtoolbox\PsychBasic\KbWait.m',143,1)">143 </a>end
+if system_dependent('IsDebugMode')==1, dbquit; end
+runexperiment
+inpoutx64 driver uninstalled.
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+
+Data file name: PIT_9999_1_210618_1508
+............ Data will be saved as                              
+............ PIT_9999_1_210618_1508                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+
+
+PTB-INFO: This is Psychtoolbox-3 for Microsoft Windows, under Matlab 64-Bit (Version 3.0.17 - Build date: Apr 13 2021).
+PTB-INFO: OS support status: Windows 10 (Version 10.0) supported and tested to some limited degree.
+PTB-INFO: Type 'PsychtoolboxVersion' for more detailed version information.
+PTB-INFO: Most parts of the Psychtoolbox distribution are licensed to you under terms of the MIT License, with
+PTB-INFO: some restrictions. See file 'License.txt' in the Psychtoolbox root folder for the exact licensing conditions.
+
+PTB-INFO: For information about paid priority support, community membership and commercial services, please type
+PTB-INFO: 'PsychPaidSupportAndServices'.
+
+PTB-INFO: Most graphics cards will not support proper syncing to vertical retrace when
+PTB-INFO: running in windowed mode (non-fullscreen). If PTB aborts with 'Synchronization failure'
+PTB-INFO: you can disable the sync test via call to Screen('Preference', 'SkipSyncTests', 2); .
+PTB-INFO: You won't get proper stimulus onset timestamps though, so windowed mode may be of limited use.
+
+
+PTB-INFO: OpenGL-Renderer is Intel :: Intel(R) HD Graphics 4600 :: 4.3.0 - Build 20.19.15.5126
+PTB-INFO: VBL startline = 720 , VBL Endline = 768
+PTB-INFO: Measured monitor refresh interval from beamposition = 16.665616 ms [60.003781 Hz].
+PTB-INFO: Will use beamposition query for accurate Flip time stamping.
+PTB-INFO: Measured monitor refresh interval from VBLsync = 16.643600 ms [60.083155 Hz]. (50 valid samples taken, stddev=0.277266 ms.)
+PTB-INFO: Reported monitor refresh interval from operating system = 16.666667 ms [60.000000 Hz].
+PTB-INFO: Small deviations between reported values are normal and no reason to worry.
+PTB-WARNING: ==============================================================================================================================
+PTB-WARNING: WINDOWS DWM DESKTOP COMPOSITOR IS ACTIVE! ALL FLIP STIMULUS ONSET TIMESTAMPS WILL BE VERY LIKELY UNRELIABLE AND LESS ACCURATE!
+PTB-WARNING: STIMULUS ONSET TIMING WILL BE UNRELIABLE AS WELL, AND GRAPHICS PERFORMANCE MAY BE SEVERELY REDUCED! STIMULUS IMAGES MAY NOT
+PTB-WARNING: SHOW UP AT ALL! DO NOT USE THIS MODE FOR RUNNING REAL EXPERIMENT SESSIONS WITH ANY REQUIREMENTS FOR ACCURATE TIMING!
+PTB-WARNING: ==============================================================================================================================
+
+WARNING: Couldn't compute a reliable estimate of monitor refresh interval! Trouble with VBL syncing?!?
+
+
+----- ! PTB - ERROR: SYNCHRONIZATION FAILURE ! -----
+
+One or more internal checks (see Warnings above) indicate that synchronization
+of Psychtoolbox to the vertical retrace (VBL) is not working on your setup.
+
+This will seriously impair proper stimulus presentation and stimulus presentation timing!
+Please read 'help SyncTrouble' for information about how to solve or work-around the problem.
+You can force Psychtoolbox to continue, despite the severe problems, by adding the command
+Screen('Preference', 'SkipSyncTests', 1); at the top of your script, if you really know what you are doing.
+
+
+
+
+PTB-ERROR: Screen('Flip'); beamposition timestamping computed an *impossible stimulus onset value* of 3228.126959 secs, which would indicate that
+PTB-ERROR: stimulus onset happened *before* it was actually requested! (Earliest theoretically possible 3228.130594 secs).
+
+PTB-ERROR: Some more diagnostic values (only for experts): rawTimestamp = 3228.133894, scanline = 271
+PTB-ERROR: Some more diagnostic values (only for experts): line_pre_swaprequest = 112, line_post_swaprequest = 156, time_post_swaprequest = 3228.131504
+PTB-ERROR: Some more diagnostic values (only for experts): preflip_vblcount = 0, preflip_vbltimestamp = 3228.128162
+PTB-ERROR: Some more diagnostic values (only for experts): postflip_vblcount = 0, postflip_vbltimestamp = -1.000000, vbltimestampquery_retrycount = 0
+
+PTB-ERROR: This error can be due to either of the following causes:
+PTB-ERROR: Very unlikely: Something is broken in your systems beamposition timestamping. I've disabled high precision
+PTB-ERROR: timestamping for now. Returned timestamps will be less robust and accurate.
+
+PTB-ERROR: The most likely cause would be that Synchronization of stimulus onset (buffer swap) to the
+PTB-ERROR: vertical blank interval VBL is not working properly, or swap completion signalling to PTB is broken.
+PTB-ERROR: Please run the script PerceptualVBLSyncTest to check this. With non-working sync to VBL, all stimulus timing
+PTB-ERROR: is futile. Also run OSXCompositorIdiocyTest on macOS. Also read 'help SyncTrouble' !
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: Choosing deviceIndex 2 [Microsoft Sound Mapper - Output] as default output audio device.
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Microsoft Sound Mapper - Output
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: Choosing deviceIndex 2 [Microsoft Sound Mapper - Output] as default output audio device.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Microsoft Sound Mapper - Output
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is open
+............. Instrumental training
+............ Displaying instructions PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+
+
+PTB-INFO: There are still 33 textures, offscreen windows or proxy windows open. Screen('CloseAll') will auto-close them.
+PTB-INFO: This may be fine for studies where you only use a few textures or windows, but a large number of open
+PTB-INFO: textures or offscreen windows can be an indication that you forgot to dispose no longer needed items
+PTB-INFO: via a proper call to Screen('Close', [windowOrTextureIndex]); , e.g., at the end of each trial. These
+PTB-INFO: stale objects linger around and can consume significant memory ressources, causing degraded performance,
+PTB-INFO: timing trouble (if the system has to resort to disk paging) and ultimately out of memory conditions or
+PTB-INFO: crashes. Please check your code. (Screen('Close') is a quick way to release all textures and offscreen windows)
+
+
+
+INFO: PTB's Screen('Flip', 10) command seems to have missed the requested stimulus presentation deadline
+INFO: a total of 3 times out of a total of 9 flips during this session.
+
+INFO: This number is fairly accurate (and indicative of real timing problems in your own code or your system)
+INFO: if you provided requested stimulus onset times with the 'when' argument of Screen('Flip', window [, when]);
+INFO: If you called Screen('Flip', window); without the 'when' argument, this count is more of a ''mild'' indicator
+INFO: of timing behaviour than a hard reliable measurement. Large numbers may indicate problems and should at least
+INFO: deserve your closer attention. Cfe. 'help SyncTrouble', the FAQ section at www.psychtoolbox.org and the
+INFO: examples in the PDF presentation in PsychDocumentation/Psychtoolbox3-Slides.pdf for more info and timing tips.
+
+<a href="matlab: opentoline('C:\toolbox\Psychtoolbox\PsychBasic\KbWait.m',143,1)">143 </a>end
+if system_dependent('IsDebugMode')==1, dbquit; end
