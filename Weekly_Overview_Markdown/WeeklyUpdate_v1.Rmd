@@ -1,7 +1,7 @@
 ---
 title: "PANDA Weekly Report"
 author: "Shreya Sheth"
-date: "April XX, 2021"
+date: "June 10, 2021"
 output:
   html_document:
     code_folding: hide
@@ -77,9 +77,11 @@ Total_Enrolled <- sum(!is.na(recruitment_data$panda_consent))
 #ss_csv <- ss_csv %>% filter(Intials != "") 
 #Total_Screened <- nrow(ss_csv) #number of rows will be equal to number of participants screened
 
-Scheduled_NotRun <- 1 # number of subjects that have been scheduled but not yet run - add from excel?
-Need_to_Screen <- 32 # subjects that need to be screened - add from excel? 
-Total_Screened <- 45 # number of subjects that have been screened - should screened include people not in redcap?
+Scheduled_NotRun <- 3 # number of subjects that have been scheduled but not yet run - add from excel?
+Dropouts <- 2
+Ineligible <- 1
+Need_to_Screen <- 24 # subjects that need to be screened - add from excel? 
+Total_Screened <- 75 # number of subjects that have been screened - should screened include people not in redcap?
 
 #panda_screening=list(name="panda_screening",
                         #redcap_uri='https://www.ctsiredcap.pitt.edu/redcap/api/',
@@ -95,7 +97,7 @@ Total_Screened <- 45 # number of subjects that have been screened - should scree
 
 Screen2Run_Conversion <- ((Part1_Only+Completed) / Total_Screened)*100 # Screen to Completion Conversion rate
 
-(recruitment_table <- data.frame(Completed, Part1_Only, Total_Enrolled, Scheduled_NotRun, Need_to_Screen, Total_Screened, Screen2Run_Conversion) %>% pivot_longer(Completed:Screen2Run_Conversion, names_to = "Metric", values_to = "Value"))
+(recruitment_table <- data.frame(Completed, Part1_Only, Dropouts, Ineligible, Total_Enrolled, Scheduled_NotRun, Need_to_Screen, Total_Screened, Screen2Run_Conversion) %>% pivot_longer(Completed:Screen2Run_Conversion, names_to = "Metric", values_to = "Value"))
 
 ```
 
@@ -137,7 +139,7 @@ MedianEducation18 <- median(demo$demo_education)
 demographic_table <- data.frame(Mean_Age, SD_Age, N_Female, N_Asian, N_AmIndianNative, N_Black, N_HisLatinx, N_NatHawPi, N_White, N_NoAns, N_Other, N_Single, MedianIncome18, MedianEducation18, row.names = NULL) %>% pivot_longer(Mean_Age:MedianEducation18, names_to = "Demographic", values_to = "Value")
 
 #percentages can be helpful for some of these, so let's add a column for those
-(demographic_table <- demographic_table %>% mutate(Percent = if_else(grepl('^N_', demographic_table$Demographic), ((demographic_table$Value / Total_Enrolled) * 100), NA_real_)))
+(demographic_table <- demographic_table %>% mutate(Percent = if_else(grepl('^N_', demographic_table$Demographic), ((demographic_table$Value / Completed) * 100), NA_real_)))
 
 #for income, let's convert it to a factor, specify levels, and plot: 
 demo$demo_income <- as.factor(demo$demo_income)

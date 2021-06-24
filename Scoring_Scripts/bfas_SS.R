@@ -1,3 +1,5 @@
+#TO COMPARE INDIVIDUAL BFAS SCORES FROM REDCAP WITH COMMUNITY SCORES FROM DEYOUNG, ET AL., 2017
+
 ###download the redcap_in_r package from the DNPL github repo
 devtools::install_github("DecisionNeurosciencePsychopathology/redcap_in_r")
 
@@ -59,17 +61,61 @@ print(bfas_scored_domains)#, #short = FALSE)
 bfas_scoredscales_a <- bfas_scored_aspects$scores
 bfas_scoredscales_d <- bfas_scored_domains$scores
 
+# Pick only individual's scores 
+SS_scored_aspects <- bfas_scoredscales_a[1,]
+SS_scored_domains <- bfas_scoredscales_d[1,]
 
 #make it a table
-bfas_scoredscales_a <- as.data.frame(bfas_scoredscales_a)
-bfas_scoredscales_d <- as.data.frame(bfas_scoredscales_d)
+SS_scored_aspects <- as.data.frame(SS_scored_aspects)
+SS_scored_domains <- as.data.frame(SS_scored_domains)
 
-### add the subject ID
-bfas_scoredscales_a$record_id <- bfas_data$record_id
-bfas_scoredscales_d$record_id <- bfas_data$record_id
+#plot(bfas_scoredscales_a)
+
+ggplot(data=bfas_scoredscales_a, aes(x=bfas_aspects, y=bfas_scoredscales_a, group=1)) +geom_line()+geom_point()
 
 
 #write csv file
-write.csv(bfas_scoredscales_a, "/Users/shreya/Box/skinner/data/PANDA/Psychosocial/bfas_scored_aspects.csv", row.names = FALSE)
-write.csv(bfas_scoredscales_d, "/Users/shreya/Box/skinner/data/PANDA/Psychosocial/bfas_scored_domains.csv", row.names = FALSE)
+write.csv(SS_scored_aspects, "/Users/shreya/Box/skinner/data/PANDA/Psychosocial/bfas_scored_aspects_SS.csv", row.names = FALSE)
+write.csv(SS_scored_domains, "/Users/shreya/Box/skinner/data/PANDA/Psychosocial/bfas_scored_domains_SS.csv", row.names = FALSE)
 
+#make list of commmunity scores
+community_scored_domains <- c(2.46,4.11,3.76,3.48,3.72)
+community_scored_aspects <- c(2.48, 2.45, 4.11, 4.10, 3.8, 3.73, 3.59, 3.36, 3.7, 3.74)
+
+#add community scores to data fram of individual scores
+SS_scored_domains$community_scored_domains <- community_scored_domains
+SS_scored_aspects$community_scored_aspects <- community_scored_aspects
+
+
+community_scored_domains <- as.integer(community_scored_domains)
+community_scored_aspects <- as.integer(community_scored_aspects)
+
+SS_scored_domains <- tibble::rownames_to_column(SS_scored_domains, "Domain")
+SS_scored_aspects <- tibble::rownames_to_column(SS_scored_aspects, "Aspect")
+
+SS_scored_domains_long <- SS_scored_domains %>% pivot_longer(!Domain, names_to = "Sample", values_to = "Score")
+SS_scored_aspects_long <- SS_scored_aspects %>% pivot_longer(!Aspect, names_to = "Sample", values_to = "Score")
+
+
+
+SS_scored_domains_long %>% 
+  ggplot(aes(x=as.factor(Domain), y=Score)) + 
+  geom_bar(aes(fill=as.factor(Sample)), stat = "identity", position = "dodge") + 
+  ylim(0,5) +
+  scale_x_discrete(limits = c("N", "A", "C", "E", "O")) +
+  xlab("Domain") + 
+  ylab("Score") +
+  scale_fill_discrete(name = "Sample", labels = c("Community", "Self")) 
+
+SS_scored_aspects_long %>% 
+  ggplot(aes(x=as.factor(Aspect), y=Score)) + 
+  geom_bar(aes(fill=as.factor(Sample)), stat = "identity", position = "dodge") + ylim(0,5) +
+  scale_x_discrete(limits = c("VOL", "WIT", "COM", "POL", "IND", "ORD", "ENT", "ASS", "INT", "OPE")) +
+  xlab("Aspect") +
+  ylab("Score") +
+  scale_fill_discrete(name = "Sample", labels = c("Community", "Self"))
+
+
+
+       
+                                  
