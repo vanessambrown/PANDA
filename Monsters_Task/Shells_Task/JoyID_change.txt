@@ -1,0 +1,40 @@
+- modifymePIT.m: 
+
+line 60-61: 
+
+joyid_ins=0; % instrumental joystick ID
+joyid_pit=1; % pit joystick ID
+
+- approachgoactive.m
+
+line 51;
+
+- approachnogo.m
+
+line 37;
+
+- getjoystickpos_pull.m
+
+line 14;
+
+-getjoystickpos_push.m
+
+line 15;
+
+- getjoystickpos_zero.m
+
+line 14
+
+- pit.m
+==> try to re-initialize the joystick position to the pit joystick
+
+line 97: add:
+[joy_pos, buttons] = mat_joy(joyid_pit);
+
+
+- For Dresden trigger:
+expparams.m: line 63-64
+runexperiment.m: line 191-192; line 216-217
+
+
+
