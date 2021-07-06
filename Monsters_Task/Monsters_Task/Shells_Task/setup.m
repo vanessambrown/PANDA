@@ -21,7 +21,7 @@ pstim = 'stimuli';
 pshel = {'shells';'monsters'};    % instrumental stimuli for the two sessions
 
 %pittsburgh fixed screen size
-wdwb = round(1280*visAngFrac);
+wdwb = round(1024*visAngFrac);
 wdhb = round(768*visAngFrac);
 
 %................... tiling backgrounds 
@@ -32,27 +32,24 @@ HideCursor;
 %ListenChar(2);
 
 %................... open a screen
-%Screen('Preference','Verbosity',0);
+Screen('Preference','Verbosity',0);
 imagingmode=kPsychNeedFastBackingStore;
 
 
 % Due to the scanner display setting, we need to select the primary monitor as stimulus monitor.
-screenNumber = max(Screen('Screens'));		% select the last monitor.
+%screenNumber = max(Screen('Screens'));	% select the last monitor.
 
 smallscreen=debug;
 if smallscreen
 	Screen('Preference','SkipSyncTests',2); % ONLY do this for quick debugging;
 	wd=Screen('OpenWindow', screenNumber,bgcol(2),[0 20 800 600],[],2,[],[],imagingmode); % make small PTB screen on my laptop screen
-%elseif scanning == 0 && strcmpi(exploc,'p')
-elseif strcmpi(exploc,'p')
-    %Screen('Preference','SkipSyncTests',2); %adding due to problem with dual graphics card & psychtoolbox -- fix before running in lab/scanner
-    wd=Screen('OpenWindow', screenNumber,bgcol(2),[],[],2,[],[],imagingmode); %automatically grab the resolution
-   %wd=Screen('OpenWindow', screenNumber,bgcol(2),[0 0 1280 768],[],2,[],[],imagingmode);
-   %wd=Screen('OpenWindow', screenNumber,bgcol(2),[0 0 1024 768],[],2,[],[],imagingmode);
-% elseif scanning == 1 && strcmpi(exploc,'p')
-%     screens = Screen('Screens');
-%     [wd,rect] = PsychImaging('OpenWindow', screenNumber, bgcol(2), []);
-%     [~,~] = Screen('WindowSize', wd); 
+ elseif strcmpi(exploc,'p')
+     wd=Screen('OpenWindow', screenNumber,bgcol(2),[],[],2,[],[],imagingmode); %automatically grab the resolution
+%    wd=Screen('OpenWindow', screenNumber,bgcol(2),[0 0 1280 768],[],2,[],[],imagingmode);
+%    wd=Screen('OpenWindow', screenNumber ,bgcol(2),[0 0 1024 768],[],2,[],[],imagingmode);
+ elseif strcmpi(exploc,'p') && exppart==3
+     Screen('Preference','SkipSyncTests',2); %adding due to problem with dual graphics card & psychtoolbox -- fix before running in lab/scanner
+     wd=Screen('OpenWindow', screenNumber,bgcol(2),[],[],2,[],[],imagingmode);
 end
 
 KbName('UnifyKeyNames'); % need this for KbName to behave

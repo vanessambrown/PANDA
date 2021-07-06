@@ -16,11 +16,11 @@ if     strcmpi(devicetype,'keyboard'); % if using keyboard
 elseif strcmpi(devicetype,'MRRC')
     % all pts will use right hand response glove, with right thumb 0, right
     % index = 1, right middle = 2, etc. 
-    % number 5 is the fMRI trigger
+    % = is the fMRI trigger
     respkey  = '2';	% index finger of right hand
     rightkey = '3';	% middle finger of right hand
     leftkey  = '2';	% index finger of right hand
-    usekbqueue = 1;
+    usekbqueue = 0;
 else
     error('Unknown device type')
 end
