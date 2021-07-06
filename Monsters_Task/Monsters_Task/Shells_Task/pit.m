@@ -43,7 +43,7 @@ Screen('gluDisk',wd,blue,dotpos(1),dotpos(2),dotsize);
 Screen('gluDisk',wd,0,dotpos(1),dotpos(2),dotsize/2);
 
 T.pit_onset(npit) = Screen('Flip',wd);	% stimulus onset time
-if ~scanning; sendparport(sparport.parportcodes.p3stimonset); end; %parport code marking instrumental stimulus onset
+if ~scanning; sendparport(sparport.parportcodes.p3stimonset); end %parport code marking instrumental stimulus onset
 
 
 %.............. GET RESPONSE
