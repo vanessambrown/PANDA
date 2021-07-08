@@ -2,14 +2,15 @@ library(tidyverse)
 library(R.matlab)
 
 
-#os <- "/Users/timallen/Box/skinner/data/PANDA/Monsters/"
-os <- "C:/Users/timot/Box/skinner/data/PANDA/Monsters/"
+os <- "/Users/timallen/Box/skinner/data/PANDA/Monsters/"
+#os <- "C:/Users/timot/Box/skinner/data/PANDA/Monsters/"
 setwd(paste0(os))
 
 mat_files <- list.files(pattern="*.ProcessedData.mat", recursive=TRUE)
+mat_files <- mat_files[!mat_files %in% "*data_with_id_errors/"] #need to fix this -- need to filter our mat files that are in the error folder
 
 #remove 440269, because she only seems to have 131 responses for some reason
-mat_files <- mat_files[!mat_files %in% "440269/PIT_440269_1_210312_0959_ProcessedData.mat"]
+mat_files <- mat_files[!mat_files %in% "440147/PIT_440147_1_210312_0959_ProcessedData.mat"]
 
 out = list()
 for (i in mat_files) {
