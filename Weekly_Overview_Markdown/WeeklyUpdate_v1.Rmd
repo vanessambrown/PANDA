@@ -77,11 +77,11 @@ Total_Enrolled <- sum(!is.na(recruitment_data$panda_consent))
 #ss_csv <- ss_csv %>% filter(Intials != "") 
 #Total_Screened <- nrow(ss_csv) #number of rows will be equal to number of participants screened
 
-Scheduled_NotRun <- 3 # number of subjects that have been scheduled but not yet run - add from excel?
+Scheduled_NotRun <- 2 # number of subjects that have been scheduled but not yet run - add from excel?
 Dropouts <- 2
 Ineligible <- 1
-Need_to_Screen <- 24 # subjects that need to be screened - add from excel? 
-Total_Screened <- 75 # number of subjects that have been screened - should screened include people not in redcap?
+Need_to_Screen <- 99 # subjects that need to be screened - add from excel? 
+Total_Screened <- 99 # number of subjects that have been screened - should screened include people not in redcap?
 
 #panda_screening=list(name="panda_screening",
                         #redcap_uri='https://www.ctsiredcap.pitt.edu/redcap/api/',
