@@ -63,7 +63,7 @@ fficd_scored_facets <- scoreItems(fficd_facets, fficd_data, min = 1, max = 5)
 fficd_scored_domains <- scoreItems(fficd_domains, fficd_data, min = 1, max = 5)
 
 #look at the output
-print(fficd_scored_aspects)#, #short = FALSE)
+print(fficd_scored_facets)#, #short = FALSE)
 print(fficd_scored_domains)#, #short = FALSE)
 
 #create new dataframe with the scored scales
