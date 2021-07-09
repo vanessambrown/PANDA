@@ -61,6 +61,7 @@ while (GetSecs < tend); % wait nogodelay seconds
                 % count responses
                 ch(npit) = ch(npit)+1;
                 % record response times 
+                if T.pit_response(npit,ch(npit))
                 T.pit_response(npit,ch(npit)) = t;
                 % reaction times
                 presstimes(npit,ch(npit)) = T.pit_response(npit,ch(npit)) -T.pit_onset(npit);

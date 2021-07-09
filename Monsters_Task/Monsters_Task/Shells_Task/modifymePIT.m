@@ -13,7 +13,7 @@ fprintf('............            MODIFYME.M\n'); fprintf('............ \n')
 %----------------------------------------------------------------------------
 %        Patient Information 
 %----------------------------------------------------------------------------
-subjn    = '79211';  % Subject ID. This number has to be > 1000 
+subjn    = '9999';  % Subject ID. This number has to be > 1000 
                     % *** subject number has to be in single quotes ***
 dominanthand     = 'right';     % 'right' or 'left'
 
@@ -33,7 +33,7 @@ psychophys = 1;
 
 debug   = 0;      % if this is set to 1, then a short version of the experiment is
                   % run. For testing/debugging. 
-doinstr = 1;      % present instructions?
+doinstr = 0;      % present instructions?
 
 %----------------------------------------------------------------------------
 %        To save or not to save

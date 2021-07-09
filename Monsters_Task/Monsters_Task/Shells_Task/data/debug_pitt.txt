@@ -4943,3 +4943,1187 @@ ans =
 
 PIT trial 4PIT trial 5PIT trial 6PIT trial 7PIT trial 8PIT trial 9PIT trial 10PIT trial 11PIT trial 12PIT trial 13PIT trial 14PIT trial 15PIT trial 16PIT trial 17PIT trial 18PIT trial 19PIT trial 20PIT trial 21PIT trial 22PIT trial 23PIT trial 24PIT trial 25PIT trial 26PIT trial 27PIT trial 28PIT trial 29PIT trial 30PIT trial 31PIT trial 32PIT trial 33PIT trial 34PIT trial 35PIT trial 36PIT trial 37PIT trial 38PIT trial 39PIT trial 40PIT trial 41PIT trial 42PIT trial 43PIT trial 44PIT trial 45PIT trial 46PIT trial 47PIT trial 48PIT trial 49PIT trial 50PIT trial 51PIT trial 52PIT trial 53PIT trial 54PIT trial 55PIT trial 56PIT trial 57PIT trial 58PIT trial 59PIT trial 60PIT trial 61PIT trial 62PIT trial 63PIT trial 64PIT trial 65PIT trial 66PIT trial 67PIT trial 68PIT trial 69PIT trial 70PIT trial 71PIT trial 72PIT trial 73PIT trial 74PIT trial 75PIT trial 76PIT trial 77PIT trial 78PIT trial 79PIT trial 80PIT trial 81PIT trial 82PIT trial 83PIT trial 84PIT trial 85PIT trial 86PIT trial 87PIT trial 88PIT trial 89PIT trial 90PIT trial 91PIT trial 92PIT trial 93PIT trial 94PIT trial 95PIT trial 96PIT trial 97PIT trial 98PIT trial 99PIT trial 100PIT trial 101PIT trial 102PIT trial 103PIT trial 104PIT trial 105PIT trial 106PIT trial 107PIT trial 108PIT trial 109PIT trial 110PIT trial 111PIT trial 112PIT trial 113PIT trial 114PIT trial 115PIT trial 116PIT trial 117PIT trial 118PIT trial 119PIT trial 120PIT trial 121PIT trial 122PIT trial 123PIT trial 124PIT trial 125PIT trial 126PIT trial 127PIT trial 128PIT trial 129PIT trial 130PIT trial 131PIT trial 132PIT trial 133PIT trial 134PIT trial 135PIT trial 136PIT trial 137PIT trial 138PIT trial 139PIT trial 140PIT trial 141PIT trial 142PIT trial 143PIT trial 144PIT trial 145PIT trial 146PIT trial 147PIT trial 148PIT trial 149PIT trial 150PIT trial 151PIT trial 152PIT trial 153PIT trial 154PIT trial 155PIT trial 156PIT trial 157PIT trial 158PIT trial 159PIT trial 160PIT trial 161PIT trial 162PIT trial 163PIT trial 164PIT trial 165PIT trial 166PIT trial 167PIT trial 168PIT trial 169PIT trial 170PIT trial 171PIT trial 172PIT trial 173PIT trial 174PIT trial 175PIT trial 176PIT trial 177PIT trial 178PIT trial 179PIT trial 180
 Acquiring final volumes
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+
+Data file name: PIT_9999_1_210709_1755
+............ Data will be saved as                              
+............ PIT_9999_1_210709_1755                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+
+Data file name: PIT_9999_1_210709_1757
+............ Data will be saved as                              
+............ PIT_9999_1_210709_1757                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+PTB-INFO: Multi-display setup in explicit multi-display mode detected. Using the following mapping:
+PTB-INFO: Screen 0 corresponds to the full Windows desktop area. Useful for stereo presentations in stereomode=4 ...
+PTB-INFO: Screen 1 corresponds to the display area of the monitor with the Windows-internal name \\.\DISPLAY1 ...
+PTB-INFO: Screen 2 corresponds to the display area of the monitor with the Windows-internal name \\.\DISPLAY4 ...
+
+PTB-INFO: Your version of Matlab 64-Bit is global system DPI aware. On Windows-8 or later, fullscreen onscreen windows will only work 
+PTB-INFO: properly timing-wise when displayed on displays with the same pixel density as your systems primary display monitor.
+PTB-INFO: For your multi-display setup the stimulus display monitor must have a DPI of (96, 96), matching that of
+PTB-INFO: your primary display monitor. Ideally you will only display on the primary display in the first place.
+PTB-INFO: Displaying on anything with a different DPI will cause mysterious visual timing problems, sync failures etc.
+PTB-INFO: Read 'help RetinaDisplay' for more info on this topic.
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is NOT open
+............. Instrumental training
+............ Displaying instructions PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+<a href="matlab: opentoline('C:\toolbox\Psychtoolbox\PsychBasic\KbWait.m',143,1)">143 </a>end
+if system_dependent('IsDebugMode')==1, dbquit; end
+modifymePIT
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+runexperiment
+inpoutx64 driver uninstalled.
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+
+Data file name: PIT_9999_1_210709_1758
+............ Data will be saved as                              
+............ PIT_9999_1_210709_1758                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+PTB-INFO: Multi-display setup in explicit multi-display mode detected. Using the following mapping:
+PTB-INFO: Screen 0 corresponds to the full Windows desktop area. Useful for stereo presentations in stereomode=4 ...
+PTB-INFO: Screen 1 corresponds to the display area of the monitor with the Windows-internal name \\.\DISPLAY1 ...
+PTB-INFO: Screen 2 corresponds to the display area of the monitor with the Windows-internal name \\.\DISPLAY4 ...
+
+PTB-INFO: Your version of Matlab 64-Bit is global system DPI aware. On Windows-8 or later, fullscreen onscreen windows will only work 
+PTB-INFO: properly timing-wise when displayed on displays with the same pixel density as your systems primary display monitor.
+PTB-INFO: For your multi-display setup the stimulus display monitor must have a DPI of (96, 96), matching that of
+PTB-INFO: your primary display monitor. Ideally you will only display on the primary display in the first place.
+PTB-INFO: Displaying on anything with a different DPI will cause mysterious visual timing problems, sync failures etc.
+PTB-INFO: Read 'help RetinaDisplay' for more info on this topic.
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is NOT open
+............. Instrumental training
+64-bit Windows
+InpOutx64 driver is NOT open
+Instrumental training trial 164-bit Windows
+InpOutx64 driver is NOT open
+Instrumental training trial 2PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+
+--------------------------------------------------------------------------------
+          Access violation detected at Fri Jul 09 05:58:52 2021 -0400
+--------------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding           : Disabled - No sandbox or build area path
+  Crash Mode               : continue (default)
+  Default Encoding         : windows-1252
+  Deployed                 : false
+  Graphics Driver          : Unknown hardware 
+  Graphics card 1          : NVIDIA ( 0x10de ) NVIDIA GeForce MX130 Version 23.21.13.9125 (2018-3-16)
+  Graphics card 2          : DisplayLink ( 0x0 ) DisplayLink USB Device Version 8.2.1952.0 (2017-5-22)
+  Graphics card 3          : Intel Corporation ( 0x8086 ) Intel(R) UHD Graphics 620 Version 27.20.100.8729 (2020-10-12)
+  JAWT Patch Status:       : Patch applied
+  Java Version             : Java 1.8.0_144-b01 with Oracle Corporation Java HotSpot(TM) 64-Bit Server VM mixed mode
+  MATLAB Architecture      : win64
+  MATLAB Entitlement ID    : 1536166
+  MATLAB Root              : C:\Program Files\MATLAB\R2018a
+  MATLAB Version           : 9.4.0.813654 (R2018a)
+  OpenGL                   : hardware
+  Operating System         : Microsoft Windows 10 Home
+  Process ID               : 6916
+  Processor ID             : x86 Family 6 Model 142 Stepping 10, GenuineIntel
+  Session Key              : 6ce683e0-e14b-4fb0-8740-d4b0c5423953
+  Window System            : Version 10.0 (Build 19041)
+
+Fault Count: 1
+
+
+Abnormal termination
+
+Register State (from fault):
+  RAX = 0000000000000000  RBX = 0000000000000244
+  RCX = 00007ffeaa391064  RDX = 0000000000000000
+  RSP = 00000000043f7af0  RBP = 0000000000000000
+  RSI = 0000000000000320  RDI = 00000001585d6650
+ 
+   R8 = 00000000043f7998   R9 = 0000000000000001
+  R10 = 0000000000000000  R11 = 00000000043f7a50
+  R12 = 0000000000000001  R13 = 0000000000000000
+  R14 = 00007ffe65105720  R15 = 0000000000000000
+ 
+  RIP = 00007ffe650a3c77  EFL = 00010202
+ 
+   CS = 0033   FS = 0053   GS = 002b
+
+Stack Trace (from fault):
+[  0] 0x00007ffe650a3c77 C:\toolbox\Psychtoolbox\PsychBasic\MatlabWindowsFilesR2007a\Screen.mexw64+00408695 mexFunction+00343527
+[  1] 0x00007ffe6509d774 C:\toolbox\Psychtoolbox\PsychBasic\MatlabWindowsFilesR2007a\Screen.mexw64+00382836 mexFunction+00317668
+[  2] 0x00007ffe6509f040 C:\toolbox\Psychtoolbox\PsychBasic\MatlabWindowsFilesR2007a\Screen.mexw64+00389184 mexFunction+00324016
+[  3] 0x00007ffe650b0f44 C:\toolbox\Psychtoolbox\PsychBasic\MatlabWindowsFilesR2007a\Screen.mexw64+00462660 mexFunction+00397492
+[  4] 0x00007ffe65050233 C:\toolbox\Psychtoolbox\PsychBasic\MatlabWindowsFilesR2007a\Screen.mexw64+00066099 mexFunction+00000931
+[  5] 0x00000000fc626594                               bin\win64\libmex.dll+00288148 MexRetrieveVersion+00002916
+[  6] 0x00000000fc62678c                               bin\win64\libmex.dll+00288652 MexRetrieveVersion+00003420
+[  7] 0x00000000fc6268de                               bin\win64\libmex.dll+00288990 MexRetrieveVersion+00003758
+[  8] 0x00000000fc612ec3                               bin\win64\libmex.dll+00208579 mexUnlock_800+00024147
+[  9] 0x00000000162ec51a                     bin\win64\pgo\m_dispatcher.dll+00050458 Mfh_file::dispatch_fh_impl+00001114
+[ 10] 0x00000000162ec0b2                     bin\win64\pgo\m_dispatcher.dll+00049330 Mfh_file::dispatch_fh+00000062
+[ 11] 0x00000000162e4674                     bin\win64\pgo\m_dispatcher.dll+00018036 Mfunction_handle::dispatch+00000420
+[ 12] 0x00000000171a0189                            bin\win64\pgo\m_lxe.dll+00393609
+[ 13] 0x00000000171af53b                            bin\win64\pgo\m_lxe.dll+00455995
+[ 14] 0x00000000171ae0a6                            bin\win64\pgo\m_lxe.dll+00450726
+[ 15] 0x00000000171ab335                            bin\win64\pgo\m_lxe.dll+00439093
+[ 16] 0x00000000171aa82e                            bin\win64\pgo\m_lxe.dll+00436270
+[ 17] 0x00000000171a8b35                            bin\win64\pgo\m_lxe.dll+00428853
+[ 18] 0x00000000171a8e9e                            bin\win64\pgo\m_lxe.dll+00429726
+[ 19] 0x00000000171a8e29                            bin\win64\pgo\m_lxe.dll+00429609
+[ 20] 0x00000000162ec51a                     bin\win64\pgo\m_dispatcher.dll+00050458 Mfh_file::dispatch_fh_impl+00001114
+[ 21] 0x00000000162ec0b2                     bin\win64\pgo\m_dispatcher.dll+00049330 Mfh_file::dispatch_fh+00000062
+[ 22] 0x00000000162e4674                     bin\win64\pgo\m_dispatcher.dll+00018036 Mfunction_handle::dispatch+00000420
+[ 23] 0x00000000171a2aa1                            bin\win64\pgo\m_lxe.dll+00404129
+[ 24] 0x0000000017228e25                            bin\win64\pgo\m_lxe.dll+00953893 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00115205
+[ 25] 0x000000001722a808                            bin\win64\pgo\m_lxe.dll+00960520 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00121832
+[ 26] 0x000000001722b403                            bin\win64\pgo\m_lxe.dll+00963587 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00124899
+[ 27] 0x000000001722c836                            bin\win64\pgo\m_lxe.dll+00968758 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00130070
+[ 28] 0x000000001722d3f0                            bin\win64\pgo\m_lxe.dll+00971760 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00133072
+[ 29] 0x000000001722c97f                            bin\win64\pgo\m_lxe.dll+00969087 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00130399
+[ 30] 0x000000001722ca7e                            bin\win64\pgo\m_lxe.dll+00969342 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00130654
+[ 31] 0x00000000171ae8a5                            bin\win64\pgo\m_lxe.dll+00452773
+[ 32] 0x00000000171ab335                            bin\win64\pgo\m_lxe.dll+00439093
+[ 33] 0x00000000171aa82e                            bin\win64\pgo\m_lxe.dll+00436270
+[ 34] 0x00000000171a8b35                            bin\win64\pgo\m_lxe.dll+00428853
+[ 35] 0x00000000171a8e9e                            bin\win64\pgo\m_lxe.dll+00429726
+[ 36] 0x00000000171a8e29                            bin\win64\pgo\m_lxe.dll+00429609
+[ 37] 0x00000000162ec51a                     bin\win64\pgo\m_dispatcher.dll+00050458 Mfh_file::dispatch_fh_impl+00001114
+[ 38] 0x00000000162ec0b2                     bin\win64\pgo\m_dispatcher.dll+00049330 Mfh_file::dispatch_fh+00000062
+[ 39] 0x00000000162e4674                     bin\win64\pgo\m_dispatcher.dll+00018036 Mfunction_handle::dispatch+00000420
+[ 40] 0x00000000171a2aa1                            bin\win64\pgo\m_lxe.dll+00404129
+[ 41] 0x0000000017228e25                            bin\win64\pgo\m_lxe.dll+00953893 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00115205
+[ 42] 0x000000001722a808                            bin\win64\pgo\m_lxe.dll+00960520 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00121832
+[ 43] 0x000000001722b403                            bin\win64\pgo\m_lxe.dll+00963587 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00124899
+[ 44] 0x000000001722c836                            bin\win64\pgo\m_lxe.dll+00968758 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00130070
+[ 45] 0x000000001722d3f0                            bin\win64\pgo\m_lxe.dll+00971760 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00133072
+[ 46] 0x000000001722c97f                            bin\win64\pgo\m_lxe.dll+00969087 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00130399
+[ 47] 0x000000001722ca7e                            bin\win64\pgo\m_lxe.dll+00969342 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00130654
+[ 48] 0x00000000171ae8a5                            bin\win64\pgo\m_lxe.dll+00452773
+[ 49] 0x00000000171ab335                            bin\win64\pgo\m_lxe.dll+00439093
+[ 50] 0x00000000171aa82e                            bin\win64\pgo\m_lxe.dll+00436270
+[ 51] 0x00000000171b1b9a                            bin\win64\pgo\m_lxe.dll+00465818
+[ 52] 0x00000000171b133d                            bin\win64\pgo\m_lxe.dll+00463677
+[ 53] 0x00000000171b144e                            bin\win64\pgo\m_lxe.dll+00463950
+[ 54] 0x0000000017351d9c                            bin\win64\pgo\m_lxe.dll+02170268 mwboost::serialization::singleton<mwboost::archive::detail::pointer_oserializer<mwboost::archive::binary_oarchive,MathWorks::lxe::PreLineExecutionEvent> >::get_instance+00475644
+[ 55] 0x0000000017351d4a                            bin\win64\pgo\m_lxe.dll+02170186 mwboost::serialization::singleton<mwboost::archive::detail::pointer_oserializer<mwboost::archive::binary_oarchive,MathWorks::lxe::PreLineExecutionEvent> >::get_instance+00475562
+[ 56] 0x000000001718051d                            bin\win64\pgo\m_lxe.dll+00263453
+[ 57] 0x0000000016438acf                    bin\win64\pgo\m_interpreter.dll+00297679 inEvalCmdWithLocalReturn+00000063
+[ 58] 0x00000000fb60bedb                          bin\win64\libmwbridge.dll+00114395 mnParser+00001595
+[ 59] 0x0000000016076564                                  bin\win64\mcr.dll+00222564 mcr::runtime::setInterpreterThreadSingletonToCurrent+00091332
+[ 60] 0x00000000160797ae                                  bin\win64\mcr.dll+00235438 mcr::runtime::setInterpreterThreadSingletonToCurrent+00104206
+[ 61] 0x0000000016096c8a                                  bin\win64\mcr.dll+00355466 mcrRegisterExternalFunction+00007930
+[ 62] 0x00000000160989bc                                  bin\win64\mcr.dll+00362940 mcrRegisterExternalFunction+00015404
+[ 63] 0x0000000016095bff                                  bin\win64\mcr.dll+00351231 mcrRegisterExternalFunction+00003695
+[ 64] 0x0000000016096c46                                  bin\win64\mcr.dll+00355398 mcrRegisterExternalFunction+00007862
+[ 65] 0x0000000016095ce3                                  bin\win64\mcr.dll+00351459 mcrRegisterExternalFunction+00003923
+[ 66] 0x0000000016098ff6                                  bin\win64\mcr.dll+00364534 mcrRegisterExternalFunction+00016998
+[ 67] 0x00000000fd014f67                                  bin\win64\iqm.dll+00544615 iqm::IqmPlugin<cmddistributor::PackagedTaskIIP>::getIIP+00016215
+[ 68] 0x00000000fd01567f                                  bin\win64\iqm.dll+00546431 iqm::PackagedTaskPlugin::execute+00000911
+[ 69] 0x00000000fd014fed                                  bin\win64\iqm.dll+00544749 iqm::IqmPlugin<cmddistributor::PackagedTaskIIP>::getIIP+00016349
+[ 70] 0x00000000fd0154c3                                  bin\win64\iqm.dll+00545987 iqm::PackagedTaskPlugin::execute+00000467
+[ 71] 0x00000000fcfed9ea                                  bin\win64\iqm.dll+00383466 iqm::Iqm::setupIqmFcnPtrs+00071994
+[ 72] 0x00000000fcfed84c                                  bin\win64\iqm.dll+00383052 iqm::Iqm::setupIqmFcnPtrs+00071580
+[ 73] 0x00000000fcfce722                                  bin\win64\iqm.dll+00255778 iqm::Iqm::deliver+00003730
+[ 74] 0x00000000fcfcf749                                  bin\win64\iqm.dll+00259913 iqm::Iqm::deliver+00007865
+[ 75] 0x00000001001aa211                        bin\win64\libmwservices.dll+01810961 services::system_events::PpeDispatchHook::dispatchOne+00030865
+[ 76] 0x00000001001b7ff3                        bin\win64\libmwservices.dll+01867763 sysq::addProcessPendingEventsUnitTestHook+00004659
+[ 77] 0x00000001001b81e0                        bin\win64\libmwservices.dll+01868256 sysq::addProcessPendingEventsUnitTestHook+00005152
+[ 78] 0x00000001001b9576                        bin\win64\libmwservices.dll+01873270 sysq::getCondition+00003446
+[ 79] 0x00000001001bb0e6                        bin\win64\libmwservices.dll+01880294 svWS_ProcessPendingEvents+00000230
+[ 80] 0x0000000016080737                                  bin\win64\mcr.dll+00263991 mcr::runtime::setInterpreterThreadSingletonToCurrent+00132759
+[ 81] 0x0000000016082360                                  bin\win64\mcr.dll+00271200 mcr::runtime::setInterpreterThreadSingletonToCurrent+00139968
+[ 82] 0x000000001605e9b7                                  bin\win64\mcr.dll+00125367 mcr_process_events+00001959
+[ 83] 0x0000000015f2fef5                             bin\win64\MVMLocal.dll+00327413 mvm_server::inproc::LocalFactory::terminate+00139589
+[ 84] 0x00000000fa9605b9                                  bin\win64\mvm.dll+01246649 mvm::detail::initLocalMvmHack+00000793
+[ 85] 0x00000000fa960dcb                                  bin\win64\mvm.dll+01248715 mvm::detail::SessionImpl::privateSession+00000555
+[ 86] 0x00000000fa960ff1                                  bin\win64\mvm.dll+01249265 mvm::detail::SessionImpl::privateSession+00001105
+[ 87] 0x000000014000780d                               bin\win64\MATLAB.exe+00030733
+[ 88] 0x000000014000862f                               bin\win64\MATLAB.exe+00034351
+[ 89] 0x00007ffeab7b7034                   C:\WINDOWS\System32\KERNEL32.DLL+00094260 BaseThreadInitThunk+00000020
+[ 90] 0x00007ffeac3a2651                      C:\WINDOWS\SYSTEM32\ntdll.dll+00337489 RtlUserThreadStart+00000033
+
+
+This error was detected while a MEX-file was running. If the MEX-file
+is not an official MathWorks function, please examine its source code
+for errors. Please consult the External Interfaces Guide for information
+on debugging MEX-files.
+** This crash report has been saved to disk as C:\Users\timot\AppData\Local\Temp\matlab_crash_dump.6916-1 **
+
+
+Caught MathWorks::System::FatalException
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 2
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+Data file please
+Choose the one starting with the date, NOT the one called 'subject_xxxx'............ Setting up the psychtoolbox screen   
+PTB-INFO: Multi-display setup in explicit multi-display mode detected. Using the following mapping:
+PTB-INFO: Screen 0 corresponds to the full Windows desktop area. Useful for stereo presentations in stereomode=4 ...
+PTB-INFO: Screen 1 corresponds to the display area of the monitor with the Windows-internal name \\.\DISPLAY1 ...
+PTB-INFO: Screen 2 corresponds to the display area of the monitor with the Windows-internal name \\.\DISPLAY4 ...
+
+PTB-INFO: Your version of Matlab 64-Bit is global system DPI aware. On Windows-8 or later, fullscreen onscreen windows will only work 
+PTB-INFO: properly timing-wise when displayed on displays with the same pixel density as your systems primary display monitor.
+PTB-INFO: For your multi-display setup the stimulus display monitor must have a DPI of (96, 96), matching that of
+PTB-INFO: your primary display monitor. Ideally you will only display on the primary display in the first place.
+PTB-INFO: Displaying on anything with a different DPI will cause mysterious visual timing problems, sync failures etc.
+PTB-INFO: Read 'help RetinaDisplay' for more info on this topic.
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 2 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 3 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 4 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is NOT open
+............. Pavlovian conditioning 
+Pavlovian training trial 1{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('checkabort', 'C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\checkabort.m', 12)" style="font-weight:bold">checkabort</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\checkabort.m',12,0)">line 12</a>)
+Pressed abort key--- aborting experiment
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('pavlov', 'C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\pavlov.m', 116)" style="font-weight:bold">pavlov</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\pavlov.m',116,0)">line 116</a>)
+checkabort; 	% Allow for abortion of experiment
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m', 121)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m',121,0)">line 121</a>)
+            pavlov;
+} 
+runexperiment
+inpoutx64 driver uninstalled.
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 3
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+Data file please
+Choose the one starting with the date, NOT the one called 'subject_xxxx'............ Setting up the psychtoolbox screen   
+PTB-INFO: Multi-display setup in explicit multi-display mode detected. Using the following mapping:
+PTB-INFO: Screen 0 corresponds to the full Windows desktop area. Useful for stereo presentations in stereomode=4 ...
+PTB-INFO: Screen 1 corresponds to the display area of the monitor with the Windows-internal name \\.\DISPLAY1 ...
+PTB-INFO: Screen 2 corresponds to the display area of the monitor with the Windows-internal name \\.\DISPLAY4 ...
+
+PTB-INFO: Your version of Matlab 64-Bit is global system DPI aware. On Windows-8 or later, fullscreen onscreen windows will only work 
+PTB-INFO: properly timing-wise when displayed on displays with the same pixel density as your systems primary display monitor.
+PTB-INFO: For your multi-display setup the stimulus display monitor must have a DPI of (96, 96), matching that of
+PTB-INFO: your primary display monitor. Ideally you will only display on the primary display in the first place.
+PTB-INFO: Displaying on anything with a different DPI will cause mysterious visual timing problems, sync failures etc.
+PTB-INFO: Read 'help RetinaDisplay' for more info on this topic.
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 2 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 3 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 4 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 5 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is NOT open
+............. PIT session 
+First Trigger Received!
+PIT trial 1
+ans =
+
+   1.5376e+05
+
+PIT trial 2PIT trial 3
+ans =
+
+   1.5378e+05
+
+PIT trial 4PIT trial 5PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+
+--------------------------------------------------------------------------------
+          Access violation detected at Fri Jul 09 06:01:20 2021 -0400
+--------------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding           : Disabled - No sandbox or build area path
+  Crash Mode               : continue (default)
+  Default Encoding         : windows-1252
+  Deployed                 : false
+  Graphics Driver          : Unknown hardware 
+  Graphics card 1          : NVIDIA ( 0x10de ) NVIDIA GeForce MX130 Version 23.21.13.9125 (2018-3-16)
+  Graphics card 2          : DisplayLink ( 0x0 ) DisplayLink USB Device Version 8.2.1952.0 (2017-5-22)
+  Graphics card 3          : Intel Corporation ( 0x8086 ) Intel(R) UHD Graphics 620 Version 27.20.100.8729 (2020-10-12)
+  Java Version             : Java 1.8.0_144-b01 with Oracle Corporation Java HotSpot(TM) 64-Bit Server VM mixed mode
+  MATLAB Architecture      : win64
+  MATLAB Entitlement ID    : 1536166
+  MATLAB Root              : C:\Program Files\MATLAB\R2018a
+  MATLAB Version           : 9.4.0.813654 (R2018a)
+  OpenGL                   : hardware
+  Operating System         : Microsoft Windows 10 Home
+  Process ID               : 15760
+  Processor ID             : x86 Family 6 Model 142 Stepping 10, GenuineIntel
+  Session Key              : 64fbb75c-93df-4c0c-aadd-659ab963d1c1
+  Window System            : Version 10.0 (Build 19041)
+
+Fault Count: 1
+
+
+Abnormal termination
+
+Register State (from fault):
+  RAX = 0000000000000000  RBX = 0000000000000244
+  RCX = 00007ffeaa391064  RDX = 0000000000000000
+  RSP = 00000000043f8280  RBP = 0000000000000000
+  RSI = 0000000000000320  RDI = 00000000d36b90e0
+ 
+   R8 = 00000000043f8128   R9 = 0000000000000001
+  R10 = 0000000000000000  R11 = 00000000043f81e0
+  R12 = 0000000000000001  R13 = 0000000000000000
+  R14 = 00007ffe65105720  R15 = 0000000000000000
+ 
+  RIP = 00007ffe650a3c77  EFL = 00010202
+ 
+   CS = 0033   FS = 0053   GS = 002b
+
+Stack Trace (from fault):
+[  0] 0x00007ffe650a3c77 C:\toolbox\Psychtoolbox\PsychBasic\MatlabWindowsFilesR2007a\Screen.mexw64+00408695 mexFunction+00343527
+[  1] 0x00007ffe6509d774 C:\toolbox\Psychtoolbox\PsychBasic\MatlabWindowsFilesR2007a\Screen.mexw64+00382836 mexFunction+00317668
+[  2] 0x00007ffe6509f040 C:\toolbox\Psychtoolbox\PsychBasic\MatlabWindowsFilesR2007a\Screen.mexw64+00389184 mexFunction+00324016
+[  3] 0x00007ffe650b0f44 C:\toolbox\Psychtoolbox\PsychBasic\MatlabWindowsFilesR2007a\Screen.mexw64+00462660 mexFunction+00397492
+[  4] 0x00007ffe65050233 C:\toolbox\Psychtoolbox\PsychBasic\MatlabWindowsFilesR2007a\Screen.mexw64+00066099 mexFunction+00000931
+[  5] 0x00000000fc626594                               bin\win64\libmex.dll+00288148 MexRetrieveVersion+00002916
+[  6] 0x00000000fc62678c                               bin\win64\libmex.dll+00288652 MexRetrieveVersion+00003420
+[  7] 0x00000000fc6268de                               bin\win64\libmex.dll+00288990 MexRetrieveVersion+00003758
+[  8] 0x00000000fc612ec3                               bin\win64\libmex.dll+00208579 mexUnlock_800+00024147
+[  9] 0x000000001674c51a                     bin\win64\pgo\m_dispatcher.dll+00050458 Mfh_file::dispatch_fh_impl+00001114
+[ 10] 0x000000001674c0b2                     bin\win64\pgo\m_dispatcher.dll+00049330 Mfh_file::dispatch_fh+00000062
+[ 11] 0x0000000016744674                     bin\win64\pgo\m_dispatcher.dll+00018036 Mfunction_handle::dispatch+00000420
+[ 12] 0x0000000017660189                            bin\win64\pgo\m_lxe.dll+00393609
+[ 13] 0x000000001766f53b                            bin\win64\pgo\m_lxe.dll+00455995
+[ 14] 0x00000000176ff686                            bin\win64\pgo\m_lxe.dll+01046150 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00207462
+[ 15] 0x000000001766f0f2                            bin\win64\pgo\m_lxe.dll+00454898
+[ 16] 0x000000001766b335                            bin\win64\pgo\m_lxe.dll+00439093
+[ 17] 0x000000001766a82e                            bin\win64\pgo\m_lxe.dll+00436270
+[ 18] 0x0000000017668b35                            bin\win64\pgo\m_lxe.dll+00428853
+[ 19] 0x0000000017668e9e                            bin\win64\pgo\m_lxe.dll+00429726
+[ 20] 0x0000000017668e29                            bin\win64\pgo\m_lxe.dll+00429609
+[ 21] 0x000000001674c51a                     bin\win64\pgo\m_dispatcher.dll+00050458 Mfh_file::dispatch_fh_impl+00001114
+[ 22] 0x000000001674c0b2                     bin\win64\pgo\m_dispatcher.dll+00049330 Mfh_file::dispatch_fh+00000062
+[ 23] 0x0000000016744674                     bin\win64\pgo\m_dispatcher.dll+00018036 Mfunction_handle::dispatch+00000420
+[ 24] 0x0000000017662aa1                            bin\win64\pgo\m_lxe.dll+00404129
+[ 25] 0x00000000176e8e25                            bin\win64\pgo\m_lxe.dll+00953893 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00115205
+[ 26] 0x000000001766f53b                            bin\win64\pgo\m_lxe.dll+00455995
+[ 27] 0x00000000176ff686                            bin\win64\pgo\m_lxe.dll+01046150 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00207462
+[ 28] 0x000000001766f0f2                            bin\win64\pgo\m_lxe.dll+00454898
+[ 29] 0x000000001766b335                            bin\win64\pgo\m_lxe.dll+00439093
+[ 30] 0x000000001766a82e                            bin\win64\pgo\m_lxe.dll+00436270
+[ 31] 0x0000000017668b35                            bin\win64\pgo\m_lxe.dll+00428853
+[ 32] 0x0000000017668e9e                            bin\win64\pgo\m_lxe.dll+00429726
+[ 33] 0x0000000017668e29                            bin\win64\pgo\m_lxe.dll+00429609
+[ 34] 0x000000001674c51a                     bin\win64\pgo\m_dispatcher.dll+00050458 Mfh_file::dispatch_fh_impl+00001114
+[ 35] 0x000000001674c0b2                     bin\win64\pgo\m_dispatcher.dll+00049330 Mfh_file::dispatch_fh+00000062
+[ 36] 0x0000000016744674                     bin\win64\pgo\m_dispatcher.dll+00018036 Mfunction_handle::dispatch+00000420
+[ 37] 0x0000000017662aa1                            bin\win64\pgo\m_lxe.dll+00404129
+[ 38] 0x00000000176e8e25                            bin\win64\pgo\m_lxe.dll+00953893 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00115205
+[ 39] 0x00000000176ea808                            bin\win64\pgo\m_lxe.dll+00960520 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00121832
+[ 40] 0x00000000176eb403                            bin\win64\pgo\m_lxe.dll+00963587 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00124899
+[ 41] 0x00000000176ec836                            bin\win64\pgo\m_lxe.dll+00968758 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00130070
+[ 42] 0x00000000176ed3f0                            bin\win64\pgo\m_lxe.dll+00971760 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00133072
+[ 43] 0x00000000176ec97f                            bin\win64\pgo\m_lxe.dll+00969087 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00130399
+[ 44] 0x00000000176eca7e                            bin\win64\pgo\m_lxe.dll+00969342 mwboost::serialization::singleton<mwboost::archive::detail::pointer_iserializer<mwboost::archive::binaryTerm_iarchive,ir::IrTree> >::get_instance+00130654
+[ 45] 0x000000001766e8a5                            bin\win64\pgo\m_lxe.dll+00452773
+[ 46] 0x000000001766b335                            bin\win64\pgo\m_lxe.dll+00439093
+[ 47] 0x000000001766a82e                            bin\win64\pgo\m_lxe.dll+00436270
+[ 48] 0x0000000017671b9a                            bin\win64\pgo\m_lxe.dll+00465818
+[ 49] 0x000000001767133d                            bin\win64\pgo\m_lxe.dll+00463677
+[ 50] 0x000000001767144e                            bin\win64\pgo\m_lxe.dll+00463950
+[ 51] 0x0000000017811d9c                            bin\win64\pgo\m_lxe.dll+02170268 mwboost::serialization::singleton<mwboost::archive::detail::pointer_oserializer<mwboost::archive::binary_oarchive,MathWorks::lxe::PreLineExecutionEvent> >::get_instance+00475644
+[ 52] 0x0000000017811d4a                            bin\win64\pgo\m_lxe.dll+02170186 mwboost::serialization::singleton<mwboost::archive::detail::pointer_oserializer<mwboost::archive::binary_oarchive,MathWorks::lxe::PreLineExecutionEvent> >::get_instance+00475562
+[ 53] 0x000000001764051d                            bin\win64\pgo\m_lxe.dll+00263453
+[ 54] 0x0000000016898acf                    bin\win64\pgo\m_interpreter.dll+00297679 inEvalCmdWithLocalReturn+00000063
+[ 55] 0x00000000fb60bedb                          bin\win64\libmwbridge.dll+00114395 mnParser+00001595
+[ 56] 0x00000000164e6564                                  bin\win64\mcr.dll+00222564 mcr::runtime::setInterpreterThreadSingletonToCurrent+00091332
+[ 57] 0x00000000164e97ae                                  bin\win64\mcr.dll+00235438 mcr::runtime::setInterpreterThreadSingletonToCurrent+00104206
+[ 58] 0x0000000016506c8a                                  bin\win64\mcr.dll+00355466 mcrRegisterExternalFunction+00007930
+[ 59] 0x00000000165089bc                                  bin\win64\mcr.dll+00362940 mcrRegisterExternalFunction+00015404
+[ 60] 0x0000000016505bff                                  bin\win64\mcr.dll+00351231 mcrRegisterExternalFunction+00003695
+[ 61] 0x0000000016506c46                                  bin\win64\mcr.dll+00355398 mcrRegisterExternalFunction+00007862
+[ 62] 0x0000000016505ce3                                  bin\win64\mcr.dll+00351459 mcrRegisterExternalFunction+00003923
+[ 63] 0x0000000016508ff6                                  bin\win64\mcr.dll+00364534 mcrRegisterExternalFunction+00016998
+[ 64] 0x00000000fd014f67                                  bin\win64\iqm.dll+00544615 iqm::IqmPlugin<cmddistributor::PackagedTaskIIP>::getIIP+00016215
+[ 65] 0x00000000fd01567f                                  bin\win64\iqm.dll+00546431 iqm::PackagedTaskPlugin::execute+00000911
+[ 66] 0x00000000fd014fed                                  bin\win64\iqm.dll+00544749 iqm::IqmPlugin<cmddistributor::PackagedTaskIIP>::getIIP+00016349
+[ 67] 0x00000000fd0154c3                                  bin\win64\iqm.dll+00545987 iqm::PackagedTaskPlugin::execute+00000467
+[ 68] 0x00000000fcfed9ea                                  bin\win64\iqm.dll+00383466 iqm::Iqm::setupIqmFcnPtrs+00071994
+[ 69] 0x00000000fcfed84c                                  bin\win64\iqm.dll+00383052 iqm::Iqm::setupIqmFcnPtrs+00071580
+[ 70] 0x00000000fcfce722                                  bin\win64\iqm.dll+00255778 iqm::Iqm::deliver+00003730
+[ 71] 0x00000000fcfcf749                                  bin\win64\iqm.dll+00259913 iqm::Iqm::deliver+00007865
+[ 72] 0x00000001001aa211                        bin\win64\libmwservices.dll+01810961 services::system_events::PpeDispatchHook::dispatchOne+00030865
+[ 73] 0x00000001001b7ff3                        bin\win64\libmwservices.dll+01867763 sysq::addProcessPendingEventsUnitTestHook+00004659
+[ 74] 0x00000001001b81e0                        bin\win64\libmwservices.dll+01868256 sysq::addProcessPendingEventsUnitTestHook+00005152
+[ 75] 0x00000001001b9576                        bin\win64\libmwservices.dll+01873270 sysq::getCondition+00003446
+[ 76] 0x00000001001bb0e6                        bin\win64\libmwservices.dll+01880294 svWS_ProcessPendingEvents+00000230
+[ 77] 0x00000000164f0737                                  bin\win64\mcr.dll+00263991 mcr::runtime::setInterpreterThreadSingletonToCurrent+00132759
+[ 78] 0x00000000164f2360                                  bin\win64\mcr.dll+00271200 mcr::runtime::setInterpreterThreadSingletonToCurrent+00139968
+[ 79] 0x00000000164ce9b7                                  bin\win64\mcr.dll+00125367 mcr_process_events+00001959
+[ 80] 0x000000001641fef5                             bin\win64\MVMLocal.dll+00327413 mvm_server::inproc::LocalFactory::terminate+00139589
+[ 81] 0x00000000fa9605b9                                  bin\win64\mvm.dll+01246649 mvm::detail::initLocalMvmHack+00000793
+[ 82] 0x00000000fa960dcb                                  bin\win64\mvm.dll+01248715 mvm::detail::SessionImpl::privateSession+00000555
+[ 83] 0x00000000fa960ff1                                  bin\win64\mvm.dll+01249265 mvm::detail::SessionImpl::privateSession+00001105
+[ 84] 0x000000014000780d                               bin\win64\MATLAB.exe+00030733
+[ 85] 0x000000014000862f                               bin\win64\MATLAB.exe+00034351
+[ 86] 0x00007ffeab7b7034                   C:\WINDOWS\System32\KERNEL32.DLL+00094260 BaseThreadInitThunk+00000020
+[ 87] 0x00007ffeac3a2651                      C:\WINDOWS\SYSTEM32\ntdll.dll+00337489 RtlUserThreadStart+00000033
+
+
+This error was detected while a MEX-file was running. If the MEX-file
+is not an official MathWorks function, please examine its source code
+for errors. Please consult the External Interfaces Guide for information
+on debugging MEX-files.
+** This crash report has been saved to disk as C:\Users\timot\AppData\Local\Temp\matlab_crash_dump.15760-1 **
+
+
+Caught MathWorks::System::FatalException
+t
+
+t =
+
+  1×0 empty <a href="matlab:helpPopup double" style="font-weight:bold">double</a> row vector
+
+helpPopup double
+runexperiment
+inpoutx64 driver uninstalled.
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 3
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] no
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m', 34)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m',34,0)">line 34</a>)
+\n *** Ok, please check. *** \n
+} 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+
+Data file name: PIT_9999_1_210709_1804
+............ Data will be saved as                              
+............ PIT_9999_1_210709_1804                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+PTB-INFO: Multi-display setup in explicit multi-display mode detected. Using the following mapping:
+PTB-INFO: Screen 0 corresponds to the full Windows desktop area. Useful for stereo presentations in stereomode=4 ...
+PTB-INFO: Screen 1 corresponds to the display area of the monitor with the Windows-internal name \\.\DISPLAY1 ...
+PTB-INFO: Screen 2 corresponds to the display area of the monitor with the Windows-internal name \\.\DISPLAY4 ...
+
+PTB-INFO: Your version of Matlab 64-Bit is global system DPI aware. On Windows-8 or later, fullscreen onscreen windows will only work 
+PTB-INFO: properly timing-wise when displayed on displays with the same pixel density as your systems primary display monitor.
+PTB-INFO: For your multi-display setup the stimulus display monitor must have a DPI of (96, 96), matching that of
+PTB-INFO: your primary display monitor. Ideally you will only display on the primary display in the first place.
+PTB-INFO: Displaying on anything with a different DPI will cause mysterious visual timing problems, sync failures etc.
+PTB-INFO: Read 'help RetinaDisplay' for more info on this topic.
+
+
+----- ! PTB - ERROR: SYNCHRONIZATION FAILURE ! -----
+
+One or more internal checks (see Warnings above) indicate that synchronization
+of Psychtoolbox to the vertical retrace (VBL) is not working on your setup.
+
+This will seriously impair proper stimulus presentation and stimulus presentation timing!
+Please read 'help SyncTrouble' for information about how to solve or work-around the problem.
+You can force Psychtoolbox to continue, despite the severe problems, by adding the command
+Screen('Preference', 'SkipSyncTests', 1); at the top of your script, if you really know what you are doing.
+
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Screen')" style="font-weight:bold">Screen</a>
+See error message printed above.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('setup', 'C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\setup.m', 47)" style="font-weight:bold">setup</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\setup.m',47,0)">line 47</a>)
+     wd=Screen('OpenWindow', screenNumber,bgcol(2),[],[],2,[],[],imagingmode); %automatically grab the resolution
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m', 57)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m',57,0)">line 57</a>)
+    setup;			% setup display, stimulus coordinates, load images etc.
+} 
+opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\setup.m',47,0)
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+
+Data file name: PIT_9999_1_210709_1811
+............ Data will be saved as                              
+............ PIT_9999_1_210709_1811                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+
+
+----- ! PTB - ERROR: SYNCHRONIZATION FAILURE ! -----
+
+One or more internal checks (see Warnings above) indicate that synchronization
+of Psychtoolbox to the vertical retrace (VBL) is not working on your setup.
+
+This will seriously impair proper stimulus presentation and stimulus presentation timing!
+Please read 'help SyncTrouble' for information about how to solve or work-around the problem.
+You can force Psychtoolbox to continue, despite the severe problems, by adding the command
+Screen('Preference', 'SkipSyncTests', 1); at the top of your script, if you really know what you are doing.
+
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Screen')" style="font-weight:bold">Screen</a>
+See error message printed above.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('setup', 'C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\setup.m', 47)" style="font-weight:bold">setup</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\setup.m',47,0)">line 47</a>)
+     wd=Screen('OpenWindow', screenNumber,bgcol(2),[],[],2,[],[],imagingmode); %automatically grab the resolution
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m', 57)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m',57,0)">line 57</a>)
+    setup;			% setup display, stimulus coordinates, load images etc.
+} 
+opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\setup.m',47,0)
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+
+Data file name: PIT_9999_1_210709_1811
+............ Data will be saved as                              
+............ PIT_9999_1_210709_1811                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+
+
+----- ! PTB - ERROR: SYNCHRONIZATION FAILURE ! -----
+
+One or more internal checks (see Warnings above) indicate that synchronization
+of Psychtoolbox to the vertical retrace (VBL) is not working on your setup.
+
+This will seriously impair proper stimulus presentation and stimulus presentation timing!
+Please read 'help SyncTrouble' for information about how to solve or work-around the problem.
+You can force Psychtoolbox to continue, despite the severe problems, by adding the command
+Screen('Preference', 'SkipSyncTests', 1); at the top of your script, if you really know what you are doing.
+
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Screen')" style="font-weight:bold">Screen</a>
+See error message printed above.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('setup', 'C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\setup.m', 48)" style="font-weight:bold">setup</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\setup.m',48,0)">line 48</a>)
+    wd=Screen('OpenWindow', screenNumber,bgcol(2),[0 0 1920 1080],[],2,[],[],imagingmode);
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m', 57)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m',57,0)">line 57</a>)
+    setup;			% setup display, stimulus coordinates, load images etc.
+} 
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+
+Data file name: PIT_9999_1_210709_1812
+............ Data will be saved as                              
+............ PIT_9999_1_210709_1812                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is NOT open
+............. Instrumental training
+64-bit Windows
+InpOutx64 driver is NOT open
+Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('checkabort', 'C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\checkabort.m', 12)" style="font-weight:bold">checkabort</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\checkabort.m',12,0)">line 12</a>)
+Pressed abort key--- aborting experiment
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('pittraining', 'C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\pittraining.m', 200)" style="font-weight:bold">pittraining</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\pittraining.m',200,0)">line 200</a>)
+checkabort; 		% Allow for abortion of experiment
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m', 89)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m',89,0)">line 89</a>)
+            pittraining;
+
+runexperiment
+inpoutx64 driver uninstalled.
+inpoutx64 driver uninstalled.
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 2
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+Data file please
+Choose the one starting with the date, NOT the one called 'subject_xxxx'............ Setting up the psychtoolbox screen   
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 2 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 3 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 4 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is NOT open
+............. Pavlovian conditioning 
+Pavlovian training trial 1{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('checkabort', 'C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\checkabort.m', 12)" style="font-weight:bold">checkabort</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\checkabort.m',12,0)">line 12</a>)
+Pressed abort key--- aborting experiment
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('pavlov', 'C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\pavlov.m', 116)" style="font-weight:bold">pavlov</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\pavlov.m',116,0)">line 116</a>)
+checkabort; 	% Allow for abortion of experiment
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m', 121)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m',121,0)">line 121</a>)
+            pavlov;
+} 
+ PsychDebugWindowConfiguration
+runexperiment
+inpoutx64 driver uninstalled.
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 3
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+Data file please
+Choose the one starting with the date, NOT the one called 'subject_xxxx'............ Setting up the psychtoolbox screen   
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 2 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 3 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 4 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 5 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is NOT open
+............. PIT session 
+First Trigger Received!
+<a href="matlab: opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\getresponse.m',21,1)">21  </a>		KbQueueFlush; 
+PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+if system_dependent('IsDebugMode')==1, dbcont; end
+if system_dependent('IsDebugMode')==1, dbcont; end
+buttons
+
+buttons =
+
+     0     0     0     0
+
+keyCode
+{Undefined function or variable 'keyCode'.
+} 
+if system_dependent('IsDebugMode')==1, dbcont; end
+keyCode
+
+keyCode =
+
+  Columns 1 through 17
+
+         0         0         0         0         0         0         0         0         0         0         0         0  509.4229         0         0         0         0
+
+  Columns 18 through 34
+
+         0         0  512.2230         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+
+  Columns 35 through 51
+
+         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+
+  Columns 52 through 68
+
+         0         0         0         0         0         0         0         0         0         0         0         0         0         0  508.4428  512.9103  514.1270
+
+  Columns 69 through 85
+
+  511.9312         0         0         0         0         0  511.7609         0         0  509.0055  508.8898         0         0         0  509.1496  508.6948  508.5567
+
+  Columns 86 through 102
+
+         0         0         0  512.0522         0         0         0         0         0         0         0         0         0         0         0         0         0
+
+  Columns 103 through 119
+
+         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+
+  Columns 120 through 136
+
+         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+
+  Columns 137 through 153
+
+         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+
+  Columns 154 through 170
+
+         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+
+  Columns 171 through 187
+
+         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+
+  Columns 188 through 204
+
+         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+
+  Columns 205 through 221
+
+         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+
+  Columns 222 through 238
+
+         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+
+  Columns 239 through 255
+
+         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+
+  Column 256
+
+         0
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+runexperiment
+inpoutx64 driver uninstalled.
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 3
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+Data file please
+Choose the one starting with the date, NOT the one called 'subject_xxxx'............ Setting up the psychtoolbox screen   
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 2 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 3 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 4 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 5 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is NOT open
+............. PIT session 
+First Trigger Received!
+<a href="matlab: opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\getresponse.m',31,1)">31  </a>		key = KbName(keyCode);
+PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+key
+
+key =
+
+  Columns 1 through 28
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Columns 29 through 56
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Columns 57 through 84
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Columns 85 through 112
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Columns 113 through 140
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Columns 141 through 168
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Columns 169 through 196
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Columns 197 through 224
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Columns 225 through 252
+
+     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0     0
+
+  Columns 253 through 256
+
+     0     0     0     0
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+runexperiment
+inpoutx64 driver uninstalled.
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 3
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+Data file please
+Choose the one starting with the date, NOT the one called 'subject_xxxx'............ Setting up the psychtoolbox screen   
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 2 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 3 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 4 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 5 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is NOT open
+............. PIT session 
+First Trigger Received!
+<a href="matlab: opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\pit.m',69,1)">69  </a>                if ch(npit)==1;
+PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+if system_dependent('IsDebugMode')==1, dbquit; end
+runexperiment
+inpoutx64 driver uninstalled.
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 3
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+Data file please
+Choose the one starting with the date, NOT the one called 'subject_xxxx'............ Setting up the psychtoolbox screen   
+
+
+----- ! PTB - ERROR: SYNCHRONIZATION FAILURE ! -----
+
+One or more internal checks (see Warnings above) indicate that synchronization
+of Psychtoolbox to the vertical retrace (VBL) is not working on your setup.
+
+This will seriously impair proper stimulus presentation and stimulus presentation timing!
+Please read 'help SyncTrouble' for information about how to solve or work-around the problem.
+You can force Psychtoolbox to continue, despite the severe problems, by adding the command
+Screen('Preference', 'SkipSyncTests', 1); at the top of your script, if you really know what you are doing.
+
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Screen')" style="font-weight:bold">Screen</a>
+See error message printed above.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('setup', 'C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\setup.m', 47)" style="font-weight:bold">setup</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\setup.m',47,0)">line 47</a>)
+     wd=Screen('OpenWindow', screenNumber,bgcol(2),[],[],2,[],[],imagingmode); %automatically grab the resolution
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m', 57)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m',57,0)">line 57</a>)
+    setup;			% setup display, stimulus coordinates, load images etc.
+} 
+opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\setup.m',47,0)
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 3
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+Data file please
+Choose the one starting with the date, NOT the one called 'subject_xxxx'............ Setting up the psychtoolbox screen   
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 2 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 3 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 4 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 5 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is NOT open
+............. PIT session 
+First Trigger Received!
+<a href="matlab: opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\pit.m',81,1)">81  </a>if presstimes(npit,1)~=0;
+PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+if system_dependent('IsDebugMode')==1, dbquit; end
+runexperiment
+inpoutx64 driver uninstalled.
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 3
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+Data file please
+Choose the one starting with the date, NOT the one called 'subject_xxxx'............ Setting up the psychtoolbox screen   
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 2 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 3 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 4 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 5 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is NOT open
+............. PIT session 
+First Trigger Received!
+<a href="matlab: opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\pit.m',118,1)">118 </a>if ~isnan(ch(npit))
+PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+t
+
+t =
+
+  1×0 empty <a href="matlab:helpPopup double" style="font-weight:bold">double</a> row vector
+
+T.pit_response
+
+ans =
+
+     0
+
+if system_dependent('IsDebugMode')==1, dbquit; end
+runexperiment
+inpoutx64 driver uninstalled.
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 3
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+Data file please
+Choose the one starting with the date, NOT the one called 'subject_xxxx'............ Setting up the psychtoolbox screen   
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 2 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 3 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 4 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 5 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is NOT open
+............. PIT session 
+First Trigger Received!
+<a href="matlab: opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\pit.m',118,1)">118 </a>if ~isnan(ch(npit))
+PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+t
+
+t =
+
+  1×0 empty <a href="matlab:helpPopup double" style="font-weight:bold">double</a> row vector
+
+T.pit_response
+
+ans =
+
+   1.0e+03 *
+
+    1.2140    1.2142    1.2144    1.2145    1.2148    1.2150    1.2154    1.2155
+
+keyCode(keyCode~=0)
+
+ans =
+
+  1×0 empty <a href="matlab:helpPopup double" style="font-weight:bold">double</a> row vector
+
+T.pit_response(npit,ch(npit))
+
+ans =
+
+   1.2155e+03
+
+length(T.pit_response(npit,ch(npit)))
+
+ans =
+
+     1
+
+struct(S)
+{Undefined function or variable 'S'.
+} 
+if system_dependent('IsDebugMode')==1, dbquit; end
+runexperiment
+inpoutx64 driver uninstalled.
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 3
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+Data file please
+Choose the one starting with the date, NOT the one called 'subject_xxxx'............ Setting up the psychtoolbox screen   
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 2 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 3 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 4 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 5 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is NOT open
+............. PIT session 
+First Trigger Received!
+{Reference to non-existent field 'pit_response'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('pit', 'C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\pit.m', 64)" style="font-weight:bold">pit</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\pit.m',64,0)">line 64</a>)
+                if length(T.pit_response(npit,ch(npit))) ~= 1
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m', 171)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m',171,0)">line 171</a>)
+            pit;
+} 
+PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\pit.m',64,0)
+runexperiment
+inpoutx64 driver uninstalled.
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 3
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+Data file please
+Choose the one starting with the date, NOT the one called 'subject_xxxx'............ Setting up the psychtoolbox screen   
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 2 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 3 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 4 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 5 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (Realtek(R) Audio)
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is NOT open
+............. PIT session 
+First Trigger Received!
+{Error: <a href="matlab: opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\pit.m',66,43)">File: pit.m Line: 66 Column: 43
+</a>Invalid expression. When calling a function or indexing a variable, use parentheses. Otherwise, check for mismatched delimiters.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m', 171)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m',171,0)">line 171</a>)
+            pit;
+} 
+PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m',171,0)
+opentoline('C:\Users\timot\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\pit.m',66,43)
+runexperiment
+inpoutx64 driver uninstalled.
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 3
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+Data file please
+Choose the one starting with the date, NOT the one called 'subject_xxxx'............ Setting up the psychtoolbox screen   
