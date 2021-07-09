@@ -37,7 +37,7 @@ imagingmode=kPsychNeedFastBackingStore;
 
 
 % Due to the scanner display setting, we need to select the primary monitor as stimulus monitor.
-%screenNumber = max(Screen('Screens'));	% select the last monitor.
+screenNumber = max(Screen('Screens'));	% select the last monitor.
 
 smallscreen=debug;
 if smallscreen
