@@ -20,7 +20,7 @@ elseif strcmpi(devicetype,'MRRC')
     respkey  = '2';	% index finger of right hand
     rightkey = '3';	% middle finger of right hand
     leftkey  = '2';	% index finger of right hand
-    usekbqueue = 1;
+    usekbqueue = 0;
 else
     error('Unknown device type')
 end
