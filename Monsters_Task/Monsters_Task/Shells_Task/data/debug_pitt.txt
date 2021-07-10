@@ -4943,6 +4943,7 @@ ans =
 
 PIT trial 4PIT trial 5PIT trial 6PIT trial 7PIT trial 8PIT trial 9PIT trial 10PIT trial 11PIT trial 12PIT trial 13PIT trial 14PIT trial 15PIT trial 16PIT trial 17PIT trial 18PIT trial 19PIT trial 20PIT trial 21PIT trial 22PIT trial 23PIT trial 24PIT trial 25PIT trial 26PIT trial 27PIT trial 28PIT trial 29PIT trial 30PIT trial 31PIT trial 32PIT trial 33PIT trial 34PIT trial 35PIT trial 36PIT trial 37PIT trial 38PIT trial 39PIT trial 40PIT trial 41PIT trial 42PIT trial 43PIT trial 44PIT trial 45PIT trial 46PIT trial 47PIT trial 48PIT trial 49PIT trial 50PIT trial 51PIT trial 52PIT trial 53PIT trial 54PIT trial 55PIT trial 56PIT trial 57PIT trial 58PIT trial 59PIT trial 60PIT trial 61PIT trial 62PIT trial 63PIT trial 64PIT trial 65PIT trial 66PIT trial 67PIT trial 68PIT trial 69PIT trial 70PIT trial 71PIT trial 72PIT trial 73PIT trial 74PIT trial 75PIT trial 76PIT trial 77PIT trial 78PIT trial 79PIT trial 80PIT trial 81PIT trial 82PIT trial 83PIT trial 84PIT trial 85PIT trial 86PIT trial 87PIT trial 88PIT trial 89PIT trial 90PIT trial 91PIT trial 92PIT trial 93PIT trial 94PIT trial 95PIT trial 96PIT trial 97PIT trial 98PIT trial 99PIT trial 100PIT trial 101PIT trial 102PIT trial 103PIT trial 104PIT trial 105PIT trial 106PIT trial 107PIT trial 108PIT trial 109PIT trial 110PIT trial 111PIT trial 112PIT trial 113PIT trial 114PIT trial 115PIT trial 116PIT trial 117PIT trial 118PIT trial 119PIT trial 120PIT trial 121PIT trial 122PIT trial 123PIT trial 124PIT trial 125PIT trial 126PIT trial 127PIT trial 128PIT trial 129PIT trial 130PIT trial 131PIT trial 132PIT trial 133PIT trial 134PIT trial 135PIT trial 136PIT trial 137PIT trial 138PIT trial 139PIT trial 140PIT trial 141PIT trial 142PIT trial 143PIT trial 144PIT trial 145PIT trial 146PIT trial 147PIT trial 148PIT trial 149PIT trial 150PIT trial 151PIT trial 152PIT trial 153PIT trial 154PIT trial 155PIT trial 156PIT trial 157PIT trial 158PIT trial 159PIT trial 160PIT trial 161PIT trial 162PIT trial 163PIT trial 164PIT trial 165PIT trial 166PIT trial 167PIT trial 168PIT trial 169PIT trial 170PIT trial 171PIT trial 172PIT trial 173PIT trial 174PIT trial 175PIT trial 176PIT trial 177PIT trial 178PIT trial 179PIT trial 180
 Acquiring final volumes
+<<<<<<< Updated upstream
 Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
 File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
 
@@ -6127,3 +6128,408 @@ Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 3
 File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
 Data file please
 Choose the one starting with the date, NOT the one called 'subject_xxxx'............ Setting up the psychtoolbox screen   
+=======
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+
+Data file name: PIT_79212_1_210709_1634
+............ Data will be saved as                              
+............ PIT_79212_1_210709_1634                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+
+
+----- ! PTB - ERROR: SYNCHRONIZATION FAILURE ! -----
+
+One or more internal checks (see Warnings above) indicate that synchronization
+of Psychtoolbox to the vertical retrace (VBL) is not working on your setup.
+
+This will seriously impair proper stimulus presentation and stimulus presentation timing!
+Please read 'help SyncTrouble' for information about how to solve or work-around the problem.
+You can force Psychtoolbox to continue, despite the severe problems, by adding the command
+Screen('Preference', 'SkipSyncTests', 1); at the top of your script, if you really know what you are doing.
+
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Screen')" style="font-weight:bold">Screen</a>
+See error message printed above.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('setup', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\setup.m', 47)" style="font-weight:bold">setup</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\setup.m',47,0)">line 47</a>)
+     wd=Screen('OpenWindow', screenNumber,bgcol(2),[],[],2,[],[],imagingmode); %automatically grab the resolution
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m', 57)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m',57,0)">line 57</a>)
+    setup;			% setup display, stimulus coordinates, load images etc.
+} 
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+
+Data file name: PIT_79212_1_210709_1634
+............ Data will be saved as                              
+............ PIT_79212_1_210709_1634                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+{Unrecognized function or variable 'screenNumber'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('setup', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\setup.m', 47)" style="font-weight:bold">setup</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\setup.m',47,0)">line 47</a>)
+     wd=Screen('OpenWindow', screenNumber,bgcol(2),[],[],2,[],[],imagingmode); %automatically grab the resolution
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m', 57)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m',57,0)">line 57</a>)
+    setup;			% setup display, stimulus coordinates, load images etc.
+} 
+ShowCursor()
+
+ans =
+
+     0
+
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+
+Data file name: PIT_79212_1_210709_1636
+............ Data will be saved as                              
+............ PIT_79212_1_210709_1636                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+{Unrecognized function or variable 'screenNumber'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('setup', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\setup.m', 47)" style="font-weight:bold">setup</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\setup.m',47,0)">line 47</a>)
+     wd=Screen('OpenWindow', screenNumber,bgcol(2),[],[],2,[],[],imagingmode); %automatically grab the resolution
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m', 57)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m',57,0)">line 57</a>)
+    setup;			% setup display, stimulus coordinates, load images etc.
+} 
+ShowCursor()
+
+ans =
+
+     0
+
+runexperiment
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+
+Data file name: PIT_79212_1_210709_1637
+............ Data will be saved as                              
+............ PIT_79212_1_210709_1637                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is open
+............. Instrumental training
+............ Displaying instructions PTB-INFO: Enforcing script abortion and restoring desktop by executing Screen('CloseAll') now!
+PTB-INFO: Please ignore the false error message (INTERNAL PSYCHTOOLBOX ERROR) caused by this...
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KbWait', 'C:\toolbox\Psychtoolbox\PsychBasic\KbWait.m', 142)" style="font-weight:bold">KbWait</a> (<a href="matlab: opentoline('C:\toolbox\Psychtoolbox\PsychBasic\KbWait.m',142,0)">line 142</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KbWait', 'C:\toolbox\Psychtoolbox\PsychBasic\KbWait.m', 121)" style="font-weight:bold">KbWait</a> (<a href="matlab: opentoline('C:\toolbox\Psychtoolbox\PsychBasic\KbWait.m',121,0)">line 121</a>)
+        KbWait(deviceNumber, 1, untilTime);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('KbStrokeWait', 'C:\toolbox\Psychtoolbox\PsychBasic\KbStrokeWait.m', 32)" style="font-weight:bold">KbStrokeWait</a> (<a href="matlab: opentoline('C:\toolbox\Psychtoolbox\PsychBasic\KbStrokeWait.m',32,0)">line 32</a>)
+[secs, keyCode, deltaSecs] = KbWait(deviceNumber, 3, varargin{:});
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('getleftrightarrow', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\getleftrightarrow.m', 15)" style="font-weight:bold">getleftrightarrow</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\getleftrightarrow.m',15,0)">line 15</a>)
+        [foo,keyCode] = KbStrokeWait;
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('instr_display', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\instr_display.m', 12)" style="font-weight:bold">instr_display</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\instr_display.m',12,0)">line 12</a>)
+		getleftrightarrow;
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('instrpitapproach', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\instrpitapproach.m', 172)" style="font-weight:bold">instrpitapproach</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\instrpitapproach.m',172,0)">line 172</a>)
+instr_display;
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m', 81)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m',81,0)">line 81</a>)
+        if doinstr; instrpitapproach; end
+} 
+runexperiment
+inpoutx64 driver uninstalled.
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+
+Data file name: PIT_79212_1_210709_1638
+............ Data will be saved as                              
+............ PIT_79212_1_210709_1638                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is open
+............. Instrumental training
+............ Displaying instructions .........done
+64-bit Windows
+InpOutx64 driver is open
+Instrumental training trial 164-bit Windows
+InpOutx64 driver is open
+Instrumental training trial 264-bit Windows
+InpOutx64 driver is open
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('checkabort', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\checkabort.m', 12)" style="font-weight:bold">checkabort</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\checkabort.m',12,0)">line 12</a>)
+Pressed abort key--- aborting experiment
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('pittraining', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\pittraining.m', 200)" style="font-weight:bold">pittraining</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\pittraining.m',200,0)">line 200</a>)
+checkabort; 		% Allow for abortion of experiment
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m', 89)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m',89,0)">line 89</a>)
+            pittraining;
+} 
+runexperiment
+inpoutx64 driver uninstalled.
+inpoutx64 driver uninstalled.
+inpoutx64 driver uninstalled.
+inpoutx64 driver uninstalled.
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 2
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+Data file please
+Choose the one starting with the date, NOT the one called 'subject_xxxx'............ Setting up the psychtoolbox screen   
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 2 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 3 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 4 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is open
+............. Pavlovian conditioning 
+............. Displaying instructions 
+.........done
+Pavlovian training trial 1Pavlovian training trial 2{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('checkabort', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\checkabort.m', 12)" style="font-weight:bold">checkabort</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\checkabort.m',12,0)">line 12</a>)
+Pressed abort key--- aborting experiment
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('pavlov', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\pavlov.m', 116)" style="font-weight:bold">pavlov</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\pavlov.m',116,0)">line 116</a>)
+checkabort; 	% Allow for abortion of experiment
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m', 121)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m',121,0)">line 121</a>)
+            pavlov;
+} 
+runexperiment
+inpoutx64 driver uninstalled.
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 3
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+Data file please
+Choose the one starting with the date, NOT the one called 'subject_xxxx'............ Setting up the psychtoolbox screen   
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 2 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 3 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 4 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 5 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is open
+............. PIT session 
+............ Displaying instructions 
+tx =
+
+  1×9 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+  Columns 1 through 4
+
+    {'Ok, now comes t…'}    {'Decide whether …'}    {'This time, the …'}    {'You have learne…'}
+
+  Columns 5 through 8
+
+    {'The monetary va…'}    {'This is done au…'}    {'Your focus shou…'}    {'There is one ot…'}
+
+  Column 9
+
+    {'You have 3 seco…'}
+
+............ end of instructions First Trigger Received!
+PIT trial 1
+ans =
+
+   2.7660e+05
+
+PIT trial 2PIT trial 3
+ans =
+
+   2.7661e+05
+
+PIT trial 4PIT trial 5PIT trial 6PIT trial 7PIT trial 8PIT trial 9PIT trial 10PIT trial 11PIT trial 12PIT trial 13PIT trial 14PIT trial 15PIT trial 16PIT trial 17PIT trial 18PIT trial 19PIT trial 20PIT trial 21PIT trial 22PIT trial 23PIT trial 24PIT trial 25PIT trial 26PIT trial 27PIT trial 28PIT trial 29PIT trial 30PIT trial 31PIT trial 32PIT trial 33PIT trial 34PIT trial 35PIT trial 36PIT trial 37PIT trial 38PIT trial 39PIT trial 40PIT trial 41PIT trial 42PIT trial 43PIT trial 44PIT trial 45PIT trial 46PIT trial 47PIT trial 48PIT trial 49PIT trial 50PIT trial 51PIT trial 52PIT trial 53PIT trial 54PIT trial 55PIT trial 56PIT trial 57PIT trial 58PIT trial 59PIT trial 60PIT trial 61PIT trial 62PIT trial 63PIT trial 64PIT trial 65PIT trial 66PIT trial 67PIT trial 68PIT trial 69PIT trial 70PIT trial 71PIT trial 72PIT trial 73PIT trial 74PIT trial 75PIT trial 76PIT trial 77PIT trial 78PIT trial 79PIT trial 80PIT trial 81PIT trial 82PIT trial 83PIT trial 84PIT trial 85PIT trial 86PIT trial 87PIT trial 88PIT trial 89PIT trial 90PIT trial 91PIT trial 92PIT trial 93PIT trial 94PIT trial 95PIT trial 96PIT trial 97PIT trial 98PIT trial 99PIT trial 100PIT trial 101PIT trial 102PIT trial 103PIT trial 104PIT trial 105PIT trial 106PIT trial 107PIT trial 108PIT trial 109PIT trial 110PIT trial 111PIT trial 112PIT trial 113PIT trial 114PIT trial 115PIT trial 116PIT trial 117PIT trial 118PIT trial 119PIT trial 120PIT trial 121PIT trial 122PIT trial 123PIT trial 124PIT trial 125PIT trial 126PIT trial 127PIT trial 128PIT trial 129PIT trial 130PIT trial 131PIT trial 132PIT trial 133PIT trial 134PIT trial 135PIT trial 136PIT trial 137PIT trial 138PIT trial 139PIT trial 140PIT trial 141PIT trial 142PIT trial 143PIT trial 144PIT trial 145PIT trial 146PIT trial 147PIT trial 148PIT trial 149PIT trial 150PIT trial 151PIT trial 152PIT trial 153PIT trial 154PIT trial 155PIT trial 156PIT trial 157PIT trial 158PIT trial 159PIT trial 160PIT trial 161PIT trial 162PIT trial 163PIT trial 164PIT trial 165PIT trial 166PIT trial 167PIT trial 168PIT trial 169PIT trial 170PIT trial 171PIT trial 172PIT trial 173PIT trial 174PIT trial 175PIT trial 176PIT trial 177PIT trial 178PIT trial 179PIT trial 180
+Acquiring final volumes
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 1
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+
+Data file name: PIT_79213_1_210709_1723
+............ Data will be saved as                              
+............ PIT_79213_1_210709_1723                                       
+............ in the folder 'data'
+............ Setting up the psychtoolbox screen   
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is open
+............. Instrumental training
+............ Displaying instructions .........done
+64-bit Windows
+InpOutx64 driver is open
+Instrumental training trial 164-bit Windows
+InpOutx64 driver is open
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('checkabort', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\checkabort.m', 12)" style="font-weight:bold">checkabort</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\checkabort.m',12,0)">line 12</a>)
+Pressed abort key--- aborting experiment
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('pittraining', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\pittraining.m', 200)" style="font-weight:bold">pittraining</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\pittraining.m',200,0)">line 200</a>)
+checkabort; 		% Allow for abortion of experiment
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m', 89)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m',89,0)">line 89</a>)
+            pittraining;
+} 
+runexperiment
+inpoutx64 driver uninstalled.
+inpoutx64 driver uninstalled.
+inpoutx64 driver uninstalled.
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 2
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+Data file please
+Choose the one starting with the date, NOT the one called 'subject_xxxx'............ Setting up the psychtoolbox screen   
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 2 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 3 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 4 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is open
+............. Pavlovian conditioning 
+............. Displaying instructions 
+.........done
+Pavlovian training trial 1Pavlovian training trial 2Pavlovian training trial 3{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('checkabort', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\checkabort.m', 12)" style="font-weight:bold">checkabort</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\checkabort.m',12,0)">line 12</a>)
+Pressed abort key--- aborting experiment
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('pavlov', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\pavlov.m', 116)" style="font-weight:bold">pavlov</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\pavlov.m',116,0)">line 116</a>)
+checkabort; 	% Allow for abortion of experiment
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('runexperiment', 'C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m', 121)" style="font-weight:bold">runexperiment</a> (<a href="matlab: opentoline('C:\Users\Shreya\Documents\GitHub\PANDA\Monsters_Task\Monsters_Task\Shells_Task\runexperiment.m',121,0)">line 121</a>)
+            pavlov;
+} 
+runexperiment
+inpoutx64 driver uninstalled.
+............ Setting basic parameters according to 
+............            MODIFYME.M
+............ 
+Part 1, 2, 3 or 4? (only part 3 to be run inside scanner)? 3
+File modifyme.m says we are scanning in part 3. Is this correct? [yes/no] yes
+Data file please
+Choose the one starting with the date, NOT the one called 'subject_xxxx'............ Setting up the psychtoolbox screen   
+PTB-INFO: Using modified PortAudio V19.6.0-devel, revision unknown
+PTB-INFO: New audio device -1 with handle 0 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 1 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 2 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 3 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 4 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+PTB-INFO: New audio device -1 with handle 5 opened as PortAudio stream:
+PTB-INFO: For 1 channels Playback: Audio subsystem is MME, Audio device name is Speakers (High Definition Audio
+PTB-INFO: Real samplerate 44100.000000 Hz. Input latency 0.000000 msecs, Output latency 180.317460 msecs.
+64-bit Windows
+InpOutx64 driver is open
+............. PIT session 
+............ Displaying instructions 
+tx =
+
+  1×9 <a href="matlab:helpPopup cell" style="font-weight:bold">cell</a> array
+
+  Columns 1 through 4
+
+    {'Ok, now comes t…'}    {'Decide whether …'}    {'This time, the …'}    {'You have learne…'}
+
+  Columns 5 through 8
+
+    {'The monetary va…'}    {'This is done au…'}    {'Your focus shou…'}    {'There is one ot…'}
+
+  Column 9
+
+    {'You have 3 seco…'}
+
+............ end of instructions First Trigger Received!
+PIT trial 1
+ans =
+
+   2.7854e+05
+
+PIT trial 2PIT trial 3
+ans =
+
+   2.7856e+05
+
+PIT trial 4PIT trial 5PIT trial 6PIT trial 7PIT trial 8PIT trial 9PIT trial 10PIT trial 11PIT trial 12PIT trial 13PIT trial 14PIT trial 15PIT trial 16PIT trial 17PIT trial 18PIT trial 19PIT trial 20PIT trial 21PIT trial 22PIT trial 23PIT trial 24PIT trial 25PIT trial 26PIT trial 27PIT trial 28PIT trial 29PIT trial 30PIT trial 31PIT trial 32PIT trial 33PIT trial 34PIT trial 35PIT trial 36PIT trial 37PIT trial 38PIT trial 39PIT trial 40PIT trial 41PIT trial 42PIT trial 43PIT trial 44PIT trial 45PIT trial 46PIT trial 47PIT trial 48PIT trial 49PIT trial 50PIT trial 51PIT trial 52PIT trial 53PIT trial 54PIT trial 55PIT trial 56PIT trial 57PIT trial 58PIT trial 59PIT trial 60PIT trial 61PIT trial 62PIT trial 63PIT trial 64PIT trial 65PIT trial 66PIT trial 67PIT trial 68PIT trial 69PIT trial 70PIT trial 71PIT trial 72PIT trial 73PIT trial 74PIT trial 75PIT trial 76PIT trial 77PIT trial 78PIT trial 79PIT trial 80PIT trial 81PIT trial 82PIT trial 83PIT trial 84PIT trial 85PIT trial 86PIT trial 87PIT trial 88PIT trial 89PIT trial 90PIT trial 91PIT trial 92PIT trial 93PIT trial 94PIT trial 95PIT trial 96PIT trial 97PIT trial 98PIT trial 99PIT trial 100PIT trial 101PIT trial 102PIT trial 103PIT trial 104PIT trial 105PIT trial 106PIT trial 107PIT trial 108PIT trial 109PIT trial 110PIT trial 111PIT trial 112PIT trial 113PIT trial 114PIT trial 115PIT trial 116PIT trial 117PIT trial 118PIT trial 119PIT trial 120PIT trial 121PIT trial 122PIT trial 123PIT trial 124PIT trial 125PIT trial 126PIT trial 127PIT trial 128PIT trial 129PIT trial 130PIT trial 131PIT trial 132PIT trial 133PIT trial 134PIT trial 135PIT trial 136PIT trial 137PIT trial 138PIT trial 139PIT trial 140PIT trial 141PIT trial 142PIT trial 143PIT trial 144PIT trial 145PIT trial 146PIT trial 147PIT trial 148PIT trial 149PIT trial 150PIT trial 151PIT trial 152PIT trial 153PIT trial 154PIT trial 155PIT trial 156PIT trial 157PIT trial 158PIT trial 159PIT trial 160PIT trial 161PIT trial 162PIT trial 163PIT trial 164PIT trial 165PIT trial 166PIT trial 167PIT trial 168PIT trial 169PIT trial 170PIT trial 171PIT trial 172PIT trial 173PIT trial 174PIT trial 175PIT trial 176PIT trial 177PIT trial 178PIT trial 179PIT trial 180
+Acquiring final volumes
+>>>>>>> Stashed changes
