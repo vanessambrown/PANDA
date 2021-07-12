@@ -44,6 +44,7 @@ if smallscreen
 	Screen('Preference','SkipSyncTests',2); % ONLY do this for quick debugging;
 	wd=Screen('OpenWindow', screenNumber,bgcol(2),[0 20 800 600],[],2,[],[],imagingmode); % make small PTB screen on my laptop screen
  elseif strcmpi(exploc,'p') && exppart~=3
+%     Screen('Preference','SkipSyncTests',2);
      wd=Screen('OpenWindow', screenNumber,bgcol(2),[],[],2,[],[],imagingmode); %automatically grab the resolution
 %    wd=Screen('OpenWindow', screenNumber,bgcol(2),[0 0 1280 768],[],2,[],[],imagingmode);
 %    wd=Screen('OpenWindow', screenNumber ,bgcol(2),[0 0 1024 768],[],2,[],[],imagingmode);
