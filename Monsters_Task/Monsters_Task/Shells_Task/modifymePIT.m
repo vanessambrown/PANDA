@@ -13,15 +13,7 @@ fprintf('............            MODIFYME.M\n'); fprintf('............ \n')
 %----------------------------------------------------------------------------
 %        Patient Information 
 %----------------------------------------------------------------------------
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-subjn    = '9999';  % Subject ID. This number has to be > 1000 
-=======
-subjn    = '79213';  % Subject ID. This number has to be > 1000 
->>>>>>> Stashed changes
-=======
-subjn    = '79213';  % Subject ID. This number has to be > 1000 
->>>>>>> Stashed changes
+subjn    = '1111';  % Subject ID. This number has to be > 1000 
                     % *** subject number has to be in single quotes ***
 dominanthand     = 'right';     % 'right' or 'left'
 
